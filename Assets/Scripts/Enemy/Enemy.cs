@@ -12,6 +12,7 @@ public class Enemy : Entity.Entity
 
     public int maxPatrolTileDistance = 5;
     public float maxIdleTime = 5f;
+    public float attackDuration = 0.5f;
 
     private EnemyState activeState;
     public Animator Animator => animator;

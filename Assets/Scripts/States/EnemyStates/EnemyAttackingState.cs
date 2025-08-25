@@ -1,53 +1,46 @@
 ﻿using UnityEngine;
 
-class EnemyAttackingState : EnemyState
+public class EnemyAttackingState : EnemyState
 {
-    private const string ANIMATOR_HORIZONTAL = "horizontal";
-    private const string ANIMATOR_VERTICAL = "vertical";
-    private const string ANIMATOR_ATTACKING = "attacking";
+    private const string ANIMATOR_ATTACK_TRIGGER = "attack";
 
     private Enemy enemy;
-    private Entity.Entity target;
-    private Vector2 targetPosition;
+    private AnimatorStateInfo animatorStateInfo;
+    private bool attackFinished = false;
 
     public void Enter(Enemy enemy)
     {
         this.enemy = enemy;
-        Vector2 movement = targetPosition - (Vector2)enemy.transform.position;
-        enemy.Animator.SetBool(ANIMATOR_ATTACKING, true);
+        attackFinished = false;
+
+        enemy.Animator.SetTrigger(ANIMATOR_ATTACK_TRIGGER);
     }
 
     public void Exit()
     {
-        enemy.Animator.SetBool(ANIMATOR_ATTACKING, false);
     }
 
     public EnemyState Update(float deltaTime)
     {
+        animatorStateInfo = enemy.Animator.GetCurrentAnimatorStateInfo(0);
+
+        if (animatorStateInfo.normalizedTime >= 1f)
+        {
+
+            attackFinished = true;
+        }
+
         return null;
-    }
-
-    private Vector2 GetMovementToward(Vector2 targetPosition)
-    {
-        Vector2 currentPosition = enemy.transform.position;
-
-        Vector2 direction = targetPosition - currentPosition;
-
-        return direction.normalized;
     }
 
     public EnemyState FixedUpdate(float fixedDeltaTime)
     {
-        Vector2 movementDirection = GetMovementToward(target.transform.position);
-        enemy.Move(movementDirection);
-        enemy.Animator.SetFloat(ANIMATOR_HORIZONTAL, movementDirection.x);
-        enemy.Animator.SetFloat(ANIMATOR_VERTICAL, movementDirection.y);
         return null;
     }
 
     public EnemyState Input(Entity.Entity target)
     {
-        if (target == null) return new EnemyPatrolState();
+        if (target == null) return new EnemyIdleState();
         return null;
     }
 }

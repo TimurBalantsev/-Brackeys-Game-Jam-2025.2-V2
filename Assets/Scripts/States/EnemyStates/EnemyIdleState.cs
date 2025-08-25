@@ -33,7 +33,7 @@ class EnemyIdleState : EnemyState
 
     public EnemyState Input(Entity.Entity target)
     {
-        if (target != null) return new EnemyChaseState();
+        if (target != null) return new EnemyChasingState();
         return null;
     }
 }

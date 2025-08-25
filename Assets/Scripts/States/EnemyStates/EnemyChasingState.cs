@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-class EnemyChaseState : EnemyState
+class EnemyChasingState : EnemyState
 {
     private const string ANIMATOR_HORIZONTAL = "horizontal";
     private const string ANIMATOR_VERTICAL = "vertical";
