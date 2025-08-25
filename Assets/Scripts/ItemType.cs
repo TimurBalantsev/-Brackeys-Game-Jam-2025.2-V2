@@ -5,5 +5,6 @@
     Weapon,
     Ammo,
     Tech,
+    Car,
     Misc
 }

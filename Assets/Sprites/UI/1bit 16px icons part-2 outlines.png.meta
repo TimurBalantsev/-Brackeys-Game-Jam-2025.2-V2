@@ -7551,7 +7551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1bit 16px icons part-2 outlines_278
+      name: weaponicon
       rect:
         serializedVersion: 2
         x: 30
@@ -11453,7 +11453,6 @@ TextureImporter:
       1bit 16px icons part-2 outlines_275: 3528876038446283953
       1bit 16px icons part-2 outlines_276: -192910790267513494
       1bit 16px icons part-2 outlines_277: 4471653901962344846
-      1bit 16px icons part-2 outlines_278: 1312553325415988730
       1bit 16px icons part-2 outlines_279: -3195695201768802530
       1bit 16px icons part-2 outlines_28: 5365167424950756871
       1bit 16px icons part-2 outlines_280: -4811653515292531377
@@ -11705,6 +11704,7 @@ TextureImporter:
       slot icon: 8447754520555838999
       t: 5600926501876118228
       transfer Icon: -8212033600700423716
+      weaponicon: 1312553325415988730
       weight icon: 229407718709670452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

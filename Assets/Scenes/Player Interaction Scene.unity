@@ -1882,6 +1882,24 @@ MonoBehaviour:
   - type: 0
     typeIcon: {fileID: 937326754003655339, guid: 031b010595472c844bf0400883a70991, type: 3}
     typeColor: {r: 1, g: 0.017255671, b: 0, a: 1}
+  - type: 1
+    typeIcon: {fileID: -8438210264055629611, guid: 031b010595472c844bf0400883a70991, type: 3}
+    typeColor: {r: 0.11457586, g: 1, b: 0, a: 1}
+  - type: 2
+    typeIcon: {fileID: 1312553325415988730, guid: 031b010595472c844bf0400883a70991, type: 3}
+    typeColor: {r: 1, g: 0.6446169, b: 0, a: 1}
+  - type: 3
+    typeIcon: {fileID: -7173003525342006096, guid: 86edb86770eadff438027160f19bfb3c, type: 3}
+    typeColor: {r: 0, g: 0, b: 0, a: 1}
+  - type: 4
+    typeIcon: {fileID: -4544898330648155148, guid: 031b010595472c844bf0400883a70991, type: 3}
+    typeColor: {r: 0, g: 1, b: 0.8698616, a: 1}
+  - type: 5
+    typeIcon: {fileID: -6777482357994996614, guid: 031b010595472c844bf0400883a70991, type: 3}
+    typeColor: {r: 1, g: 1, b: 1, a: 1}
+  - type: 6
+    typeIcon: {fileID: -1186078742574901109, guid: 031b010595472c844bf0400883a70991, type: 3}
+    typeColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1482372700
 Transform:
   m_ObjectHideFlags: 0
