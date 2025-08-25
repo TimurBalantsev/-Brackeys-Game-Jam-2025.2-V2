@@ -10,5 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca403553c7e04aa5bc772e5e20ed1dfd, type: 3}
-  m_Name: Item
+  m_Name: Melon
   m_EditorClassIdentifier: 
+  itemName: Melon Slice
+  description: yummy yummy melon slice
+  itemType: 0
+  weight: 0.1
+  slot: 0.1
+  icon: {fileID: -1839822025, guid: 942252e71f3a347468d10c8087176b05, type: 3}

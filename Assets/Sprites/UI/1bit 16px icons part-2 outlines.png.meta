@@ -1677,7 +1677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1bit 16px icons part-2 outlines_11
+      name: close
       rect:
         serializedVersion: 2
         x: 272
@@ -11273,7 +11273,6 @@ TextureImporter:
       1bit 16px icons part-2 outlines_107: 149045456189599873
       1bit 16px icons part-2 outlines_108: -8653242267450754686
       1bit 16px icons part-2 outlines_109: 5004064758267869799
-      1bit 16px icons part-2 outlines_11: -8908260910652505893
       1bit 16px icons part-2 outlines_110: -2683774262978962360
       1bit 16px icons part-2 outlines_111: -5178394157014365521
       1bit 16px icons part-2 outlines_112: 5600926501876118228
@@ -11700,6 +11699,7 @@ TextureImporter:
       1bit 16px icons part-2 outlines_97: -4432151330280445396
       1bit 16px icons part-2 outlines_98: -7690127206607863302
       1bit 16px icons part-2 outlines_99: -7306521902400239659
+      close: -8908260910652505893
       food icon: 937326754003655339
       mechanical icon: 6486082190052190123
       meds icon: -8438210264055629611

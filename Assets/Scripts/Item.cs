@@ -27,7 +27,7 @@ public class Item
 
     public Item(ItemSO itemSO)
     {
-        this.name = itemSO.name;
+        this.name = itemSO.itemName;
         this.description = itemSO.description;
         this.itemType = itemSO.itemType;
         this.weight = itemSO.weight;
