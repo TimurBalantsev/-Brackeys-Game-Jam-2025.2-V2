@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 590760358640951208}
   - component: {fileID: 6140671933116547379}
   - component: {fileID: 4168170753372244475}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6306243544655891594}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Follow Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7548629880688783635}
   - component: {fileID: 3642813237899114465}
   - component: {fileID: 2079546560123301941}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Animations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 2021559248130265878}
   - component: {fileID: 6558805846583715273}
   - component: {fileID: 3470584594326562364}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,8 +394,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats:
     maxHealth: 10
-    damage: 10
-    speed: 2
+    damage: 2
+    speed: 0.5
     healthBarUI: {fileID: 0}
   spriteRenderer: {fileID: 3642813237899114465}
   isSpriteFacingRight: 1
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 1036841045546594538}
   - component: {fileID: 5782956142978731296}
   - component: {fileID: 8021935630252916948}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Player Interaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,6 +505,6 @@ MonoBehaviour:
   interactRange: 0.3
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   player: {fileID: 6558805846583715273}
   interactionCollider: {fileID: 5782956142978731296}
