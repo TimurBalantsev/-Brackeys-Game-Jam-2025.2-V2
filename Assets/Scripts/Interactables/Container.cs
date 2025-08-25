@@ -15,7 +15,7 @@ public class Container : MonoBehaviour, Interactable
     
     public void Interact(Player player)
     {
-        InventoryUI.Instance.DisplayInventory(inventory);
+        InventoryUIController.Instance.DisplayInventory(inventory, player.Inventory);
     }
 
     public void Select(Player player, bool isSelected)

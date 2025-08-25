@@ -17,36 +17,46 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private ItemUI itemUITemplate;
     [SerializeField] private Button closeButton;
     [SerializeField] private Transform inventoryList;
+    [SerializeField] private TextMeshProUGUI inventoryName;
+
+    private Inventory inventory;
+    
     private bool isContainer = false;
-
-    public static InventoryUI Instance;
-
-    private void Awake()
-    {
-        if (Instance != null)
-        {
-            Debug.LogError("multiples instances of inventory UI found");
-        }
-        Instance = this;
-    }
 
     private void Start()
     {
         itemUITemplate.gameObject.SetActive(false);
-        closeButton.onClick.AddListener(HideInventory);
+        closeButton.onClick.AddListener(CloseInventory);
         gameObject.SetActive(false);
+    }
+
+    private void CloseInventory()
+    {
+        if (isContainer)
+        {
+            InventoryUIController.Instance.CloseContainer();
+        }
+        else
+        {
+            InventoryUIController.Instance.ClosePlayer();
+        }
+
     }
 
     public void DisplayInventory(Inventory inventory)
     {
-        maxSlotAmount = inventory.MaxSlots;
-        maxWeightAmount = inventory.MaxWeight;
-        currentSlotAmount = inventory.CurrentSlots;
-        currentWeightAmount = inventory.CurrentWeight;
-        isContainer = inventory.IsContainer;
-        UpdateSlots();
-        UpdateWeight();
-        InitializeItems(inventory.Items);
+        // maxSlotAmount = inventory.MaxSlots;
+        // maxWeightAmount = inventory.MaxWeight;
+        // currentSlotAmount = inventory.CurrentSlots;
+        // currentWeightAmount = inventory.CurrentWeight;
+        // isContainer = inventory.IsContainer;
+        // inventoryName.text = inventory.InventoryName;
+        // this.inventory = inventory;
+        // UpdateSlots();
+        // UpdateWeight();
+        // InitializeItems(inventory.Items);
+        this.inventory = inventory;
+        RefreshUI();
         gameObject.SetActive(true);
     }
     
@@ -65,7 +75,7 @@ public class InventoryUI : MonoBehaviour
         foreach (Item item in items)
         {
             ItemUI itemUI = Instantiate(itemUITemplate, inventoryList);
-            itemUI.SetItem(item);
+            itemUI.SetItem(item, isContainer);
             itemUI.gameObject.SetActive(true);
         }
     }
@@ -79,5 +89,23 @@ public class InventoryUI : MonoBehaviour
     private void UpdateSlots()
     {
         totalSlotText.text = $"{currentSlotAmount}/{maxSlotAmount}";
+    }
+
+    public void RefreshUI()
+    {
+        maxSlotAmount = inventory.MaxSlots;
+        maxWeightAmount = inventory.MaxWeight;
+        currentSlotAmount = inventory.CurrentSlots;
+        currentWeightAmount = inventory.CurrentWeight;
+        isContainer = inventory.IsContainer;
+        inventoryName.text = inventory.InventoryName;
+        UpdateSlots();
+        UpdateWeight();
+        InitializeItems(inventory.Items);
+    }
+
+    public Inventory GetInventory()
+    {
+        return inventory;
     }
 }

@@ -9,7 +9,9 @@ public class Player : Entity.Entity
     [SerializeField] private Transform followPoint;
     
     [SerializeField] private LayerMask damageableLayerMask;
-    
+    [SerializeField] private Inventory inventory;
+
+    public Inventory Inventory => inventory;
     
     //TODO put new animation in attack without the FX
 
@@ -26,7 +28,13 @@ public class Player : Entity.Entity
         ChangeState(new PlayerIdleState());
         InputManager.Instance.OnAttackPerformed += InputManager_OnAttackPerformed;
         InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
+        InputManager.Instance.OnInventory += InputManager_OnInventoryPressed;
         stats.Initialize();
+    }
+
+    private void InputManager_OnInventoryPressed(object sender, EventArgs e)
+    {
+        InventoryUIController.Instance.TogglePlayerInventory(this);
     }
 
     private void InputManager_OnAttackPerformed(object sender, EventArgs e)

@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,9 +12,29 @@ public class ItemUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI weightText;
     [SerializeField] private TextMeshProUGUI slotText;
     [SerializeField] private Image typeIcon;
-    
-    //TODO: add remove and add buttons depending on isContainer
-    
+
+    [SerializeField] private Button TransferButton;
+    [SerializeField] private Button DropButton;
+
+    private bool isInContainer;
+
+    private void Start()
+    {
+        TransferButton.onClick.AddListener(TransferOnClick);
+        DropButton.onClick.AddListener(DropButtonOnClick);
+    }
+
+    private void DropButtonOnClick()
+    {
+        InventoryUIController.Instance.RemoveItemFromInventory(isInContainer, item);
+    }
+
+    private void TransferOnClick()
+    {
+        InventoryUIController.Instance.TransferItem(isInContainer, item);
+
+    }
+
     // [SerializeField] private ItemSO defaultItem;
     // private void Start()
     // {
@@ -23,9 +44,10 @@ public class ItemUI : MonoBehaviour
     //     }
     // }
     
-    public void SetItem(Item item)
+    public void SetItem(Item item, bool isInContainer)
     {
         this.item = item;
+        this.isInContainer = isInContainer;
         itemIcon.sprite = item.icon;
         nameText.text = item.name;
         descriptionText.text = item.description;

@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private float maxWeight;
     [SerializeField] private float maxWeightBuffer;
     [SerializeField] private bool isContainer;
+    [SerializeField] private string inventoryName;
     private float currentWeight;
     private List<Item> items;
 
@@ -19,6 +20,7 @@ public class Inventory : MonoBehaviour
     public bool IsContainer => isContainer;
     public float CurrentWeight => currentWeight;
     public int CurrentSlots => items.Count;
+    public string InventoryName => inventoryName;
     public List<Item> Items => items;
     
     private void Awake()

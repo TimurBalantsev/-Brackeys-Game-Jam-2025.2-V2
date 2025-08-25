@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour
     public event EventHandler OnAttackPerformed;
     public event EventHandler OnAttackReleased;
     public event EventHandler OnInteract;
+    public event EventHandler OnInventory;
     
     public enum InputActions
     {
@@ -20,7 +21,8 @@ public class InputManager : MonoBehaviour
         ATTACK,
         INTERACT,
         DASH,
-        ABILITY
+        ABILITY,
+        INVENTORY
     }
 
     private void Awake()
@@ -38,6 +40,12 @@ public class InputManager : MonoBehaviour
         playerInput.Player.Attack.started += PlayerAttackStarted;
         playerInput.Player.Attack.canceled += PlayerAttackReleased;
         playerInput.Player.Interact.started += PlayerInteractStarted;
+        playerInput.Player.ToggleInventory.started += PlayerInventoryStarted;
+    }
+
+    private void PlayerInventoryStarted(InputAction.CallbackContext obj)
+    {
+        OnInventory?.Invoke(this, EventArgs.Empty);
     }
 
     private void PlayerInteractStarted(InputAction.CallbackContext obj)
