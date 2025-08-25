@@ -48,6 +48,9 @@ public class Inventory : MonoBehaviour
         if (items.Remove(item))
         {
             currentWeight -= item.weight;
+            if (Mathf.Abs(currentWeight) < 0.005f) {
+                currentWeight = 0f;
+            }
             return true;
         }
         return false;
