@@ -303,6 +303,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f663c90878223e14c8c6f6072fd192cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalWeightText: {fileID: 4888720186382782848}
+  totalSlotText: {fileID: 3747536198217366943}
+  weightIcon: {fileID: 7641503024321518630}
+  slotIcon: {fileID: 6984432835733282856}
 --- !u!1 &1932073891795902175
 GameObject:
   m_ObjectHideFlags: 0
