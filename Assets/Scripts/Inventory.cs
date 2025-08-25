@@ -19,10 +19,10 @@ public class Inventory : MonoBehaviour
     {
         if (items.Count >= maxSlots) return false;
         if (currentWeight > maxWeight) return false;
-        if (currentWeight + item.Weight > maxWeight + maxWeightBuffer) return false;
+        if (currentWeight + item.weight > maxWeight + maxWeightBuffer) return false;
         
         items.Add(item);
-        currentWeight += item.Weight;
+        currentWeight += item.weight;
         return true;
     }
     
@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
     {
         if (items.Remove(item))
         {
-            currentWeight -= item.Weight;
+            currentWeight -= item.weight;
             return true;
         }
         return false;
