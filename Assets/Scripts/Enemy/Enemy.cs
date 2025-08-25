@@ -1,14 +1,21 @@
 using System;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Enemy : Entity.Entity
 {
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Animator animator;
     [SerializeField] private EnemyFOV enemyFOV;
+    [SerializeField] private Tilemap tilemap;
+    [SerializeField] private LayerMask obstacleMask;
+
+    public int maxPatrolTileDistance = 5;
+    public float maxIdleTime = 5f;
 
     private EnemyState activeState;
     public Animator Animator => animator;
+    public Tilemap Tilemap => tilemap;
 
     public Entity.Entity Target { get; private set; }
 
@@ -42,7 +49,7 @@ public class Enemy : Entity.Entity
 
     private void Start()
     {
-        ChangeState(new EnemyPatrolState());
+        ChangeState(new EnemyIdleState());
     }
 
     private void Update()
@@ -88,6 +95,16 @@ public class Enemy : Entity.Entity
         float angle = Mathf.Atan2(movementDirection.y, movementDirection.x) * Mathf.Rad2Deg;
 
         enemyFOV.transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
+    }
+
+    public bool IsTileFree(Vector3Int cell)
+    {
+        if (!tilemap.HasTile(cell))
+            return false;
+
+        Vector3 worldPos = tilemap.GetCellCenterWorld(cell);
+        Collider2D hit = Physics2D.OverlapPoint(worldPos, obstacleMask);
+        return hit == null;
     }
 
     protected override void Die()

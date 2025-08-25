@@ -12,13 +12,13 @@ class EnemyPatrolState : EnemyState
     public void Enter(Enemy enemy)
     {
         this.enemy = enemy;
-        Vector2 targetPosition = GetNextTargetPosition();
-        Vector2 movement = targetPosition - (Vector2)enemy.transform.position;
+        targetPosition = GetNextTargetPosition();
         enemy.Animator.SetBool(ANIMATOR_WALKING, true);
     }
 
     public void Exit()
     {
+        enemy.Animator.SetBool(ANIMATOR_WALKING, false);
     }
 
     public EnemyState Update(float deltaTime)
@@ -28,9 +28,27 @@ class EnemyPatrolState : EnemyState
 
     private Vector2 GetNextTargetPosition()
     {
-        // impl: random near target
+        Vector3Int currentCell = enemy.Tilemap.WorldToCell(enemy.transform.position);
+        Vector3Int randomCell;
+        int iterations = 0;
 
-        return new Vector2(0f, 1f);
+        do
+        {
+            int x = currentCell.x + Random.Range(-enemy.maxPatrolTileDistance, enemy.maxPatrolTileDistance + 1);
+            int y = currentCell.y + Random.Range(-enemy.maxPatrolTileDistance, enemy.maxPatrolTileDistance + 1);
+            randomCell = new Vector3Int(x, y, 0);
+
+            iterations++;
+            if (iterations > 1000)
+            {
+                Debug.LogWarning("Could not find a nearby free tile!");
+                return enemy.transform.position;
+            }
+
+        }
+        while (!enemy.IsTileFree(randomCell));
+
+        return (Vector2)enemy.Tilemap.GetCellCenterWorld(randomCell);
     }
 
     private Vector2 GetMovementToward(Vector2 targetPosition)
@@ -44,6 +62,14 @@ class EnemyPatrolState : EnemyState
 
     public EnemyState FixedUpdate(float fixedDeltaTime)
     {
+        Vector2 currentPosition = enemy.transform.position;
+        float distance = Vector2.Distance(currentPosition, targetPosition);
+
+        if (distance < 0.1f)
+        {
+            return new EnemyIdleState();
+        }
+
         Vector2 movementDirection = GetMovementToward(targetPosition);
         enemy.Move(movementDirection);
         enemy.Animator.SetFloat(ANIMATOR_HORIZONTAL, movementDirection.x);

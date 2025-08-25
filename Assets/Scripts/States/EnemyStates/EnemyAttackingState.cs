@@ -4,7 +4,7 @@ class EnemyAttackingState : EnemyState
 {
     private const string ANIMATOR_HORIZONTAL = "horizontal";
     private const string ANIMATOR_VERTICAL = "vertical";
-    private const string ANIMATOR_WALKING = "walking";
+    private const string ANIMATOR_ATTACKING = "attacking";
 
     private Enemy enemy;
     private Entity.Entity target;
@@ -14,11 +14,12 @@ class EnemyAttackingState : EnemyState
     {
         this.enemy = enemy;
         Vector2 movement = targetPosition - (Vector2)enemy.transform.position;
-        enemy.Animator.SetBool(ANIMATOR_WALKING, true);
+        enemy.Animator.SetBool(ANIMATOR_ATTACKING, true);
     }
 
     public void Exit()
     {
+        enemy.Animator.SetBool(ANIMATOR_ATTACKING, false);
     }
 
     public EnemyState Update(float deltaTime)

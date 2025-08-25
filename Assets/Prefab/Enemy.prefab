@@ -163,7 +163,7 @@ MonoBehaviour:
   stats:
     maxHealth: 5
     damage: 2
-    speed: 0.2
+    speed: 0.3
     healthBarUI: {fileID: 0}
   spriteRenderer: {fileID: 3731390317818495351}
   isSpriteFacingRight: 1
@@ -171,6 +171,12 @@ MonoBehaviour:
   rigidBody: {fileID: 7387307885916471795}
   animator: {fileID: 7486400538606977092}
   enemyFOV: {fileID: 627286652973277704}
+  tilemap: {fileID: 0}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 128
+  maxPatrolTileDistance: 5
+  maxIdleTime: 5
 --- !u!50 &7387307885916471795
 Rigidbody2D:
   serializedVersion: 5
@@ -293,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b247543dcb58040b1d75eb69e32e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  radius: 1.5
   angle: 90
   targetLayer:
     serializedVersion: 2

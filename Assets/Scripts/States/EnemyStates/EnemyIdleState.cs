@@ -2,17 +2,16 @@
 
 class EnemyIdleState : EnemyState
 {
-    private const string ANIMATOR_HORIZONTAL = "horizontal";
-    private const string ANIMATOR_VERTICAL = "vertical";
-    private const string ANIMATOR_WALKING = "walking";
-
     private Enemy enemy;
+    private float idleTimer;
+    private float maxIdleTime;
 
     public void Enter(Enemy enemy)
     {
         this.enemy = enemy;
+        idleTimer = 0f;
 
-        enemy.Animator.SetBool(ANIMATOR_WALKING, false);
+        maxIdleTime = Random.Range(0f, enemy.maxIdleTime);
     }
 
     public void Exit()
@@ -22,6 +21,13 @@ class EnemyIdleState : EnemyState
 
     public EnemyState Update(float deltaTime)
     {
+        idleTimer += deltaTime;
+
+        if (idleTimer >= maxIdleTime)
+        {
+            return new EnemyPatrolState();
+        }
+
         return null;
     }
 

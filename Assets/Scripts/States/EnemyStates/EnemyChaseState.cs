@@ -17,7 +17,7 @@ class EnemyChaseState : EnemyState
 
     public void Exit()
     {
-
+        enemy.Animator.SetBool(ANIMATOR_WALKING, false);
     }
 
     private Vector2 GetMovementToward(Vector2 targetPosition)
@@ -45,7 +45,7 @@ class EnemyChaseState : EnemyState
 
     public EnemyState Input(Entity.Entity target)
     {
-        if (target == null) return new EnemyPatrolState();
+        if (target == null) return new EnemyIdleState();
         return null;
     }
 }
