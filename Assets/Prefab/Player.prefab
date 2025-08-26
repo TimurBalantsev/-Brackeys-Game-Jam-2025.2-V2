@@ -418,7 +418,6 @@ Transform:
   - {fileID: 7548629880688783635}
   - {fileID: 6306243544655891594}
   - {fileID: 1036841045546594538}
-  - {fileID: 4538853995005764104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &8320593679081067472
@@ -498,8 +497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats:
     maxHealth: 10
-    damage: 10
-    speed: 2
+    damage: 2
+    speed: 0.5
     healthBarUI: {fileID: 2898433407837963087}
   spriteRenderer: {fileID: 3642813237899114465}
   isSpriteFacingRight: 1
@@ -510,6 +509,7 @@ MonoBehaviour:
   damageableLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  inventory: {fileID: 0}
 --- !u!114 &3470584594326562364
 MonoBehaviour:
   m_ObjectHideFlags: 0
