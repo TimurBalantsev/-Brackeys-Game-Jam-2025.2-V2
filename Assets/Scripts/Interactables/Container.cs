@@ -14,6 +14,7 @@ public class Container : MonoBehaviour, Interactable
     private void Start()
     {
         defaultColor = spriteRenderer.color;
+        if (lootTable == null) return;
         int amountItems = Random.Range(minItemsSpawned, maxItemsSpawned);
         for (int i = 0; i < amountItems; i++)
         {
