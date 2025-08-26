@@ -174,7 +174,8 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 128
-  attackRange: 0.2
+  targetLostDelay: 5
+  attackRange: 0.15
   maxPatrolDistance: 1
   maxIdleTime: 5
   patrolDuration: 5
@@ -302,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1.5
-  angle: 90
+  angle: 120
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -377,8 +378,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0011000037, y: 0.50030005, z: 0}
-    m_Extent: {x: 0.4989, y: 0.6005, z: 0}
+    m_Center: {x: -0.007049978, y: 0.63525, z: 0}
+    m_Extent: {x: 1.3963499, y: 0.73585, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -390,5 +391,7 @@ MonoBehaviour:
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0, y: 0, z: 0}
-  - {x: 0.4, y: 1, z: 0}
-  - {x: -0.4, y: 1, z: 0}
+  - {x: 1.2905651, y: 0.74186516, z: 0}
+  - {x: 0.7854098, y: 1.2704325, z: 0}
+  - {x: -0.816941, y: 1.2172424, z: 0}
+  - {x: -1.3042312, y: 0.7606447, z: 0}
