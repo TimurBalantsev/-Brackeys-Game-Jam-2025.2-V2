@@ -7,6 +7,8 @@
      public static InventoryUIController Instance;
      [SerializeField] private InventoryUI ContainerUI;
      [SerializeField] private InventoryUI PlayerUI;
+     
+     [SerializeField] private DroppedItem droppedItemPrefab;
 
      private void Awake()
      {
@@ -60,7 +62,13 @@
      {
          InventoryUI targetInventory = isContainer ? ContainerUI : PlayerUI;
          bool isItemDeleted = targetInventory.GetInventory().RemoveItem(item);
-         if (isItemDeleted) targetInventory.RefreshUI();
+         if (isItemDeleted)
+         {
+             targetInventory.RefreshUI();
+             DroppedItem droppedItem = Instantiate(droppedItemPrefab);
+             droppedItem.transform.position = Player.Instance.transform.position;
+             droppedItem.Initialize(item);
+         }
          return isItemDeleted;
      }
 

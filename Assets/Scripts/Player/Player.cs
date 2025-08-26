@@ -10,6 +10,7 @@ public class Player : Entity.Entity
     
     [SerializeField] private LayerMask damageableLayerMask;
     [SerializeField] private Inventory inventory;
+    public static Player Instance;
 
     public Inventory Inventory => inventory;
     
@@ -21,6 +22,15 @@ public class Player : Entity.Entity
     private InputManager.InputActions currentInputAction = InputManager.InputActions.NONE;
     private Camera mainCam;
     private bool attackInputHeld = false;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Debug.LogError($"more than one player in scene");
+        }
+        Instance = this;
+    }
 
     private void Start()
     {
