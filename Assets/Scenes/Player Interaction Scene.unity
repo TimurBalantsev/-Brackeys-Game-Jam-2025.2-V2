@@ -1123,6 +1123,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1302789849774684931, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -17.178
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302789849774684931, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 290.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302789849774684931, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -91.1
       objectReference: {fileID: 0}
@@ -1509,6 +1517,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1302789849774684931, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -17.178
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302789849774684931, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 289.7964
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302789849774684931, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -91.1
       objectReference: {fileID: 0}
@@ -1546,6 +1562,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3944277729209021666, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944277729209021666, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4199627856557928517, guid: 104037dc6920bcc45a8dac04ca615af3, type: 3}
@@ -1989,7 +2009,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.34, y: 0.18}
   m_EdgeRadius: 0
 --- !u!114 &1788331819
 MonoBehaviour:
@@ -2010,8 +2030,8 @@ MonoBehaviour:
   inventoryName: Car Wreck
   testItems:
   - {fileID: 11400000, guid: 11102eeebcffad24ab5d741f72997892, type: 2}
-  - {fileID: 11400000, guid: 11102eeebcffad24ab5d741f72997892, type: 2}
-  - {fileID: 11400000, guid: 11102eeebcffad24ab5d741f72997892, type: 2}
+  - {fileID: 11400000, guid: 5a9d5e28086e66f4da1372ece95d71bc, type: 2}
+  - {fileID: 11400000, guid: 5bb49bf34253e89439e2493dbc31a2a2, type: 2}
 --- !u!114 &1788331820
 MonoBehaviour:
   m_ObjectHideFlags: 0

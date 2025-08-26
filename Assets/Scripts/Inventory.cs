@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private bool isContainer;
     [SerializeField] private string inventoryName;
     private float currentWeight;
+    private float currentSlots;
     private List<Item> items;
 
     [SerializeField] private List<ItemSO> testItems;
@@ -19,16 +20,16 @@ public class Inventory : MonoBehaviour
     public float MaxWeight => maxWeight;
     public bool IsContainer => isContainer;
     public float CurrentWeight => currentWeight;
-    public int CurrentSlots => items.Count;
+    public float CurrentSlots => currentSlots;
     public string InventoryName => inventoryName;
     public List<Item> Items => items;
     
     private void Awake()
     {
-        items = new List<Item>(maxSlots);
+        items = new List<Item>();
         foreach (ItemSO itemSO in testItems)
         {
-            items.Add(itemSO.CreateItem());
+            AddItem(itemSO.CreateItem());
         }
     }
 
@@ -37,9 +38,11 @@ public class Inventory : MonoBehaviour
         if (items.Count >= maxSlots) return false;
         if (currentWeight > maxWeight) return false;
         if (currentWeight + item.weight > maxWeight + maxWeightBuffer) return false;
+        if (currentSlots + item.slot > maxSlots) return false;
         
         items.Add(item);
         currentWeight += item.weight;
+        currentSlots += item.slot;
         return true;
     }
     
@@ -48,9 +51,13 @@ public class Inventory : MonoBehaviour
         if (items.Remove(item))
         {
             currentWeight -= item.weight;
+            currentSlots -= item.slot;
             if (Mathf.Abs(currentWeight) < 0.005f) {
                 currentWeight = 0f;
             }
+            if (Mathf.Abs(currentSlots) < 0.005f) {
+                currentSlots = 0f;
+            }            
             return true;
         }
         return false;

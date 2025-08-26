@@ -45,16 +45,6 @@ public class InventoryUI : MonoBehaviour
 
     public void DisplayInventory(Inventory inventory)
     {
-        // maxSlotAmount = inventory.MaxSlots;
-        // maxWeightAmount = inventory.MaxWeight;
-        // currentSlotAmount = inventory.CurrentSlots;
-        // currentWeightAmount = inventory.CurrentWeight;
-        // isContainer = inventory.IsContainer;
-        // inventoryName.text = inventory.InventoryName;
-        // this.inventory = inventory;
-        // UpdateSlots();
-        // UpdateWeight();
-        // InitializeItems(inventory.Items);
         this.inventory = inventory;
         RefreshUI();
         gameObject.SetActive(true);
