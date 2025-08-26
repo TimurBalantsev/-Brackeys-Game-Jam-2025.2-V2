@@ -22,11 +22,8 @@ public class EnemyAttackingState : EnemyState
     {
         animatorStateInfo = enemy.Animator.GetCurrentAnimatorStateInfo(0);
 
-        // Middle of animation
-        if (animatorStateInfo.normalizedTime >= 0.5f)
+        if (animatorStateInfo.normalizedTime >= 1f)
         {
-            enemy.Attack();
-
             return new EnemyIdleState();
         }
 

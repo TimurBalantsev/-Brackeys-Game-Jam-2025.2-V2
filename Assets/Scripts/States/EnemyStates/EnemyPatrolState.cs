@@ -28,14 +28,7 @@ class EnemyPatrolState : EnemyState
     {
         if (enemy.Target != null)
         {
-            if (enemy.CanAttack(enemy.Target))
-            {
-                return new EnemyAttackingState();
-            }
-            else
-            {
-                return new EnemyChasingState();
-            }
+            return new EnemyChasingState();
         }
 
         patrolTimer += deltaTime;

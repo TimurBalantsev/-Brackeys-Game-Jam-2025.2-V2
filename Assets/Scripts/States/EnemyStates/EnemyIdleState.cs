@@ -16,7 +16,6 @@ class EnemyIdleState : EnemyState
 
     public void Exit()
     {
-
     }
 
     public EnemyState Update(float deltaTime)

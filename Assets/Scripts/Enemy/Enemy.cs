@@ -1,20 +1,20 @@
+using HitBox;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
-public class Enemy : Entity.Entity
+public class Enemy : Entity.Entity, AttackHitBoxSource
 {
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Animator animator;
     [SerializeField] private EnemyFOV enemyFOV;
+    [SerializeField] private AttackHitBox attackHitBox;
     [SerializeField] private LayerMask obstacleMask;
 
     [SerializeField] private float targetLostDelay = 5f;
-    [SerializeField] private float attackRange = 0.1f;
+    [SerializeField] public float attackStartRange = 0.1f;
     [SerializeField] public int maxPatrolDistance = 1;
     [SerializeField] public float maxIdleTime = 5f;
     [SerializeField] public float patrolDuration = 5f;
-    [SerializeField] public float attackDuration = 0.5f;
 
     private EnemyState activeState;
     public Animator Animator => animator;
@@ -47,12 +47,22 @@ public class Enemy : Entity.Entity
 
         Target = target;
         EnemyState newState = activeState.Input(target);
-        if (newState != null) ChangeState(newState);
+        if (newState != null)
+        {
+            ChangeState(newState);
+        }
+        else
+        {
+        }
     }
 
     private void EnemyFOV_OnTargetLost()
     {
-        if (loseTargetCoroutine != null) StopCoroutine(loseTargetCoroutine);
+        if (loseTargetCoroutine != null)
+        {
+            StopCoroutine(loseTargetCoroutine);
+        }
+
         loseTargetCoroutine = StartCoroutine(LoseTargetAfterDelay());
     }
 
@@ -62,7 +72,13 @@ public class Enemy : Entity.Entity
 
         Target = null;
         EnemyState newState = activeState.Input(null);
-        if (newState != null) ChangeState(newState);
+        if (newState != null)
+        {
+            ChangeState(newState);
+        }
+        else
+        {
+        }
 
         loseTargetCoroutine = null;
     }
@@ -77,6 +93,7 @@ public class Enemy : Entity.Entity
         StateUpdate();
 
         UpdateFOVRotation(lastMovementDirection);
+        UpdateAttackHitboxRotation(lastMovementDirection);
     }
 
     private void FixedUpdate()
@@ -117,18 +134,10 @@ public class Enemy : Entity.Entity
         enemyFOV.transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
     }
 
-    public void Attack()
+    private void UpdateAttackHitboxRotation(Vector2 movementDirection)
     {
-        if (CanAttack(Target))
-        {
-            DealDamage(Target);
-        }
-    }
-
-    public bool CanAttack(Entity.Entity target)
-    {
-        Vector3 directionToTarget = target.transform.position - transform.position;
-        return directionToTarget.magnitude <= attackRange;
+        float angle = Mathf.Atan2(movementDirection.y, movementDirection.x) * Mathf.Rad2Deg;
+        attackHitBox.transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
     }
 
     protected override void Die()
