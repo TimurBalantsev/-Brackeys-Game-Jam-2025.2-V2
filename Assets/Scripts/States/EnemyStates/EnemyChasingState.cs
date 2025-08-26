@@ -8,6 +8,8 @@ class EnemyChasingState : EnemyState
 
     private Enemy enemy;
 
+    private float extendedChaseTimer;
+
     public void Enter(Enemy enemy)
     {
         this.enemy = enemy;
@@ -40,6 +42,11 @@ class EnemyChasingState : EnemyState
 
     public EnemyState Update(float deltaTime)
     {
+        if (enemy.CanAttack(enemy.Target))
+        {
+            return new EnemyAttackingState();
+        }
+
         return null;
     }
 

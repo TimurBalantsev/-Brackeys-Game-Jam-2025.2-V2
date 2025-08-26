@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Tilemaps;
 
 class EnemyPatrolState : EnemyState
 {
@@ -8,6 +9,8 @@ class EnemyPatrolState : EnemyState
 
     private Enemy enemy;
     private Vector2 targetPosition;
+
+    private float patrolTimer;
 
     public void Enter(Enemy enemy)
     {
@@ -23,20 +26,40 @@ class EnemyPatrolState : EnemyState
 
     public EnemyState Update(float deltaTime)
     {
+        if (enemy.Target != null)
+        {
+            if (enemy.CanAttack(enemy.Target))
+            {
+                return new EnemyAttackingState();
+            }
+            else
+            {
+                return new EnemyChasingState();
+            }
+        }
+
+        patrolTimer += deltaTime;
+
+        // If the enemy patrolled for longer than its patrolDuration, return back to idle state
+        if (patrolTimer >= enemy.patrolDuration)
+        {
+            return new EnemyPatrolState();
+        }
+
         return null;
     }
 
     private Vector2 GetNextTargetPosition()
     {
-        Vector3Int currentCell = enemy.Tilemap.WorldToCell(enemy.transform.position);
-        Vector3Int randomCell;
+        Vector2 currentPosition = enemy.transform.position;
+        Vector2 randomPosition;
         int iterations = 0;
 
         do
         {
-            int x = currentCell.x + Random.Range(-enemy.maxPatrolTileDistance, enemy.maxPatrolTileDistance + 1);
-            int y = currentCell.y + Random.Range(-enemy.maxPatrolTileDistance, enemy.maxPatrolTileDistance + 1);
-            randomCell = new Vector3Int(x, y, 0);
+            float x = currentPosition.x + Random.Range(-enemy.maxPatrolDistance, enemy.maxPatrolDistance + 1);
+            float y = currentPosition.y + Random.Range(-enemy.maxPatrolDistance, enemy.maxPatrolDistance + 1);
+            randomPosition = new Vector2(x, y);
 
             iterations++;
             if (iterations > 1000)
@@ -46,9 +69,15 @@ class EnemyPatrolState : EnemyState
             }
 
         }
-        while (!enemy.IsTileFree(randomCell));
+        while (!IsPositionFree(randomPosition));
 
-        return (Vector2)enemy.Tilemap.GetCellCenterWorld(randomCell);
+        return randomPosition;
+    }
+
+    public bool IsPositionFree(Vector2 position)
+    {
+        Collider2D hit = Physics2D.OverlapPoint(position, enemy.ObstacleMask);
+        return hit == null;
     }
 
     private Vector2 GetMovementToward(Vector2 targetPosition)
@@ -65,7 +94,8 @@ class EnemyPatrolState : EnemyState
         Vector2 currentPosition = enemy.transform.position;
         float distance = Vector2.Distance(currentPosition, targetPosition);
 
-        if (distance < 0.1f)
+        // If the enemy reached the target tile, return back to idle state
+        if (distance <= 0.1f)
         {
             return new EnemyIdleState();
         }

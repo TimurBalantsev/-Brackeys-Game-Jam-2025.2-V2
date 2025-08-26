@@ -21,6 +21,11 @@ class EnemyIdleState : EnemyState
 
     public EnemyState Update(float deltaTime)
     {
+        if (enemy.Target != null)
+        {
+            return new EnemyChasingState();
+        }
+
         idleTimer += deltaTime;
 
         if (idleTimer >= maxIdleTime)

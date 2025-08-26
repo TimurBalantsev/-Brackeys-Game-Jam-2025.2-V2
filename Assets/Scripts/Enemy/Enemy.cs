@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -7,19 +7,23 @@ public class Enemy : Entity.Entity
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Animator animator;
     [SerializeField] private EnemyFOV enemyFOV;
-    [SerializeField] private Tilemap tilemap;
     [SerializeField] private LayerMask obstacleMask;
 
-    public int maxPatrolTileDistance = 5;
-    public float maxIdleTime = 5f;
-    public float attackDuration = 0.5f;
+    [SerializeField] private float targetLostDelay = 5f;
+    [SerializeField] private float attackRange = 0.1f;
+    [SerializeField] public int maxPatrolDistance = 1;
+    [SerializeField] public float maxIdleTime = 5f;
+    [SerializeField] public float patrolDuration = 5f;
+    [SerializeField] public float attackDuration = 0.5f;
 
+    private Tilemap tilemap;
     private EnemyState activeState;
     public Animator Animator => animator;
-    public Tilemap Tilemap => tilemap;
+    public LayerMask ObstacleMask => obstacleMask;
 
     public Entity.Entity Target { get; private set; }
 
+    private Coroutine loseTargetCoroutine;
     private Vector2 lastMovementDirection;
 
     private void OnEnable()
@@ -36,6 +40,12 @@ public class Enemy : Entity.Entity
 
     private void EnemyFOV_OnTargetSpotted(Entity.Entity target)
     {
+        if (loseTargetCoroutine != null)
+        {
+            StopCoroutine(loseTargetCoroutine);
+            loseTargetCoroutine = null;
+        }
+
         Target = target;
         EnemyState newState = activeState.Input(target);
         if (newState != null) ChangeState(newState);
@@ -43,9 +53,19 @@ public class Enemy : Entity.Entity
 
     private void EnemyFOV_OnTargetLost()
     {
+        if (loseTargetCoroutine != null) StopCoroutine(loseTargetCoroutine);
+        loseTargetCoroutine = StartCoroutine(LoseTargetAfterDelay());
+    }
+
+    private IEnumerator LoseTargetAfterDelay()
+    {
+        yield return new WaitForSeconds(targetLostDelay);
+
         Target = null;
         EnemyState newState = activeState.Input(null);
         if (newState != null) ChangeState(newState);
+
+        loseTargetCoroutine = null;
     }
 
     private void Start()
@@ -98,14 +118,18 @@ public class Enemy : Entity.Entity
         enemyFOV.transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
     }
 
-    public bool IsTileFree(Vector3Int cell)
+    public void Attack()
     {
-        if (!tilemap.HasTile(cell))
-            return false;
+        if (CanAttack(Target))
+        {
+            DealDamage(Target);
+        }
+    }
 
-        Vector3 worldPos = tilemap.GetCellCenterWorld(cell);
-        Collider2D hit = Physics2D.OverlapPoint(worldPos, obstacleMask);
-        return hit == null;
+    public bool CanAttack(Entity.Entity target)
+    {
+        Vector3 directionToTarget = target.transform.position - transform.position;
+        return directionToTarget.magnitude <= attackRange;
     }
 
     protected override void Die()

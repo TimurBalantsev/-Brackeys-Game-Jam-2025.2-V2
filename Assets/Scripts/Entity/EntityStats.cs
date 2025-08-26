@@ -28,7 +28,7 @@ public class EntityStats
         if (damage <= 0) return false;
         
         currentHealth -= damage;
-        healthBarUI.SetHealth(currentHealth, maxHealth);
+        //healthBarUI.SetHealth(currentHealth, maxHealth);
         if (currentHealth <= 0)
         {
             return true;
