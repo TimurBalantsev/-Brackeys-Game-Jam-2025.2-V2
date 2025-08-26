@@ -6,11 +6,19 @@ public class Container : MonoBehaviour, Interactable
     [SerializeField] private Inventory inventory;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Color highlightColor = Color.yellow;
+    [SerializeField] private WeightedLootTableSO lootTable;
+    [SerializeField] private int maxItemsSpawned;
+    [SerializeField] private int minItemsSpawned;
     private Color defaultColor;
     
     private void Start()
     {
         defaultColor = spriteRenderer.color;
+        int amountItems = Random.Range(minItemsSpawned, maxItemsSpawned);
+        for (int i = 0; i < amountItems; i++)
+        {
+            inventory.AddItem(lootTable.GetRandomItem());
+        }
     }
     
     public void Interact(Player player)

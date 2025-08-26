@@ -66,7 +66,7 @@
          {
              targetInventory.RefreshUI();
              DroppedItem droppedItem = Instantiate(droppedItemPrefab);
-             droppedItem.transform.position = Player.Instance.transform.position;
+             droppedItem.transform.position = Player.Instance.transform.position; //TODO: make it so player isn't a singleton
              droppedItem.Initialize(item);
          }
          return isItemDeleted;
