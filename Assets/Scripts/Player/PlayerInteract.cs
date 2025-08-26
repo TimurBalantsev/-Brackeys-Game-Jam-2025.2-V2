@@ -11,7 +11,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] CircleCollider2D interactionCollider;
     
     private Interactable currentInteractable;
-    private List<Interactable> interactablesInRange = new List<Interactable>();
+    private List<Interactable> interactablesInRange = new List<Interactable>(); //TODO: Maybe change to colliders
 
     
     private void Start()
@@ -41,7 +41,9 @@ public class PlayerInteract : MonoBehaviour
         float closestDistance = float.MaxValue;
         foreach (Interactable interactable in interactablesInRange)
         {
-            float distance = Vector2.Distance(player.transform.position, interactable.GetTransform().position);
+            Vector2 playerPosition = player.FollowPoint.position;
+            Collider2D collider = interactable.GetTransform().GetComponent<Collider2D>();
+            float distance = Vector2.Distance(playerPosition, collider.ClosestPoint((playerPosition)));
             if (distance < closestDistance)
             {
                 closestDistance = distance;

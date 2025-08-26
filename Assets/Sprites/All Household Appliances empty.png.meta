@@ -1,0 +1,995 @@
+fileFormatVersion: 2
+guid: 6b89d90540a0330408d90e240e23de76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1193255305506834911
+    second: "All Household\_Appliances empty_0"
+  - first:
+      213: 1505607189827934899
+    second: "All Household\_Appliances empty_1"
+  - first:
+      213: -2824406664599247235
+    second: "All Household\_Appliances empty_2"
+  - first:
+      213: -8642375513744001040
+    second: "All Household\_Appliances empty_3"
+  - first:
+      213: 5513390835527148251
+    second: "All Household\_Appliances empty_4"
+  - first:
+      213: 1308214329461975105
+    second: "All Household\_Appliances empty_5"
+  - first:
+      213: -5891003578303655369
+    second: "All Household\_Appliances empty_6"
+  - first:
+      213: -1586958382166794774
+    second: "All Household\_Appliances empty_7"
+  - first:
+      213: -3573851293057016390
+    second: "All Household\_Appliances empty_8"
+  - first:
+      213: 8662030912403043933
+    second: "All Household\_Appliances empty_9"
+  - first:
+      213: -5070936511275720529
+    second: "All Household\_Appliances empty_10"
+  - first:
+      213: 4229977592613424417
+    second: "All Household\_Appliances empty_11"
+  - first:
+      213: -5782002697805739448
+    second: "All Household\_Appliances empty_12"
+  - first:
+      213: 8977180112277129967
+    second: "All Household\_Appliances empty_13"
+  - first:
+      213: -7666651395636051118
+    second: "All Household\_Appliances empty_14"
+  - first:
+      213: 8698884494877133567
+    second: "All Household\_Appliances empty_15"
+  - first:
+      213: 6543461616857522562
+    second: "All Household\_Appliances empty_16"
+  - first:
+      213: -5423913485720552317
+    second: "All Household\_Appliances empty_17"
+  - first:
+      213: -6398699577342860784
+    second: "All Household\_Appliances empty_18"
+  - first:
+      213: -1658180583302162961
+    second: "All Household\_Appliances empty_19"
+  - first:
+      213: 4479947287059704517
+    second: "All Household\_Appliances empty_20"
+  - first:
+      213: 6654464598508061101
+    second: "All Household\_Appliances empty_21"
+  - first:
+      213: -2133193012445058036
+    second: "All Household\_Appliances empty_22"
+  - first:
+      213: -2967780272740401714
+    second: "All Household\_Appliances empty_23"
+  - first:
+      213: 9074137132568289383
+    second: "All Household\_Appliances empty_24"
+  - first:
+      213: -6529368635759277861
+    second: "All Household\_Appliances empty_25"
+  - first:
+      213: 8602909270293480925
+    second: "All Household\_Appliances empty_26"
+  - first:
+      213: 7183461779583387989
+    second: "All Household\_Appliances empty_27"
+  - first:
+      213: 1069184164250961114
+    second: "All Household\_Appliances empty_28"
+  - first:
+      213: -5948110453786279002
+    second: "All Household\_Appliances empty_29"
+  - first:
+      213: 8270721509163221221
+    second: "All Household\_Appliances empty_30"
+  - first:
+      213: -1189741599379595685
+    second: "All Household\_Appliances empty_31"
+  - first:
+      213: -5528148999753579852
+    second: "All Household\_Appliances empty_32"
+  - first:
+      213: 673831820058124848
+    second: "All Household\_Appliances empty_33"
+  - first:
+      213: -3155868002931850631
+    second: "All Household\_Appliances empty_34"
+  - first:
+      213: 8124139759805787081
+    second: "All Household\_Appliances empty_35"
+  - first:
+      213: 8835358720285825459
+    second: "All Household\_Appliances empty_36"
+  - first:
+      213: 3394345448820274583
+    second: "All Household\_Appliances empty_37"
+  - first:
+      213: -4310565487885644910
+    second: "All Household\_Appliances empty_38"
+  - first:
+      213: -3766710819323747669
+    second: "All Household\_Appliances empty_39"
+  - first:
+      213: 750715159723172032
+    second: "All Household\_Appliances empty_40"
+  - first:
+      213: 2588572108531144234
+    second: "All Household\_Appliances empty_41"
+  - first:
+      213: -4219723037233149381
+    second: "All Household\_Appliances empty_42"
+  - first:
+      213: 3310567626405674972
+    second: "All Household\_Appliances empty_43"
+  - first:
+      213: -6509242079783788888
+    second: "All Household\_Appliances empty_44"
+  - first:
+      213: -472536126587159588
+    second: "All Household\_Appliances empty_45"
+  - first:
+      213: -7218073849535297666
+    second: "All Household\_Appliances empty_46"
+  - first:
+      213: -4934188887333409374
+    second: "All Household\_Appliances empty_47"
+  - first:
+      213: -5529097174405103265
+    second: "All Household\_Appliances empty_48"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_18"
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 335
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012690cd2a04337a0800000000000000
+      internalID: -6398699577342860784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_19"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe513de7b85fcf8e0800000000000000
+      internalID: -1658180583302162961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_20"
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 335
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca2ba16258fb2e30800000000000000
+      internalID: 4479947287059704517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_21"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da14c74ab48695c50800000000000000
+      internalID: 6654464598508061101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_22"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 303
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ceddfd1406562e0800000000000000
+      internalID: -2133193012445058036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_23"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 303
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd75efd09350d6d0800000000000000
+      internalID: -2967780272740401714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_24"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 271
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7602aed25afcded70800000000000000
+      internalID: 9074137132568289383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_25"
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 271
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8cdf1e1d50365a0800000000000000
+      internalID: -6529368635759277861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_26"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 271
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd502c2b66ca36770800000000000000
+      internalID: 8602909270293480925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_27"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 271
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559c9adcd68c0b360800000000000000
+      internalID: 7183461779583387989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_28"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 271
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4c6a5255186de00800000000000000
+      internalID: 1069184164250961114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_29"
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 273
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a308458e01147da0800000000000000
+      internalID: -5948110453786279002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_30"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 239
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e04bd5746187c270800000000000000
+      internalID: 8270721509163221221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_31"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 239
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e5972a1503d7fe0800000000000000
+      internalID: -1189741599379595685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_32"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2c14c26c11843b0800000000000000
+      internalID: -5528148999753579852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_33"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 207
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0326be0687ee95900800000000000000
+      internalID: 673831820058124848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_34"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 207
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972c93795ca1434d0800000000000000
+      internalID: -3155868002931850631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_35"
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 175
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbe9d8611ebeb070800000000000000
+      internalID: 8124139759805787081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_36"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 175
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b959c1c1ff7d9a70800000000000000
+      internalID: 8835358720285825459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_37"
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 175
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79575e1a3332b1f20800000000000000
+      internalID: 3394345448820274583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_38"
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 175
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b8481f68bcd24c0800000000000000
+      internalID: -4310565487885644910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_39"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 175
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2669a7774f9bbc0800000000000000
+      internalID: -3766710819323747669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_40"
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 175
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0ecc6d5731b6a00800000000000000
+      internalID: 750715159723172032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_41"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 143
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a269b7c2e947ce320800000000000000
+      internalID: 2588572108531144234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_42"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a8f2331488075c0800000000000000
+      internalID: -4219723037233149381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_43"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf71d057bf71fd20800000000000000
+      internalID: 3310567626405674972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_44"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae567dd0d68aa5a0800000000000000
+      internalID: -6509242079783788888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_45"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 79
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbbb3f75e63179f0800000000000000
+      internalID: -472536126587159588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_46"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7789eba31044db90800000000000000
+      internalID: -7218073849535297666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_47"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2adefc3795d368bb0800000000000000
+      internalID: -4934188887333409374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All Household\_Appliances empty_48"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 16
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51c7fe0a63b443b0800000000000000
+      internalID: -5529097174405103265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 51e4e30f50694084a9ae33f1bda11823
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "All Household\_Appliances empty_0": -1193255305506834911
+      "All Household\_Appliances empty_1": 1505607189827934899
+      "All Household\_Appliances empty_10": -5070936511275720529
+      "All Household\_Appliances empty_11": 4229977592613424417
+      "All Household\_Appliances empty_12": -5782002697805739448
+      "All Household\_Appliances empty_13": 8977180112277129967
+      "All Household\_Appliances empty_14": -7666651395636051118
+      "All Household\_Appliances empty_15": 8698884494877133567
+      "All Household\_Appliances empty_16": 6543461616857522562
+      "All Household\_Appliances empty_17": -5423913485720552317
+      "All Household\_Appliances empty_18": -6398699577342860784
+      "All Household\_Appliances empty_19": -1658180583302162961
+      "All Household\_Appliances empty_2": -2824406664599247235
+      "All Household\_Appliances empty_20": 4479947287059704517
+      "All Household\_Appliances empty_21": 6654464598508061101
+      "All Household\_Appliances empty_22": -2133193012445058036
+      "All Household\_Appliances empty_23": -2967780272740401714
+      "All Household\_Appliances empty_24": 9074137132568289383
+      "All Household\_Appliances empty_25": -6529368635759277861
+      "All Household\_Appliances empty_26": 8602909270293480925
+      "All Household\_Appliances empty_27": 7183461779583387989
+      "All Household\_Appliances empty_28": 1069184164250961114
+      "All Household\_Appliances empty_29": -5948110453786279002
+      "All Household\_Appliances empty_3": -8642375513744001040
+      "All Household\_Appliances empty_30": 8270721509163221221
+      "All Household\_Appliances empty_31": -1189741599379595685
+      "All Household\_Appliances empty_32": -5528148999753579852
+      "All Household\_Appliances empty_33": 673831820058124848
+      "All Household\_Appliances empty_34": -3155868002931850631
+      "All Household\_Appliances empty_35": 8124139759805787081
+      "All Household\_Appliances empty_36": 8835358720285825459
+      "All Household\_Appliances empty_37": 3394345448820274583
+      "All Household\_Appliances empty_38": -4310565487885644910
+      "All Household\_Appliances empty_39": -3766710819323747669
+      "All Household\_Appliances empty_4": 5513390835527148251
+      "All Household\_Appliances empty_40": 750715159723172032
+      "All Household\_Appliances empty_41": 2588572108531144234
+      "All Household\_Appliances empty_42": -4219723037233149381
+      "All Household\_Appliances empty_43": 3310567626405674972
+      "All Household\_Appliances empty_44": -6509242079783788888
+      "All Household\_Appliances empty_45": -472536126587159588
+      "All Household\_Appliances empty_46": -7218073849535297666
+      "All Household\_Appliances empty_47": -4934188887333409374
+      "All Household\_Appliances empty_48": -5529097174405103265
+      "All Household\_Appliances empty_5": 1308214329461975105
+      "All Household\_Appliances empty_6": -5891003578303655369
+      "All Household\_Appliances empty_7": -1586958382166794774
+      "All Household\_Appliances empty_8": -3573851293057016390
+      "All Household\_Appliances empty_9": 8662030912403043933
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
