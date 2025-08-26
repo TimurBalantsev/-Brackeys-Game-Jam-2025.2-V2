@@ -2050,10 +2050,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4806686162966172645, guid: 4855cc1c9d1becd4797cfe6747705e5b, type: 3}
-      propertyPath: orthographic size
-      value: 0.93
-      objectReference: {fileID: 0}
     - target: {fileID: 5227673399864738966, guid: 4855cc1c9d1becd4797cfe6747705e5b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -14515,10 +14511,6 @@ PrefabInstance:
     - target: {fileID: 6301508010393646716, guid: 4c3f0b5d91cf04846a198c60234bd4dc, type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6301508010393646716, guid: 4c3f0b5d91cf04846a198c60234bd4dc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
