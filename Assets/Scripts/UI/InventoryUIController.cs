@@ -74,6 +74,7 @@
 
      public bool TransferItem(bool isInContainer, Item item)
      {
+         if (!ContainerUI.gameObject.activeSelf || !PlayerUI.gameObject.activeSelf) return false;
          Inventory origin = isInContainer ? ContainerUI.GetInventory() : PlayerUI.GetInventory();
          Inventory target = isInContainer ? PlayerUI.GetInventory() : ContainerUI.GetInventory();
          if (!origin.RemoveItem(item)) return false;
