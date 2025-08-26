@@ -16,7 +16,6 @@ public class Enemy : Entity.Entity
     [SerializeField] public float patrolDuration = 5f;
     [SerializeField] public float attackDuration = 0.5f;
 
-    private Tilemap tilemap;
     private EnemyState activeState;
     public Animator Animator => animator;
     public LayerMask ObstacleMask => obstacleMask;
