@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -92,8 +92,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -323,7 +323,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zombie_Small_Side-left_Second-Death-Sheet7_0: 1750478014470835351
+      Zombie_Small_Side-left_Second-Death-Sheet7_1: 8085370981848239356
+      Zombie_Small_Side-left_Second-Death-Sheet7_2: 6501353106362120962
+      Zombie_Small_Side-left_Second-Death-Sheet7_3: 692062470241363037
+      Zombie_Small_Side-left_Second-Death-Sheet7_4: -6268068993240494795
+      Zombie_Small_Side-left_Second-Death-Sheet7_5: 2196628113349756980
+      Zombie_Small_Side-left_Second-Death-Sheet7_6: -6219930347113345630
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

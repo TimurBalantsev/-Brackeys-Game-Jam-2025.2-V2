@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -80,8 +80,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -150,10 +150,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 22
+        width: 11
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: Zombie_Small_Side-left_First-Attack-Sheet4_1
       rect:
         serializedVersion: 2
-        x: 21
+        x: 11
         y: 0
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 11
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: Zombie_Small_Side-left_First-Attack-Sheet4_2
       rect:
         serializedVersion: 2
-        x: 33
+        x: 22
         y: 0
         width: 11
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,11 +210,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Zombie_Small_Side-left_First-Attack-Sheet4_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 11
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e25ffdab46bc24e924501938d1d7ab
+      internalID: 1255802930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a617594dbbbcb184ab8dd59b5bf7fb9e
     internalID: 0
     vertices: []
     indices: 
@@ -223,7 +245,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zombie_Small_Side-left_First-Attack-Sheet4_0: -3299677336675309201
+      Zombie_Small_Side-left_First-Attack-Sheet4_1: 8882226750727241831
+      Zombie_Small_Side-left_First-Attack-Sheet4_2: 9152940955121920677
+      Zombie_Small_Side-left_First-Attack-Sheet4_3: 1255802930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

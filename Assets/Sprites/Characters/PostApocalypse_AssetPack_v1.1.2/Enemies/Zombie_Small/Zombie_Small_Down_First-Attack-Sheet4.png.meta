@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -83,8 +83,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -153,10 +153,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 14
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,10 +175,10 @@ TextureImporter:
         serializedVersion: 2
         x: 13
         y: 0
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,10 +197,10 @@ TextureImporter:
         serializedVersion: 2
         x: 26
         y: 0
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,8 +221,8 @@ TextureImporter:
         y: 0
         width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 03a1b8a3bfe1e2a43b480e454f5604e4
     internalID: 0
     vertices: []
     indices: 
@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zombie_Small_Down_First-Attack-Sheet4_0: -987226483923070570
+      Zombie_Small_Down_First-Attack-Sheet4_1: 2206597722276166426
+      Zombie_Small_Down_First-Attack-Sheet4_2: 8660793552663003946
+      Zombie_Small_Down_First-Attack-Sheet4_3: -6144407864174073582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
