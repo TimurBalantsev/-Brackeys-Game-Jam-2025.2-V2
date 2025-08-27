@@ -10,6 +10,7 @@ public class Player : Entity.Entity
     
     [SerializeField] private LayerMask damageableLayerMask;
     [SerializeField] private Inventory inventory;
+    [SerializeField] public AudioSource walkSoundLoop;
     public static Player Instance;
 
     public Inventory Inventory => inventory;

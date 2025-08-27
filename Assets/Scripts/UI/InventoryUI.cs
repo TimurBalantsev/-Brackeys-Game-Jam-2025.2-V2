@@ -32,15 +32,8 @@ public class InventoryUI : MonoBehaviour
 
     private void CloseInventory()
     {
-        if (isContainer)
-        {
-            InventoryUIController.Instance.CloseContainer();
-        }
-        else
-        {
-            InventoryUIController.Instance.ClosePlayer();
-        }
-
+        InventoryUIController.Instance.CloseContainer();
+        InventoryUIController.Instance.ClosePlayer();
     }
 
     public void DisplayInventory(Inventory inventory)

@@ -10,6 +10,7 @@ public class PlayerWalkingState : PlayerState
     {
         this.player = player;
         HandleAnimation(InputManager.Instance.GetMovementDirection());
+        this.player.walkSoundLoop.Play();
     }
     
     private void HandleAnimation(Vector2 direction)
@@ -46,6 +47,7 @@ public class PlayerWalkingState : PlayerState
 
     public void Exit()
     {
+        this.player.walkSoundLoop.Stop();
     }
 
     public PlayerState Update(float deltaTime)

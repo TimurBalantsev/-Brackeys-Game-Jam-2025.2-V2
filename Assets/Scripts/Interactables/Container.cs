@@ -9,6 +9,7 @@ public class Container : MonoBehaviour, Interactable
     [SerializeField] private WeightedLootTableSO lootTable;
     [SerializeField] private int maxItemsSpawned;
     [SerializeField] private int minItemsSpawned;
+    [SerializeField] private AudioClipSO openingSound;
     private Color defaultColor;
     
     private void Start()
@@ -25,6 +26,7 @@ public class Container : MonoBehaviour, Interactable
     public void Interact(Player player)
     {
         InventoryUIController.Instance.DisplayInventory(inventory, player.Inventory);
+        SoundManager.Instance.SpawnTempSoundSourceAtWorldSpacePoint(transform.position, openingSound.GetRandomAudioClipReference());
     }
 
     public void Select(Player player, bool isSelected)
