@@ -532,4 +532,4 @@ MonoBehaviour:
   lootTable: {fileID: 0}
   maxItemsSpawned: 0
   minItemsSpawned: 0
-  openingSound: {fileID: 0}
+  openingSound: {fileID: 11400000, guid: e23cbc2ab350056488861c0c6b944e88, type: 2}
