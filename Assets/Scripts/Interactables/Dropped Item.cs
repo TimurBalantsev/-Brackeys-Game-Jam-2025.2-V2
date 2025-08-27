@@ -8,13 +8,13 @@ public class DroppedItem : MonoBehaviour, Interactable
     [SerializeField] private Color highlightColor = Color.yellow;
     private Color defaultColor;
 
-    [SerializeField] private ItemSO testItemSO;
+    [SerializeField] private ItemSO ForceItemSO;
 
     private void Start()
     {
-        if (testItemSO)
+        if (ForceItemSO)
         {
-            Initialize(testItemSO.CreateItem());
+            Initialize(ForceItemSO.CreateItem());
         }
 
         defaultColor = spriteRenderer.color;

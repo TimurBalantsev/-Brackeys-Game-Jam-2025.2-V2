@@ -4,16 +4,21 @@ using UnityEngine;
 public class Container : MonoBehaviour, Interactable
 {
     [SerializeField] private Inventory inventory;
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    // [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer[] spriteRenderers;
+    [SerializeField] private Color defaultColor = Color.white;
     [SerializeField] private Color highlightColor = Color.yellow;
     [SerializeField] private WeightedLootTableSO lootTable;
     [SerializeField] private int maxItemsSpawned;
     [SerializeField] private int minItemsSpawned;
-    private Color defaultColor;
+    [SerializeField] private AudioClipSO openingSound;
     
     private void Start()
     {
-        defaultColor = spriteRenderer.color;
+        if (spriteRenderers.Length == 0)
+        {
+            Debug.LogError($"{this} has no sprite rendrer");
+        }
         if (lootTable == null) return;
         int amountItems = Random.Range(minItemsSpawned, maxItemsSpawned);
         for (int i = 0; i < amountItems; i++)
@@ -25,11 +30,17 @@ public class Container : MonoBehaviour, Interactable
     public void Interact(Player player)
     {
         InventoryUIController.Instance.DisplayInventory(inventory, player.Inventory);
+        SoundManager.Instance.SpawnTempSoundSourceAtWorldSpacePoint(transform.position, openingSound.GetRandomAudioClipReference());
     }
 
     public void Select(Player player, bool isSelected)
     {
-        spriteRenderer.color = isSelected ? highlightColor : defaultColor;
+        foreach (SpriteRenderer spriteRenderer in spriteRenderers)
+        {
+            spriteRenderer.color = isSelected ? highlightColor : defaultColor;
+
+        }
+        // spriteRenderer.color = isSelected ? highlightColor : defaultColor;
     }
 
     public Transform GetTransform()
