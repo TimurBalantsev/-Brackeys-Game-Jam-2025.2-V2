@@ -1,0 +1,2363 @@
+fileFormatVersion: 2
+guid: 0d30a108b0db67a4b8aa5cddfb9a1334
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 801079049707464473
+    second: "All auto\_parts empty_0"
+  - first:
+      213: 8924790504520753150
+    second: "All auto\_parts empty_1"
+  - first:
+      213: 2254053165824215961
+    second: "All auto\_parts empty_2"
+  - first:
+      213: -995101079489897481
+    second: "All auto\_parts empty_3"
+  - first:
+      213: -4768701868429440865
+    second: "All auto\_parts empty_4"
+  - first:
+      213: -6927448479370924171
+    second: "All auto\_parts empty_5"
+  - first:
+      213: -8950192271237911085
+    second: "All auto\_parts empty_6"
+  - first:
+      213: 908664132370454890
+    second: "All auto\_parts empty_7"
+  - first:
+      213: 6440298539812851695
+    second: "All auto\_parts empty_8"
+  - first:
+      213: -1662006342010420515
+    second: "All auto\_parts empty_9"
+  - first:
+      213: 6098923608089639727
+    second: "All auto\_parts empty_10"
+  - first:
+      213: -1477561551258915558
+    second: "All auto\_parts empty_11"
+  - first:
+      213: 704310415938601680
+    second: "All auto\_parts empty_12"
+  - first:
+      213: 4352871972753417546
+    second: "All auto\_parts empty_13"
+  - first:
+      213: 3644236880538251842
+    second: "All auto\_parts empty_14"
+  - first:
+      213: 6379287516102469402
+    second: "All auto\_parts empty_15"
+  - first:
+      213: 3174565988960073913
+    second: "All auto\_parts empty_16"
+  - first:
+      213: 4551103682516217979
+    second: "All auto\_parts empty_17"
+  - first:
+      213: -3011865775606264170
+    second: "All auto\_parts empty_18"
+  - first:
+      213: -8578047029897106071
+    second: "All auto\_parts empty_19"
+  - first:
+      213: 1994520407293378050
+    second: "All auto\_parts empty_20"
+  - first:
+      213: -974259485763265325
+    second: "All auto\_parts empty_21"
+  - first:
+      213: -693528899484767441
+    second: "All auto\_parts empty_22"
+  - first:
+      213: 2904136979718838571
+    second: "All auto\_parts empty_23"
+  - first:
+      213: 4873370265653023152
+    second: "All auto\_parts empty_24"
+  - first:
+      213: 1940307389846081270
+    second: "All auto\_parts empty_25"
+  - first:
+      213: 4941324330176679863
+    second: "All auto\_parts empty_26"
+  - first:
+      213: 5941243415615110562
+    second: "All auto\_parts empty_27"
+  - first:
+      213: 8587481251202886876
+    second: "All auto\_parts empty_28"
+  - first:
+      213: -3565022934203310794
+    second: "All auto\_parts empty_29"
+  - first:
+      213: 5269949222432521297
+    second: "All auto\_parts empty_30"
+  - first:
+      213: -7572640394913123842
+    second: "All auto\_parts empty_31"
+  - first:
+      213: 4831391233412488728
+    second: "All auto\_parts empty_32"
+  - first:
+      213: -9191761651314643663
+    second: "All auto\_parts empty_33"
+  - first:
+      213: -5904538285067154065
+    second: "All auto\_parts empty_34"
+  - first:
+      213: -2288903243407620297
+    second: "All auto\_parts empty_35"
+  - first:
+      213: -5048161401113044008
+    second: "All auto\_parts empty_36"
+  - first:
+      213: 3836866186081247230
+    second: "All auto\_parts empty_37"
+  - first:
+      213: -6575156737469142780
+    second: "All auto\_parts empty_38"
+  - first:
+      213: -3699680803673671437
+    second: "All auto\_parts empty_39"
+  - first:
+      213: -5540087505798320158
+    second: "All auto\_parts empty_40"
+  - first:
+      213: -1476866771676188447
+    second: "All auto\_parts empty_41"
+  - first:
+      213: 6074859941811179497
+    second: "All auto\_parts empty_42"
+  - first:
+      213: 7582740623483335741
+    second: "All auto\_parts empty_43"
+  - first:
+      213: -3661354142933880792
+    second: "All auto\_parts empty_44"
+  - first:
+      213: 6143774364866779084
+    second: "All auto\_parts empty_45"
+  - first:
+      213: -675622218503105947
+    second: "All auto\_parts empty_46"
+  - first:
+      213: -4786245625178574835
+    second: "All auto\_parts empty_47"
+  - first:
+      213: 5478498415357385324
+    second: "All auto\_parts empty_48"
+  - first:
+      213: -6723170634845721308
+    second: "All auto\_parts empty_49"
+  - first:
+      213: 7329298280682429489
+    second: "All auto\_parts empty_50"
+  - first:
+      213: 8740235920856810353
+    second: "All auto\_parts empty_51"
+  - first:
+      213: 6259687494703939063
+    second: "All auto\_parts empty_52"
+  - first:
+      213: 1662216108170444939
+    second: "All auto\_parts empty_53"
+  - first:
+      213: 1310188145659040342
+    second: "All auto\_parts empty_54"
+  - first:
+      213: -3891136515815164736
+    second: "All auto\_parts empty_55"
+  - first:
+      213: 1367818012743574753
+    second: "All auto\_parts empty_56"
+  - first:
+      213: -5265177586133577458
+    second: "All auto\_parts empty_57"
+  - first:
+      213: 4993753989632052174
+    second: "All auto\_parts empty_58"
+  - first:
+      213: -8021564218218550555
+    second: "All auto\_parts empty_59"
+  - first:
+      213: 2046849256579693145
+    second: "All auto\_parts empty_60"
+  - first:
+      213: 6965366268610391480
+    second: "All auto\_parts empty_61"
+  - first:
+      213: 6401674074302980970
+    second: "All auto\_parts empty_62"
+  - first:
+      213: 5275148718257001479
+    second: "All auto\_parts empty_63"
+  - first:
+      213: 8615293504331206421
+    second: "All auto\_parts empty_64"
+  - first:
+      213: 751475499529462174
+    second: "All auto\_parts empty_65"
+  - first:
+      213: -9080057136752523188
+    second: "All auto\_parts empty_66"
+  - first:
+      213: -2985126845219927707
+    second: "All auto\_parts empty_67"
+  - first:
+      213: -5478825706560019453
+    second: "All auto\_parts empty_68"
+  - first:
+      213: -3529109652279544572
+    second: "All auto\_parts empty_69"
+  - first:
+      213: -6007637651540847267
+    second: "All auto\_parts empty_70"
+  - first:
+      213: -4346450259160049249
+    second: "All auto\_parts empty_71"
+  - first:
+      213: -8815910400533400579
+    second: "All auto\_parts empty_72"
+  - first:
+      213: -7794911975912097527
+    second: "All auto\_parts empty_73"
+  - first:
+      213: -6827032034263933814
+    second: "All auto\_parts empty_74"
+  - first:
+      213: 6244363945590197353
+    second: "All auto\_parts empty_75"
+  - first:
+      213: 101535827675470991
+    second: "All auto\_parts empty_76"
+  - first:
+      213: 3905526399120719292
+    second: "All auto\_parts empty_77"
+  - first:
+      213: 4718383827948830756
+    second: "All auto\_parts empty_78"
+  - first:
+      213: 1243469492287208163
+    second: "All auto\_parts empty_79"
+  - first:
+      213: 1044937475364890901
+    second: "All auto\_parts empty_80"
+  - first:
+      213: -6944883746938626147
+    second: "All auto\_parts empty_81"
+  - first:
+      213: -9027918768728565713
+    second: "All auto\_parts empty_82"
+  - first:
+      213: 590174033653639849
+    second: "All auto\_parts empty_83"
+  - first:
+      213: 4015197650330498733
+    second: "All auto\_parts empty_84"
+  - first:
+      213: 550268264454829511
+    second: "All auto\_parts empty_85"
+  - first:
+      213: -1390118143563852636
+    second: "All auto\_parts empty_86"
+  - first:
+      213: -7085653050590419090
+    second: "All auto\_parts empty_87"
+  - first:
+      213: 8061677133198519948
+    second: "All auto\_parts empty_88"
+  - first:
+      213: 2524128909929167352
+    second: "All auto\_parts empty_89"
+  - first:
+      213: 4629038524372517459
+    second: "All auto\_parts empty_90"
+  - first:
+      213: -6045939490798847239
+    second: "All auto\_parts empty_91"
+  - first:
+      213: 3415494175900000941
+    second: "All auto\_parts empty_92"
+  - first:
+      213: -7967893873804756809
+    second: "All auto\_parts empty_93"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "All auto\_parts empty_9"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 783
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2c502a90e5fe8e0800000000000000
+      internalID: -1662006342010420515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_10"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 783
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b3d6445bab3a450800000000000000
+      internalID: 6098923608089639727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_11"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 783
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1def6bf895ae7be0800000000000000
+      internalID: -1477561551258915558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_12"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 783
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2c0a9779636c900800000000000000
+      internalID: 704310415938601680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_13"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 783
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45a8b82ff1886c30800000000000000
+      internalID: 4352871972753417546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_14"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 751
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2423cd5822ee29230800000000000000
+      internalID: 3644236880538251842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_15"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 751
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a172f5d6238c78850800000000000000
+      internalID: 6379287516102469402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_16"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 719
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8700882f25e0c20800000000000000
+      internalID: 3174565988960073913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_17"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 719
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70f95cbfa4c82f30800000000000000
+      internalID: 4551103682516217979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_18"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 719
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e05ddd804b336d0800000000000000
+      internalID: -3011865775606264170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_19"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 719
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d636cbca7a4f880800000000000000
+      internalID: -8578047029897106071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_20"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 719
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e3df53eb5fdab10800000000000000
+      internalID: 1994520407293378050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_21"
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 719
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc9608d82cba72f0800000000000000
+      internalID: -974259485763265325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_22"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b2eb0f3271066f0800000000000000
+      internalID: -693528899484767441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_23"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29973f32319d4820800000000000000
+      internalID: 2904136979718838571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_24"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b11337bf60b1a340800000000000000
+      internalID: 4873370265653023152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_25"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 655
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe47d67a4b5dea10800000000000000
+      internalID: 1940307389846081270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_26"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 655
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf0d2c4c4c139440800000000000000
+      internalID: 4941324330176679863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_27"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 659
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2adfddf8869837250800000000000000
+      internalID: 5941243415615110562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_28"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 624
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc664513bcdc2770800000000000000
+      internalID: 8587481251202886876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_29"
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 591
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63dd0b6978e768ec0800000000000000
+      internalID: -3565022934203310794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_30"
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 591
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15cbf6b75ee922940800000000000000
+      internalID: 5269949222432521297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_31"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 596
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1fd61bea398e690800000000000000
+      internalID: -7572640394913123842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_32"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 591
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81edc7e9abc8c0340800000000000000
+      internalID: 4831391233412488728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_33"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 591
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d25596a7d407080800000000000000
+      internalID: -9191761651314643663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_34"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 559
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dc0eb96bdde0ea0800000000000000
+      internalID: -5904538285067154065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_35"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737037390ae2c30e0800000000000000
+      internalID: -2288903243407620297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_36"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db91d5b3f351f9b0800000000000000
+      internalID: -5048161401113044008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_37"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 528
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff9418b7794f3530800000000000000
+      internalID: 3836866186081247230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_38"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 527
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409a2a0b8c950c4a0800000000000000
+      internalID: -6575156737469142780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_39"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 495
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8f2ba29e718acc0800000000000000
+      internalID: -3699680803673671437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_40"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efaf4024c7ad13b0800000000000000
+      internalID: -5540087505798320158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_41"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 463
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0b9a5fe7d118be0800000000000000
+      internalID: -1476866771676188447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_42"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 463
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efc7eb5eec3e4450800000000000000
+      internalID: 6074859941811179497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_43"
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 463
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34f5a60c6e4b3960800000000000000
+      internalID: 7582740623483335741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_44"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 463
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82075814ec1403dc0800000000000000
+      internalID: -3661354142933880792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_45"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 434
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc71906db32134550800000000000000
+      internalID: 6143774364866779084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_46"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 433
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562d2cffb25bf96f0800000000000000
+      internalID: -675622218503105947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_47"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 433
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00b67766f6d39db0800000000000000
+      internalID: -4786245625178574835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_48"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 433
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6adaed4849870c40800000000000000
+      internalID: 5478498415357385324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_49"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 432
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42deea1bdef72b2a0800000000000000
+      internalID: -6723170634845721308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_50"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 402
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c15f834f5e6b560800000000000000
+      internalID: 7329298280682429489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_51"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17387c3234e8b4970800000000000000
+      internalID: 8740235920856810353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_52"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd78c67c90eed650800000000000000
+      internalID: 6259687494703939063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_53"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 369
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b808e6b5eb0611710800000000000000
+      internalID: 1662216108170444939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_54"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 369
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6525fe24d29be2210800000000000000
+      internalID: 1310188145659040342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_55"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4394a74f7eff9c0800000000000000
+      internalID: -3891136515815164736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_56"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e426fe4c377bf210800000000000000
+      internalID: 1367818012743574753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_57"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01d82ba1e45ee6b0800000000000000
+      internalID: -5265177586133577458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_58"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb45b7abc06d4540800000000000000
+      internalID: 4993753989632052174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_59"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea6916f7ddada090800000000000000
+      internalID: -8021564218218550555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_60"
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a743fdd8ed76c10800000000000000
+      internalID: 2046849256579693145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_61"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bda20b97b3f9a060800000000000000
+      internalID: 6965366268610391480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_62"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6328ae27a057d850800000000000000
+      internalID: 6401674074302980970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_63"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704d0117fc7153940800000000000000
+      internalID: 5275148718257001479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_64"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f4461ebcbaf8770800000000000000
+      internalID: 8615293504331206421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_65"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91ecde3cf6cd6a00800000000000000
+      internalID: 751475499529462174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_66"
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c488d9f64282df180800000000000000
+      internalID: -9080057136752523188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_67"
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5690f2d33f2b296d0800000000000000
+      internalID: -2985126845219927707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_68"
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30426364c0d47f3b0800000000000000
+      internalID: -5478825706560019453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_69"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 271
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405b9722875160fc0800000000000000
+      internalID: -3529109652279544572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_70"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 271
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5555a0c26590aca0800000000000000
+      internalID: -6007637651540847267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_71"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 239
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f995cdc848e4ea3c0800000000000000
+      internalID: -4346450259160049249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_72"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 239
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3f88c033897a580800000000000000
+      internalID: -8815910400533400579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_73"
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 239
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909325c6bd8e2d390800000000000000
+      internalID: -7794911975912097527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_74"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 239
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c5c7739828141a0800000000000000
+      internalID: -6827032034263933814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_75"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 239
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c0929acef68a650800000000000000
+      internalID: 6244363945590197353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_76"
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 240
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c529c1c4ab86100800000000000000
+      internalID: 101535827675470991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_77"
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 240
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd30805197333630800000000000000
+      internalID: 3905526399120719292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_78"
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 207
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42086daa7111b7140800000000000000
+      internalID: 4718383827948830756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_79"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 207
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea70d04ae0b14110800000000000000
+      internalID: 1243469492287208163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_80"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 175
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5192e97f81d508e00800000000000000
+      internalID: 1044937475364890901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_81"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 144
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9fd6591701de9f90800000000000000
+      internalID: -6944883746938626147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_82"
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 143
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f281ad836b366b280800000000000000
+      internalID: -9027918768728565713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_83"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aaa59f1828b03800800000000000000
+      internalID: 590174033653639849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_84"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6bee25df8d8b730800000000000000
+      internalID: 4015197650330498733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_85"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c530023212f2a700800000000000000
+      internalID: 550268264454829511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_86"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a41d01e9ee45bce0800000000000000
+      internalID: -1390118143563852636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_87"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6725e58714baad90800000000000000
+      internalID: -7085653050590419090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_88"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8eef2ad3a4d0ef60800000000000000
+      internalID: 8061677133198519948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_89"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f93f93ced1870320800000000000000
+      internalID: 2524128909929167352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_90"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35282d02306ad3040800000000000000
+      internalID: 4629038524372517459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_91"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fabd6dd012881ca0800000000000000
+      internalID: -6045939490798847239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_92"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da26fee5bd5466f20800000000000000
+      internalID: 3415494175900000941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "All auto\_parts empty_93"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 16
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b83bdbccba5c6190800000000000000
+      internalID: -7967893873804756809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b4fed5863fa3d1e479ac7ca9e8f5550e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "All auto\_parts empty_0": 801079049707464473
+      "All auto\_parts empty_1": 8924790504520753150
+      "All auto\_parts empty_10": 6098923608089639727
+      "All auto\_parts empty_11": -1477561551258915558
+      "All auto\_parts empty_12": 704310415938601680
+      "All auto\_parts empty_13": 4352871972753417546
+      "All auto\_parts empty_14": 3644236880538251842
+      "All auto\_parts empty_15": 6379287516102469402
+      "All auto\_parts empty_16": 3174565988960073913
+      "All auto\_parts empty_17": 4551103682516217979
+      "All auto\_parts empty_18": -3011865775606264170
+      "All auto\_parts empty_19": -8578047029897106071
+      "All auto\_parts empty_2": 2254053165824215961
+      "All auto\_parts empty_20": 1994520407293378050
+      "All auto\_parts empty_21": -974259485763265325
+      "All auto\_parts empty_22": -693528899484767441
+      "All auto\_parts empty_23": 2904136979718838571
+      "All auto\_parts empty_24": 4873370265653023152
+      "All auto\_parts empty_25": 1940307389846081270
+      "All auto\_parts empty_26": 4941324330176679863
+      "All auto\_parts empty_27": 5941243415615110562
+      "All auto\_parts empty_28": 8587481251202886876
+      "All auto\_parts empty_29": -3565022934203310794
+      "All auto\_parts empty_3": -995101079489897481
+      "All auto\_parts empty_30": 5269949222432521297
+      "All auto\_parts empty_31": -7572640394913123842
+      "All auto\_parts empty_32": 4831391233412488728
+      "All auto\_parts empty_33": -9191761651314643663
+      "All auto\_parts empty_34": -5904538285067154065
+      "All auto\_parts empty_35": -2288903243407620297
+      "All auto\_parts empty_36": -5048161401113044008
+      "All auto\_parts empty_37": 3836866186081247230
+      "All auto\_parts empty_38": -6575156737469142780
+      "All auto\_parts empty_39": -3699680803673671437
+      "All auto\_parts empty_4": -4768701868429440865
+      "All auto\_parts empty_40": -5540087505798320158
+      "All auto\_parts empty_41": -1476866771676188447
+      "All auto\_parts empty_42": 6074859941811179497
+      "All auto\_parts empty_43": 7582740623483335741
+      "All auto\_parts empty_44": -3661354142933880792
+      "All auto\_parts empty_45": 6143774364866779084
+      "All auto\_parts empty_46": -675622218503105947
+      "All auto\_parts empty_47": -4786245625178574835
+      "All auto\_parts empty_48": 5478498415357385324
+      "All auto\_parts empty_49": -6723170634845721308
+      "All auto\_parts empty_5": -6927448479370924171
+      "All auto\_parts empty_50": 7329298280682429489
+      "All auto\_parts empty_51": 8740235920856810353
+      "All auto\_parts empty_52": 6259687494703939063
+      "All auto\_parts empty_53": 1662216108170444939
+      "All auto\_parts empty_54": 1310188145659040342
+      "All auto\_parts empty_55": -3891136515815164736
+      "All auto\_parts empty_56": 1367818012743574753
+      "All auto\_parts empty_57": -5265177586133577458
+      "All auto\_parts empty_58": 4993753989632052174
+      "All auto\_parts empty_59": -8021564218218550555
+      "All auto\_parts empty_6": -8950192271237911085
+      "All auto\_parts empty_60": 2046849256579693145
+      "All auto\_parts empty_61": 6965366268610391480
+      "All auto\_parts empty_62": 6401674074302980970
+      "All auto\_parts empty_63": 5275148718257001479
+      "All auto\_parts empty_64": 8615293504331206421
+      "All auto\_parts empty_65": 751475499529462174
+      "All auto\_parts empty_66": -9080057136752523188
+      "All auto\_parts empty_67": -2985126845219927707
+      "All auto\_parts empty_68": -5478825706560019453
+      "All auto\_parts empty_69": -3529109652279544572
+      "All auto\_parts empty_7": 908664132370454890
+      "All auto\_parts empty_70": -6007637651540847267
+      "All auto\_parts empty_71": -4346450259160049249
+      "All auto\_parts empty_72": -8815910400533400579
+      "All auto\_parts empty_73": -7794911975912097527
+      "All auto\_parts empty_74": -6827032034263933814
+      "All auto\_parts empty_75": 6244363945590197353
+      "All auto\_parts empty_76": 101535827675470991
+      "All auto\_parts empty_77": 3905526399120719292
+      "All auto\_parts empty_78": 4718383827948830756
+      "All auto\_parts empty_79": 1243469492287208163
+      "All auto\_parts empty_8": 6440298539812851695
+      "All auto\_parts empty_80": 1044937475364890901
+      "All auto\_parts empty_81": -6944883746938626147
+      "All auto\_parts empty_82": -9027918768728565713
+      "All auto\_parts empty_83": 590174033653639849
+      "All auto\_parts empty_84": 4015197650330498733
+      "All auto\_parts empty_85": 550268264454829511
+      "All auto\_parts empty_86": -1390118143563852636
+      "All auto\_parts empty_87": -7085653050590419090
+      "All auto\_parts empty_88": 8061677133198519948
+      "All auto\_parts empty_89": 2524128909929167352
+      "All auto\_parts empty_9": -1662006342010420515
+      "All auto\_parts empty_90": 4629038524372517459
+      "All auto\_parts empty_91": -6045939490798847239
+      "All auto\_parts empty_92": 3415494175900000941
+      "All auto\_parts empty_93": -7967893873804756809
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

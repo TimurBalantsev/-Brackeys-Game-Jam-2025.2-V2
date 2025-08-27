@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,10 +11,11 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - Collision
+  - Interactables
   - 
-  - 
-  - 
-  - 
+  -  
   - 
   - 
   - 
@@ -38,6 +39,22 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back
+    uniqueID: 988549331
+    locked: 0
+  - name: Colision
+    uniqueID: 2219279503
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Front
+    uniqueID: 3539820655
+  - name: Enviroment
+    uniqueID: 1063347577
+    locked: 0
+  - name: Player
+    uniqueID: 578608921
+    locked: 0
+  m_RenderingLayers:
+  - Default

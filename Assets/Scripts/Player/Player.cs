@@ -9,7 +9,10 @@ public class Player : Entity.Entity
     [SerializeField] private Transform followPoint;
     
     [SerializeField] private LayerMask damageableLayerMask;
-    
+    [SerializeField] private Inventory inventory;
+    public static Player Instance;
+
+    public Inventory Inventory => inventory;
     
     //TODO put new animation in attack without the FX
 
@@ -20,13 +23,28 @@ public class Player : Entity.Entity
     private Camera mainCam;
     private bool attackInputHeld = false;
 
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Debug.LogError($"more than one player in scene");
+        }
+        Instance = this;
+    }
+
     private void Start()
     {
         mainCam = Camera.main;
         ChangeState(new PlayerIdleState());
         InputManager.Instance.OnAttackPerformed += InputManager_OnAttackPerformed;
         InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
+        InputManager.Instance.OnInventory += InputManager_OnInventoryPressed;
         stats.Initialize();
+    }
+
+    private void InputManager_OnInventoryPressed(object sender, EventArgs e)
+    {
+        InventoryUIController.Instance.TogglePlayerInventory(this);
     }
 
     private void InputManager_OnAttackPerformed(object sender, EventArgs e)
