@@ -48,7 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 7120117614777455958}
-  spriteRenderer: {fileID: 6756676655635435163}
+  spriteRenderers:
+  - {fileID: 6756676655635435163}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   lootTable: {fileID: 11400000, guid: dd4e457ee954c2547b78dcc9e40040fc, type: 2}
   maxItemsSpawned: 2
