@@ -15,47 +15,35 @@ public class EnemyFOV : MonoBehaviour
 
     private Entity.Entity currentTarget;
 
-    private void Start()
+    private void Update()
     {
-        StartCoroutine(FOVCheck());
-    }
+        Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
 
-    private IEnumerator FOVCheck()
-    {
-        while (true)
+        if (rangeCheck.Length > 0)
         {
-            yield return new WaitForSeconds(0.2f);
+            Transform target = rangeCheck[0].transform;
+            Vector2 directionToTarget = (target.position - transform.position).normalized;
 
-            Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
-
-            if (rangeCheck.Length > 0)
+            if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
             {
-                Transform target = rangeCheck[0].transform;
-                Vector2 directionToTarget = (target.position - transform.position).normalized;
+                float distanceToTarget = Vector2.Distance(transform.position, target.position);
 
-                if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
+                if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
                 {
-                    float distanceToTarget = Vector2.Distance(transform.position, target.position);
+                    Entity.Entity targetEntity = target.GetComponent<Entity.Entity>();
 
-                    if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
+                    if (currentTarget == null)
                     {
-                        Entity.Entity targetEntity = target.GetComponent<Entity.Entity>();
-
-                        if (currentTarget == null)
-                        {
-                            currentTarget = targetEntity;
-                            OnTargetSpotted?.Invoke(targetEntity);
-                        }
-
-                        continue;
+                        currentTarget = targetEntity;
+                        OnTargetSpotted?.Invoke(targetEntity);
                     }
                 }
             }
-            if (currentTarget != null)
-            {
-                currentTarget = null;
-                OnTargetLost?.Invoke();
-            }
+        }
+        if (currentTarget != null)
+        {
+            currentTarget = null;
+            OnTargetLost?.Invoke();
         }
     }
 
