@@ -265,9 +265,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1063347577
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 84920805017206154, guid: 02dc19a3014f03149910b6982e8fc8d9, type: 3}
+  m_Sprite: {fileID: -93411115985092021, guid: 160b875e0deaf2b4f972a0a99933c14b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1584,7 +1584,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1063347577
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 4836677061834456910, guid: 5eb17d73e4921fe43830c9497dd26e81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1656,7 +1656,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1063347577
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 4836677061834456910, guid: 5eb17d73e4921fe43830c9497dd26e81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2049,6 +2049,10 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 585938278}
+    - target: {fileID: 6558805846583715273, guid: 4855cc1c9d1becd4797cfe6747705e5b, type: 3}
+      propertyPath: stats.speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6558805846583715273, guid: 4855cc1c9d1becd4797cfe6747705e5b, type: 3}
       propertyPath: stats.healthBarUI
       value: 

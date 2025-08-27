@@ -74,11 +74,11 @@ public class InventoryUI : MonoBehaviour
     {
         totalWeightText.gameObject.SetActive(!isContainer);
         weightIcon.gameObject.SetActive(!isContainer);
-        totalWeightText.text = $"{currentWeightAmount}/{maxWeightAmount}";
+        totalWeightText.text = $"{Mathf.Round(currentWeightAmount * 10.0f)*0.1f}/{maxWeightAmount}";
     }
     private void UpdateSlots()
     {
-        totalSlotText.text = $"{currentSlotAmount}/{maxSlotAmount}";
+        totalSlotText.text = $"{Mathf.Round(currentSlotAmount * 10.0f)*0.1f}/{maxSlotAmount}";
     }
 
     public void RefreshUI()
