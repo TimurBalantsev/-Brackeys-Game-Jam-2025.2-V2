@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
@@ -19,9 +19,11 @@ public class EnemyFOV : MonoBehaviour
     {
         Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
 
-        if (rangeCheck.Length > 0)
+        Entity.Entity foundTarget = null;
+
+        foreach (Collider2D col in rangeCheck)
         {
-            Transform target = rangeCheck[0].transform;
+            Transform target = col.transform;
             Vector2 directionToTarget = (target.position - transform.position).normalized;
 
             if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
@@ -30,17 +32,21 @@ public class EnemyFOV : MonoBehaviour
 
                 if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
                 {
-                    Entity.Entity targetEntity = target.GetComponent<Entity.Entity>();
-
-                    if (currentTarget == null)
-                    {
-                        currentTarget = targetEntity;
-                        OnTargetSpotted?.Invoke(targetEntity);
-                    }
+                    foundTarget = target.GetComponent<Entity.Entity>();
+                    break;
                 }
             }
         }
-        if (currentTarget != null)
+
+        if (foundTarget != null)
+        {
+            if (currentTarget == null)
+            {
+                currentTarget = foundTarget;
+                OnTargetSpotted?.Invoke(foundTarget);
+            }
+        }
+        else if (currentTarget != null)
         {
             currentTarget = null;
             OnTargetLost?.Invoke();
