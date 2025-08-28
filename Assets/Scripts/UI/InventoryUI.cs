@@ -29,10 +29,12 @@ public class InventoryUI : MonoBehaviour
         itemUITemplate.gameObject.SetActive(false);
         closeButton.onClick.AddListener(CloseInventory);
         gameObject.SetActive(false);
+        // LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
     }
 
     private void CloseInventory()
     {
+        Debug.Log("clicked");
         InventoryUIController.Instance.CloseContainer();
         InventoryUIController.Instance.ClosePlayer();
     }
@@ -71,7 +73,7 @@ public class InventoryUI : MonoBehaviour
         totalWeightText.text = $"{Mathf.Round(currentWeightAmount * 10.0f)*0.1f}/{maxWeightAmount}";
 
         // Unity jank, have to update the horizontal layout group
-        LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
+        // LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
 
     }
     private void UpdateSlots()
@@ -79,7 +81,7 @@ public class InventoryUI : MonoBehaviour
         totalSlotText.text = $"{Mathf.Round(currentSlotAmount * 10.0f)*0.1f}/{maxSlotAmount}";
 
         // Unity jank, have to update the horizontal layout group
-        LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
+        // LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
     }
 
     public void RefreshUI()
@@ -93,6 +95,7 @@ public class InventoryUI : MonoBehaviour
         UpdateSlots();
         UpdateWeight();
         InitializeItems(inventory.Items);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
     }
 
     public Inventory GetInventory()
