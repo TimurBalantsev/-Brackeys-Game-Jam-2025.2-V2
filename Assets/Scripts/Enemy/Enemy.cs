@@ -123,8 +123,11 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     public void Move(Vector2 movementDirection)
     {
-        float distance = Vector2.Distance(transform.position, Target.transform.position);
-        if (distance < minDistance)            return;
+        if (Target != null)
+        {
+            float distance = Vector2.Distance(transform.position, Target.transform.position);
+            if (distance < minDistance) return;
+        }
         Vector2 newPosition = rigidBody.position + movementDirection * (stats.speed * Time.fixedDeltaTime);
         rigidBody.MovePosition(newPosition);
         lastMovementDirection = movementDirection;

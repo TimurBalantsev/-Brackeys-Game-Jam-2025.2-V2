@@ -94,6 +94,7 @@ class EnemyPatrolState : EnemyState
         }
 
         Vector2 movementDirection = GetMovementToward(targetPosition);
+        // if (movementDirection == null) return null;
         enemy.Move(movementDirection);
         enemy.Animator.SetFloat(ANIMATOR_HORIZONTAL, movementDirection.x);
         enemy.Animator.SetFloat(ANIMATOR_VERTICAL, movementDirection.y);
