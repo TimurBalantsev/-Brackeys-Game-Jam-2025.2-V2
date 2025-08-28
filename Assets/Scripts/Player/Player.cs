@@ -38,7 +38,7 @@ public class Player : Entity.Entity
         mainCam = Camera.main;
         ChangeState(new PlayerIdleState());
         InputManager.Instance.OnAttackPerformed += InputManager_OnAttackPerformed;
-        InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
+        // InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
         InputManager.Instance.OnInventory += InputManager_OnInventoryPressed;
         stats.Initialize();
     }
@@ -56,10 +56,10 @@ public class Player : Entity.Entity
         if (newState != null) ChangeState(newState);
     }
     
-    private void InputManager_OnAttackReleased(object sender, EventArgs e)
-    {
-        attackInputHeld = false;
-    }
+    // private void InputManager_OnAttackReleased(object sender, EventArgs e)
+    // {
+    //     attackInputHeld = false;
+    // }
 
     private void Update()
     {
@@ -89,11 +89,11 @@ public class Player : Entity.Entity
     private void StateInput()
     {
         //this only check movement states, as other states will be instantly overwritten by an event call.
-        if (attackInputHeld)
-        {
-            currentInputAction = InputManager.InputActions.ATTACK;
-        }
-        else if (InputManager.Instance.GetMovementDirection().Equals(Vector2.zero))
+        // if (attackInputHeld)
+        // {
+        //     currentInputAction = InputManager.InputActions.ATTACK;
+        // }
+        if (InputManager.Instance.GetMovementDirection().Equals(Vector2.zero))
         {
             currentInputAction = InputManager.InputActions.NONE;
         }
@@ -101,6 +101,7 @@ public class Player : Entity.Entity
         {
             currentInputAction = InputManager.InputActions.MOVE;
         }
+
         
         PlayerState newState = activeState.Input(currentInputAction);
         if(newState != null) ChangeState(newState);
