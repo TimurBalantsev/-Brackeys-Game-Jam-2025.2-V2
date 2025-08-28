@@ -1074,7 +1074,7 @@ MonoBehaviour:
   maxWeight: 999
   maxWeightBuffer: 0
   isContainer: 1
-  inventoryName: House
+  inventoryName: Barn
   testItems: []
 --- !u!1 &3869866515507302001
 GameObject:

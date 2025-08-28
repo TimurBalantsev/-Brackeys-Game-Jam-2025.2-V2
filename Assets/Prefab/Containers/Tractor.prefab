@@ -162,7 +162,7 @@ MonoBehaviour:
   maxWeight: 9999
   maxWeightBuffer: 0
   isContainer: 1
-  inventoryName: Car Wreck
+  inventoryName: Tractor
   testItems: []
 --- !u!61 &4466067019011246052
 BoxCollider2D:
