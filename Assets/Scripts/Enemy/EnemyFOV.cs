@@ -12,6 +12,7 @@ public class EnemyFOV : MonoBehaviour
     [SerializeField, Range(0f, 360f)] private float angle = 5f;
     [SerializeField] private LayerMask targetLayer;
     [SerializeField] private LayerMask obstructionLayer;
+    [SerializeField] private float perceptionRange = 0.3f;
 
     private Entity.Entity currentTarget;
 
@@ -25,17 +26,26 @@ public class EnemyFOV : MonoBehaviour
         {
             Transform target = col.transform;
             Vector2 directionToTarget = (target.position - transform.position).normalized;
-
-            if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
+            float distanceToTarget = Vector2.Distance(transform.position, target.position);
+            if (distanceToTarget > perceptionRange)
             {
-                float distanceToTarget = Vector2.Distance(transform.position, target.position);
-
-                if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
+                if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
                 {
-                    foundTarget = target.GetComponent<Entity.Entity>();
-                    break;
-                }
+
+                    if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
+                    {
+                        foundTarget = target.GetComponent<Entity.Entity>();
+                        break;
+                    }
+                } 
             }
+            else
+            {
+                foundTarget = target.GetComponent<Entity.Entity>();
+                break;
+            }
+
+    
         }
 
         if (foundTarget != null)
@@ -58,6 +68,7 @@ public class EnemyFOV : MonoBehaviour
     {
         Gizmos.color = Color.white;
         Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
+        Handles.DrawWireDisc(transform.position,Vector3.forward, perceptionRange);
 
         Vector3 angle1 = DirectionFromAngle(-transform.eulerAngles.z, -angle / 2);
         Vector3 angle2 = DirectionFromAngle(-transform.eulerAngles.z, angle / 2);

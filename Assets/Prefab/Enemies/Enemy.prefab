@@ -289,6 +289,7 @@ MonoBehaviour:
   maxPatrolDistance: 1
   maxIdleTime: 5
   patrolDuration: 5
+  minDistance: 0.1
 --- !u!50 &7387307885916471795
 Rigidbody2D:
   serializedVersion: 5
@@ -419,6 +420,7 @@ MonoBehaviour:
   obstructionLayer:
     serializedVersion: 2
     m_Bits: 128
+  perceptionRange: 0.3
 --- !u!1 &8805860001907845580
 GameObject:
   m_ObjectHideFlags: 0

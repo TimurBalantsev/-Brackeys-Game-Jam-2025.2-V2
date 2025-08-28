@@ -15,6 +15,7 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     [SerializeField] public int maxPatrolDistance = 1;
     [SerializeField] public float maxIdleTime = 5f;
     [SerializeField] public float patrolDuration = 5f;
+    [SerializeField] private float minDistance = 0.1f;
 
     private EnemyState activeState;
     public Animator Animator => animator;
@@ -122,6 +123,8 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     public void Move(Vector2 movementDirection)
     {
+        float distance = Vector2.Distance(transform.position, Target.transform.position);
+        if (distance < minDistance)            return;
         Vector2 newPosition = rigidBody.position + movementDirection * (stats.speed * Time.fixedDeltaTime);
         rigidBody.MovePosition(newPosition);
         lastMovementDirection = movementDirection;
