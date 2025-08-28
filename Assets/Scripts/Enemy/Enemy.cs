@@ -148,6 +148,6 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     protected override void Die()
     {
-        Debug.Log($"Enemy {name} died");
+        Destroy(this);
     }
 }
