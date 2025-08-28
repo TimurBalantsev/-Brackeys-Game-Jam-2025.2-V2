@@ -17,6 +17,8 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     [SerializeField] public float patrolDuration = 5f;
     [SerializeField] private float minDistance = 0.1f;
 
+    [SerializeField] private AudioSource audioSource;
+
     private EnemyState activeState;
     public Animator Animator => animator;
     public LayerMask ObstacleMask => obstacleMask;
