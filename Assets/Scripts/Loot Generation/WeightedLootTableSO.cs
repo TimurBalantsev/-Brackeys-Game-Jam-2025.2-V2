@@ -32,7 +32,7 @@ public class WeightedLootTableSO : ScriptableObject
         foreach (LootTableInfo lootTableInfo in lootTable)
         {
             selectedWeight -= lootTableInfo.weight;
-            if (selectedWeight <= 0)
+            if (selectedWeight < 0)
             {
                 return lootTableInfo.itemSO.CreateItem();
             }

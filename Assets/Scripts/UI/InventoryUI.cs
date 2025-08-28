@@ -34,7 +34,6 @@ public class InventoryUI : MonoBehaviour
 
     private void CloseInventory()
     {
-        Debug.Log("clicked");
         InventoryUIController.Instance.CloseContainer();
         InventoryUIController.Instance.ClosePlayer();
     }
