@@ -4,9 +4,7 @@ public class MainCamera : MonoBehaviour
 {
     [SerializeField] private Transform followTarget;
 
-    public static Bounds levelBounds;
-
-    public static Bounds cameraBounds;
+    private Bounds cameraBounds;
     private Vector3 targetPosition;
 
     private Camera mainCamera;
@@ -18,6 +16,8 @@ public class MainCamera : MonoBehaviour
 
     private void Start()
     {
+        Bounds levelBounds = SetBounds.Instance.LevelBounds;
+
         float height = mainCamera.orthographicSize;
         float width = height * mainCamera.aspect;
 
