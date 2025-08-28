@@ -2957,7 +2957,7 @@ MonoBehaviour:
   nameText: {fileID: 87693829124158716}
   descriptionText: {fileID: 5912960501007783263}
   weightText: {fileID: 4611223992171788756}
-  slotText: {fileID: 0}
+  slotText: {fileID: 80303330084096066}
   typeIcon: {fileID: 6236336616068685323}
   TransferButton: {fileID: 4663145089764761475}
   DropButton: {fileID: 3044773115444314748}
