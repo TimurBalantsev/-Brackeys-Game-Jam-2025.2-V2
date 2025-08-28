@@ -5,26 +5,13 @@ using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Tilemap))]
 public class SetBounds : MonoBehaviour
 {
-    public static SetBounds Instance;
-
-    public Bounds LevelBounds { get; private set; }
-
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Debug.LogError("Multiple SetBounds Instances in scene");
-        }
-
         Tilemap tilemap = GetComponent<Tilemap>();
         tilemap.CompressBounds();
         Bounds bounds = tilemap.localBounds;
 
-        LevelBounds = bounds;
+        MainCamera.levelBounds = bounds;
 
         EdgeCollider2D edgeCollider = GetComponent<EdgeCollider2D>();
         Vector2 bottomLeft = new Vector2(bounds.min.x, bounds.min.y);
