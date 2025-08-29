@@ -1,5 +1,4 @@
 using System;
-using HitBox;
 using UnityEngine;
 
 public class Player : Entity.Entity
@@ -10,7 +9,11 @@ public class Player : Entity.Entity
     
     [SerializeField] private LayerMask damageableLayerMask;
     [SerializeField] private Inventory inventory;
+
     [SerializeField] public AudioSource walkSoundLoop;
+    [SerializeField] public AudioSource hurtSound;
+    [SerializeField] public AudioSource deathSound;
+
     public static Player Instance;
 
     public Inventory Inventory => inventory;
@@ -121,8 +124,17 @@ public class Player : Entity.Entity
         rigidBody.MovePosition(newPosition);
     }
 
+    public override void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+        hurtSound.pitch = UnityEngine.Random.Range(0.8f, 1f);
+        hurtSound.Play();
+    }
+
     protected override void Die()
     {
+        base.Die();
+        ChangeState(new PlayerDeathState());
         Debug.Log("Player died");
     }
 }
