@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class MainCamera : MonoBehaviour
 {
-    [SerializeField] private Transform followTarget;
-
     private Bounds cameraBounds;
     private Vector3 targetPosition;
+
+    private Transform followTarget;
 
     private Camera mainCamera;
 
@@ -29,6 +29,8 @@ public class MainCamera : MonoBehaviour
 
         cameraBounds = new Bounds();
         cameraBounds.SetMinMax(new Vector3(minX, minY, 0f), new Vector3(maxX, maxY, 0f));
+
+        followTarget = Player.Instance.transform;
     }
 
     private void LateUpdate()

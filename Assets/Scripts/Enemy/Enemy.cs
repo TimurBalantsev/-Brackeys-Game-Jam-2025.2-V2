@@ -17,7 +17,9 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     [SerializeField] public float patrolDuration = 5f;
     [SerializeField] private float minDistance = 0.1f;
 
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] public AudioSource idleLoopSound;
+    [SerializeField] public AudioSource[] targetSpottedSounds;
+    [SerializeField] public AudioSource attackSound;
 
     private EnemyState activeState;
     public Animator Animator => animator;
@@ -42,6 +44,9 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     private void EnemyFOV_OnTargetSpotted(Entity.Entity target)
     {
+        int randomTargetSpottedSoundIndex = Random.Range(0, targetSpottedSounds.Length);
+        targetSpottedSounds[randomTargetSpottedSoundIndex].Play();
+
         if (loseTargetCoroutine != null)
         {
             StopCoroutine(loseTargetCoroutine);
@@ -89,6 +94,7 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     private void Start()
     {
         ChangeState(new EnemyIdleState());
+        idleLoopSound.Play();
     }
 
     private void Update()
