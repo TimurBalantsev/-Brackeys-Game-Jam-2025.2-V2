@@ -13,7 +13,6 @@ public class PlayerDeathState : PlayerState
     {
         this.player = player;
         
-        this.player.deathSound.Play();
         this.player.Animator.SetFloat(ANIMATOR_HORIZONTAL, player.lastMovement.x);
         this.player.Animator.SetFloat(ANIMATOR_VERTICAL, player.lastMovement.y);
         this.player.Animator.SetTrigger(ANIMATOR_DIE);

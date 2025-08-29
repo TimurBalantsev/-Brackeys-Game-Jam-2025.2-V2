@@ -42,6 +42,11 @@ namespace Entity
 
         public virtual void TakeDamage(float damage)
         {
+            if (isDead)
+            {
+                return;
+            }
+
             colorFlashHelper.FlashColor();
             if (stats.TakeDamage(damage))
             {

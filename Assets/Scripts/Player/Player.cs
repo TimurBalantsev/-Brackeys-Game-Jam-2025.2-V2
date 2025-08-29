@@ -134,6 +134,7 @@ public class Player : Entity.Entity
     protected override void Die()
     {
         base.Die();
+        deathSound.Play();
         ChangeState(new PlayerDeathState());
         Debug.Log("Player died");
     }
