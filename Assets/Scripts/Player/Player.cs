@@ -24,6 +24,8 @@ public class Player : Entity.Entity
     private Camera mainCam;
     private bool attackInputHeld = false;
 
+    public Vector2 lastMovement;
+
     private void Awake()
     {
         if (Instance != null)
