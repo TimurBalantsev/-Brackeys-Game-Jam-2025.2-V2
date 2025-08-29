@@ -20,6 +20,7 @@ public class BaseManager : MonoBehaviour
 
     public int Population => population;
     public Quest CurrentQuest => currentQuest;
+    public Quest RandomEvent => randomEvent;
 
     private void Awake()
     {
@@ -40,7 +41,7 @@ public class BaseManager : MonoBehaviour
         }
     }
 
-    public Quest RandomEvent()
+    public bool LaunchRandomEvent()
     {
         randomEvent = new Quest(Random.Range(amountMin, amountMax), weightedLootTable.GetRandomItem(),Random.Range(questPopulationMin, questPopulationMax),Random.Range(questPopulationMin, questPopulationMax));
         int targetItemAmount = currentQuest.Amount;
@@ -63,14 +64,14 @@ public class BaseManager : MonoBehaviour
             }
 
             this.population += randomEvent.PopReward;
+            return true;
         }
         else
         {
             Debug.Log("Event Failed");
             this.population -= randomEvent.PopConsequence;
+            return false;
         }
-
-        return randomEvent;
     }
 
     public Quest GetNewQuest()
