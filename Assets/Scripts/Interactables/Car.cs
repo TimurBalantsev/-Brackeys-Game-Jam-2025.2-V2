@@ -4,6 +4,7 @@ public class Car : MonoBehaviour, Interactable
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Color highlightColor = Color.yellow;
+    [SerializeField] private Inventory trunkInventory;
     private Color defaultColor;
     
     private void Start()
@@ -14,7 +15,9 @@ public class Car : MonoBehaviour, Interactable
 
     public void Interact(Player player)
     {
-        
+        Debug.Log(BaseManager.Instance.Population);
+        BaseManager.Instance.TransferItems(trunkInventory);
+        Debug.Log(BaseManager.Instance.Population);
     }
 
     public void Select(Player player, bool isSelected)

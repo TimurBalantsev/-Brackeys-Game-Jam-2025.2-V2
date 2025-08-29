@@ -68,4 +68,9 @@ public class Inventory : MonoBehaviour
     {
         return currentWeight > maxWeight;
     }
+
+    public void Clear()
+    {
+        items.Clear();
+    }
 }
