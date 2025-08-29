@@ -14,7 +14,7 @@ public class Car : MonoBehaviour, Interactable
 
     public void Interact(Player player)
     {
-        Debug.Log("car");
+        
     }
 
     public void Select(Player player, bool isSelected)

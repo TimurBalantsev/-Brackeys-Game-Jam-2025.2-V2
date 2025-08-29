@@ -41,7 +41,7 @@ public class PlayerInteract : MonoBehaviour
         float closestDistance = float.MaxValue;
         foreach (Interactable interactable in interactablesInRange)
         {
-            Vector2 playerPosition = player.FollowPoint.position;
+            Vector2 playerPosition = player.transform.position;
             Collider2D collider = interactable.GetTransform().GetComponent<Collider2D>();
             float distance = Vector2.Distance(playerPosition, collider.ClosestPoint((playerPosition)));
             if (distance < closestDistance)

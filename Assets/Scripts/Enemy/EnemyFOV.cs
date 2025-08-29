@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
@@ -12,50 +12,57 @@ public class EnemyFOV : MonoBehaviour
     [SerializeField, Range(0f, 360f)] private float angle = 5f;
     [SerializeField] private LayerMask targetLayer;
     [SerializeField] private LayerMask obstructionLayer;
+    [SerializeField] private float perceptionRange = 0.3f;
 
     private Entity.Entity currentTarget;
 
-    private void Start()
+    private void Update()
     {
-        StartCoroutine(FOVCheck());
-    }
+        Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
 
-    private IEnumerator FOVCheck()
-    {
-        while (true)
+        Entity.Entity foundTarget = null;
+
+        foreach (Collider2D col in rangeCheck)
         {
-            yield return new WaitForSeconds(0.2f);
-
-            Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
-
-            if (rangeCheck.Length > 0)
+            Transform target = col.transform;
+            Vector2 directionToTarget = (target.position - transform.position).normalized;
+            float distanceToTarget = Vector2.Distance(transform.position, target.position);
+            if (distanceToTarget > perceptionRange)
             {
-                Transform target = rangeCheck[0].transform;
-                Vector2 directionToTarget = (target.position - transform.position).normalized;
-
                 if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
                 {
-                    float distanceToTarget = Vector2.Distance(transform.position, target.position);
-
                     if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
                     {
-                        Entity.Entity targetEntity = target.GetComponent<Entity.Entity>();
-
-                        if (currentTarget == null)
+                        foundTarget = target.GetComponent<Entity.Entity>();
+                        if (foundTarget != null)
                         {
-                            currentTarget = targetEntity;
-                            OnTargetSpotted?.Invoke(targetEntity);
+                            break;
                         }
-
-                        continue;
                     }
                 }
             }
-            if (currentTarget != null)
+            else
             {
-                currentTarget = null;
-                OnTargetLost?.Invoke();
+                foundTarget = target.GetComponent<Entity.Entity>();
+                if (foundTarget != null)
+                {
+                    break;
+                }
             }
+        }
+
+        if (foundTarget != null)
+        {
+            if (currentTarget == null)
+            {
+                currentTarget = foundTarget;
+                OnTargetSpotted?.Invoke(foundTarget);
+            }
+        }
+        else if (currentTarget != null)
+        {
+            currentTarget = null;
+            OnTargetLost?.Invoke();
         }
     }
 
@@ -64,6 +71,7 @@ public class EnemyFOV : MonoBehaviour
     {
         Gizmos.color = Color.white;
         Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
+        Handles.DrawWireDisc(transform.position, Vector3.forward, perceptionRange);
 
         Vector3 angle1 = DirectionFromAngle(-transform.eulerAngles.z, -angle / 2);
         Vector3 angle2 = DirectionFromAngle(-transform.eulerAngles.z, angle / 2);

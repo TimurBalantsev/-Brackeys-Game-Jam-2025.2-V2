@@ -3,49 +3,25 @@ using UnityEngine;
 
 public class PlayerWalkingState : PlayerState
 {
+    private const string ANIMATOR_HORIZONTAL = "horizontal";
+    private const string ANIMATOR_VERTICAL = "vertical";
+    private const string ANIMATOR_WALKING = "walking";
+
     private Player player;
     private Vector2 lastDirection = Vector2.zero;
 
     public void Enter(Player player)
     {
         this.player = player;
-        HandleAnimation(InputManager.Instance.GetMovementDirection());
-    }
-    
-    private void HandleAnimation(Vector2 direction)
-    {
-        if (direction == lastDirection) return;
-        if (direction.y < 0)
-        {
-            lastDirection = direction;
-            player.Animator.Play("walk_down");
-        } else if (direction == Vector2.up)
-        {
-            lastDirection = direction;
-            player.Animator.Play("walk_up");
-        }
-        else if (direction == Vector2.left)
-        {
-            lastDirection = direction;
-            player.Animator.Play("walk_left");
-        }
-        else if (direction == Vector2.right)
-        {
-            lastDirection = direction;
-            player.Animator.Play("walk_right");
-        } else if (direction == (Vector2.up + Vector2.right).normalized)
-        {
-            lastDirection = direction;
-            player.Animator.Play("walk_up_right");
-        } else if (direction == (Vector2.up + Vector2.left).normalized)
-        {
-            lastDirection = direction;
-            player.Animator.Play("walk_up_left");
-        }
-    }
+        this.player.walkSoundLoop.Play();
 
+        player.Animator.SetBool(ANIMATOR_WALKING, true);
+    }
     public void Exit()
     {
+        this.player.walkSoundLoop.Stop();
+
+        player.Animator.SetBool(ANIMATOR_WALKING, false);
     }
 
     public PlayerState Update(float deltaTime)
@@ -60,8 +36,10 @@ public class PlayerWalkingState : PlayerState
     public PlayerState FixedUpdate(float fixedDeltaTime)
     {
         Vector2 movementDirection = InputManager.Instance.GetMovementDirection();
-        HandleAnimation(movementDirection);
         player.Move(movementDirection);
+        player.Animator.SetFloat(ANIMATOR_HORIZONTAL, movementDirection.x);
+        player.Animator.SetFloat(ANIMATOR_VERTICAL, movementDirection.y);
+        player.lastMovement = movementDirection;
         return null;
     }
 

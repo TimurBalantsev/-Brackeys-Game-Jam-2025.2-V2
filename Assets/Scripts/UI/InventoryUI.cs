@@ -10,6 +10,7 @@ public class InventoryUI : MonoBehaviour
     private float maxWeightAmount = 40f;
     private float currentWeightAmount = 4f;
     private float currentSlotAmount = 3f;
+    [SerializeField] private HorizontalLayoutGroup parametersContainer;
     [SerializeField] private TextMeshProUGUI totalWeightText;
     [SerializeField] private TextMeshProUGUI totalSlotText;
     [SerializeField] private Image weightIcon;
@@ -28,19 +29,13 @@ public class InventoryUI : MonoBehaviour
         itemUITemplate.gameObject.SetActive(false);
         closeButton.onClick.AddListener(CloseInventory);
         gameObject.SetActive(false);
+        // LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
     }
 
     private void CloseInventory()
     {
-        if (isContainer)
-        {
-            InventoryUIController.Instance.CloseContainer();
-        }
-        else
-        {
-            InventoryUIController.Instance.ClosePlayer();
-        }
-
+        InventoryUIController.Instance.CloseContainer();
+        InventoryUIController.Instance.ClosePlayer();
     }
 
     public void DisplayInventory(Inventory inventory)
@@ -75,10 +70,17 @@ public class InventoryUI : MonoBehaviour
         totalWeightText.gameObject.SetActive(!isContainer);
         weightIcon.gameObject.SetActive(!isContainer);
         totalWeightText.text = $"{Mathf.Round(currentWeightAmount * 10.0f)*0.1f}/{maxWeightAmount}";
+
+        // Unity jank, have to update the horizontal layout group
+        // LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
+
     }
     private void UpdateSlots()
     {
         totalSlotText.text = $"{Mathf.Round(currentSlotAmount * 10.0f)*0.1f}/{maxSlotAmount}";
+
+        // Unity jank, have to update the horizontal layout group
+        // LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
     }
 
     public void RefreshUI()
@@ -92,6 +94,7 @@ public class InventoryUI : MonoBehaviour
         UpdateSlots();
         UpdateWeight();
         InitializeItems(inventory.Items);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
     }
 
     public Inventory GetInventory()

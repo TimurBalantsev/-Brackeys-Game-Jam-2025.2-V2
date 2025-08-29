@@ -1,5 +1,4 @@
 using System;
-using HitBox;
 using UnityEngine;
 
 public class Player : Entity.Entity
@@ -10,6 +9,11 @@ public class Player : Entity.Entity
     
     [SerializeField] private LayerMask damageableLayerMask;
     [SerializeField] private Inventory inventory;
+
+    [SerializeField] public AudioSource walkSoundLoop;
+    [SerializeField] public AudioSource hurtSound;
+    [SerializeField] public AudioSource deathSound;
+
     public static Player Instance;
 
     public Inventory Inventory => inventory;
@@ -22,6 +26,8 @@ public class Player : Entity.Entity
     private InputManager.InputActions currentInputAction = InputManager.InputActions.NONE;
     private Camera mainCam;
     private bool attackInputHeld = false;
+
+    public Vector2 lastMovement;
 
     private void Awake()
     {
@@ -37,7 +43,7 @@ public class Player : Entity.Entity
         mainCam = Camera.main;
         ChangeState(new PlayerIdleState());
         InputManager.Instance.OnAttackPerformed += InputManager_OnAttackPerformed;
-        InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
+        // InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
         InputManager.Instance.OnInventory += InputManager_OnInventoryPressed;
         stats.Initialize();
     }
@@ -55,10 +61,10 @@ public class Player : Entity.Entity
         if (newState != null) ChangeState(newState);
     }
     
-    private void InputManager_OnAttackReleased(object sender, EventArgs e)
-    {
-        attackInputHeld = false;
-    }
+    // private void InputManager_OnAttackReleased(object sender, EventArgs e)
+    // {
+    //     attackInputHeld = false;
+    // }
 
     private void Update()
     {
@@ -88,11 +94,11 @@ public class Player : Entity.Entity
     private void StateInput()
     {
         //this only check movement states, as other states will be instantly overwritten by an event call.
-        if (attackInputHeld)
-        {
-            currentInputAction = InputManager.InputActions.ATTACK;
-        }
-        else if (InputManager.Instance.GetMovementDirection().Equals(Vector2.zero))
+        // if (attackInputHeld)
+        // {
+        //     currentInputAction = InputManager.InputActions.ATTACK;
+        // }
+        if (InputManager.Instance.GetMovementDirection().Equals(Vector2.zero))
         {
             currentInputAction = InputManager.InputActions.NONE;
         }
@@ -100,6 +106,7 @@ public class Player : Entity.Entity
         {
             currentInputAction = InputManager.InputActions.MOVE;
         }
+
         
         PlayerState newState = activeState.Input(currentInputAction);
         if(newState != null) ChangeState(newState);
@@ -117,8 +124,18 @@ public class Player : Entity.Entity
         rigidBody.MovePosition(newPosition);
     }
 
+    public override void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+        hurtSound.pitch = UnityEngine.Random.Range(0.8f, 1f);
+        hurtSound.Play();
+    }
+
     protected override void Die()
     {
+        base.Die();
+        deathSound.Play();
+        ChangeState(new PlayerDeathState());
         Debug.Log("Player died");
     }
 }

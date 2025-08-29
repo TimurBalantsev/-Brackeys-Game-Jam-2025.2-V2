@@ -15,6 +15,11 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     [SerializeField] public int maxPatrolDistance = 1;
     [SerializeField] public float maxIdleTime = 5f;
     [SerializeField] public float patrolDuration = 5f;
+    [SerializeField] private float minDistance = 0.1f;
+
+    [SerializeField] public AudioSource idleLoopSound;
+    [SerializeField] public AudioSource[] targetSpottedSounds;
+    [SerializeField] public AudioSource attackSound;
 
     private EnemyState activeState;
     public Animator Animator => animator;
@@ -39,6 +44,9 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     private void EnemyFOV_OnTargetSpotted(Entity.Entity target)
     {
+        int randomTargetSpottedSoundIndex = Random.Range(0, targetSpottedSounds.Length);
+        targetSpottedSounds[randomTargetSpottedSoundIndex].Play();
+
         if (loseTargetCoroutine != null)
         {
             StopCoroutine(loseTargetCoroutine);
@@ -86,6 +94,7 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     private void Start()
     {
         ChangeState(new EnemyIdleState());
+        idleLoopSound.Play();
     }
 
     private void Update()
@@ -122,6 +131,11 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     public void Move(Vector2 movementDirection)
     {
+        if (Target != null)
+        {
+            float distance = Vector2.Distance(transform.position, Target.transform.position);
+            if (distance < minDistance) return;
+        }
         Vector2 newPosition = rigidBody.position + movementDirection * (stats.speed * Time.fixedDeltaTime);
         rigidBody.MovePosition(newPosition);
         lastMovementDirection = movementDirection;
@@ -142,6 +156,7 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     protected override void Die()
     {
+        base.Die();
         Debug.Log($"Enemy {name} died");
     }
 }
