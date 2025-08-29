@@ -35,17 +35,21 @@ public class EnemyFOV : MonoBehaviour
                     if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
                     {
                         foundTarget = target.GetComponent<Entity.Entity>();
-                        break;
+                        if (foundTarget != null)
+                        {
+                            break;
+                        }
                     }
                 } 
             }
             else
             {
                 foundTarget = target.GetComponent<Entity.Entity>();
-                break;
+                if (foundTarget != null)
+                {
+                    break;
+                }
             }
-
-    
         }
 
         if (foundTarget != null)
