@@ -1046,7 +1046,7 @@ MonoBehaviour:
   obstructionLayer:
     serializedVersion: 2
     m_Bits: 128
-  perceptionRange: 0.3
+  perceptionRange: 0.5
 --- !u!1 &8805860001907845580
 GameObject:
   m_ObjectHideFlags: 0
