@@ -43,7 +43,7 @@ public class LoadingManager : MonoBehaviour
     public void StartGame()
     {
         currentStreak = 0;
-        LoadLevel(levels[UnityEngine.Random.Range(0, levels.Length)), true);
+        LoadLevel(levels[UnityEngine.Random.Range(0, levels.Length)], true);
     }
 
     public void LoadMenu()
