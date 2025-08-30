@@ -20,6 +20,14 @@ PrefabInstance:
       propertyPath: radius
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 1439303370088482833, guid: 4c3f0b5d91cf04846a198c60234bd4dc, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: dafbf28bdaf02b04c8d9d7bf9ff3c717, type: 3}
+    - target: {fileID: 1439303370088482833, guid: 4c3f0b5d91cf04846a198c60234bd4dc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dafbf28bdaf02b04c8d9d7bf9ff3c717, type: 3}
     - target: {fileID: 3112904198101292595, guid: 4c3f0b5d91cf04846a198c60234bd4dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.87

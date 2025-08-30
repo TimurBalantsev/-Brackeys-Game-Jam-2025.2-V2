@@ -2,12 +2,17 @@
 
 public class PlayerIdleState : PlayerState
 {
+    private const string ANIMATOR_HORIZONTAL = "horizontal";
+    private const string ANIMATOR_VERTICAL = "vertical";
+
     private Player player;
 
     public void Enter(Player player)
     {
         this.player = player;
-        player.Animator.Play("player_idle");
+
+        player.Animator.SetFloat(ANIMATOR_HORIZONTAL, player.lastMovement.x);
+        player.Animator.SetFloat(ANIMATOR_VERTICAL, player.lastMovement.y);
     }
 
     public void Exit()
