@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -10,6 +11,9 @@ public class BaseManager : MonoBehaviour
     [SerializeField] private int amountMax;
     [SerializeField] private int questPopulationMin;
     [SerializeField] private int questPopulationMax;
+    [SerializeField] private int eventPopulationMin;
+    [SerializeField] private int eventPopulationMax;
+
 
     [SerializeField] private int population;
     [SerializeField] private Inventory inventory;
@@ -35,15 +39,22 @@ public class BaseManager : MonoBehaviour
     private void Start()
     {
         currentQuest = forceQuest;
+        forceQuest = null;
         if (forceQuest == null)
         {
-            GetNewQuest();
+            ItemType itemType = (ItemType)Random.Range(0, Enum.GetValues(typeof(ItemType)).Length); //get random item type
+            Debug.Log(GetNewQuest(itemType));
         }
     }
 
-    public bool LaunchRandomEvent()
+    public bool LaunchRandomEvent(ItemType itemType)
     {
-        randomEvent = new Quest(Random.Range(amountMin, amountMax), weightedLootTable.GetRandomItem(),Random.Range(questPopulationMin, questPopulationMax),Random.Range(questPopulationMin, questPopulationMax));
+        Item questItem;
+        do
+        {
+            questItem = weightedLootTable.GetRandomItem();
+        } while (questItem.itemType != itemType);
+        randomEvent = new Quest(Random.Range(amountMin, amountMax), questItem,Random.Range(eventPopulationMin, eventPopulationMax),Random.Range(eventPopulationMin, eventPopulationMax));
         int targetItemAmount = currentQuest.Amount;
         List<Item> toBeRemoved = new List<Item>();
         foreach (Item item in inventory.Items)
@@ -74,8 +85,13 @@ public class BaseManager : MonoBehaviour
         }
     }
 
-    public Quest GetNewQuest()
+    public Quest GetNewQuest(ItemType itemType)
     {
+        Item item;
+        do
+        {
+            item = weightedLootTable.GetRandomItem();
+        } while (item.itemType != itemType);
         currentQuest = new Quest(Random.Range(amountMin, amountMax), weightedLootTable.GetRandomItem(),Random.Range(questPopulationMin, questPopulationMax),Random.Range(questPopulationMin, questPopulationMax));
         return currentQuest;
     }

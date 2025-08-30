@@ -6,5 +6,4 @@
     Ammo,
     Tech,
     Car,
-    Misc
 }
