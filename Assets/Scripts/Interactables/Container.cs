@@ -30,7 +30,7 @@ public class Container : MonoBehaviour, Interactable
     public void Interact(Player player)
     {
         InventoryUIController.Instance.DisplayInventory(inventory, player.Inventory);
-        SoundManager.Instance.SpawnTempSoundSourceAtWorldSpacePoint(transform.position, openingSound.GetRandomAudioClipReference());
+        AudioManager.Instance.PlayTempSoundAt(transform.position, openingSound.GetRandomAudioClipReference());
     }
 
     public void Select(Player player, bool isSelected)

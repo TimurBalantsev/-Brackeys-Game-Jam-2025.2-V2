@@ -211,6 +211,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5367639358918028284}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   trunkInventory: {fileID: 2179566726587568042}
+  openingSound: {fileID: 11400000, guid: e23cbc2ab350056488861c0c6b944e88, type: 2}
 --- !u!1 &3295344611621344128
 GameObject:
   m_ObjectHideFlags: 0
