@@ -10,6 +10,7 @@ public class LoadingManager : MonoBehaviour
 
     public event Action<LevelSO, int> OnLevelLoaded;
 
+
     [SerializeField] private LevelSO[] levels;
     [SerializeField] private int nextLevelOptionsAmount;
 
@@ -38,6 +39,10 @@ public class LoadingManager : MonoBehaviour
     public void BackToBase()
     {
         currentStreak = 0;
+        Fade.Instance.FadeIn(2f, () =>
+        {
+            BaseManager.Instance.TransferItems(Player.Instance.Inventory);
+        });
     }
 
     public void StartGame()
@@ -68,6 +73,8 @@ public class LoadingManager : MonoBehaviour
 
     public void LoadLevel(LevelSO levelSO, bool fade)
     {
+        Time.timeScale = 0f;
+
         currentStreak++;
 
         if (fade)
@@ -99,11 +106,12 @@ public class LoadingManager : MonoBehaviour
     private void InstantiateLevel(LevelSO levelSO)
     {
         Instantiate(levelSO.prefab);
+
+        Time.timeScale = 1f;
         Fade.Instance.FadeOut(2f);
 
         ChooseNextLevelOptions();
 
-        Debug.LogWarning(currentStreak);
         OnLevelLoaded?.Invoke(levelSO, currentStreak);
     }
 }

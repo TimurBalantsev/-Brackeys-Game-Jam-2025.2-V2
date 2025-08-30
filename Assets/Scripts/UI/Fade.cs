@@ -54,7 +54,7 @@ public class Fade : MonoBehaviour
 
         while (time < duration)
         {
-            time += Time.deltaTime;
+            time += Time.unscaledDeltaTime;
             float t = Mathf.Clamp01(time / duration);
             color.a = Mathf.Lerp(from, to, t);
             image.color = color;
