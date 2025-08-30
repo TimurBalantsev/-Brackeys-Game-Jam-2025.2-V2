@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1facceece6a1c404da31c4da53addf04, type: 3}
+  m_Name: Highway
+  m_EditorClassIdentifier: 
+  levelName: Autobahn
+  preview: {fileID: 2800305970135965591, guid: 2a40c51b744c9834ea30c87755b46435, type: 3}
+  prefab: {fileID: 2846245292322501765, guid: dbeaa1faf5c9d1846a17a169ff07e850, type: 3}
