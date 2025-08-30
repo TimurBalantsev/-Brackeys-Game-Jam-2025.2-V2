@@ -9,22 +9,29 @@ public class BaseManager : MonoBehaviour
     [SerializeField] private WeightedLootTableSO weightedLootTable;
     [SerializeField] private int amountMin;
     [SerializeField] private int amountMax;
-    [SerializeField] private int questPopulationMin;
-    [SerializeField] private int questPopulationMax;
-    [SerializeField] private int eventPopulationMin;
-    [SerializeField] private int eventPopulationMax;
+    
+    [SerializeField] private int questRewardPopulationMin;
+    [SerializeField] private int questRewardPopulationMax;
+    [SerializeField] private int questFailPopulationMin;
+    [SerializeField] private int questFailPopulationMax;
+    
+    [SerializeField] private int eventRewardPopulationMin;
+    [SerializeField] private int eventRewardPopulationMax;
+    [SerializeField] private int eventFailPopulationMin;
+    [SerializeField] private int eventFailPopulationMax;
 
 
     [SerializeField] private int population;
     [SerializeField] private Inventory inventory;
+
+    public List<Quest> ActiveQuests = new List<Quest>();
+    public List<Quest> ActiveEvents = new List<Quest>();
+    
+    
+    
     public static BaseManager Instance;
-    private Quest currentQuest;
-    [SerializeField] private Quest forceQuest;
-    private Quest randomEvent;
 
     public int Population => population;
-    public Quest CurrentQuest => currentQuest;
-    public Quest RandomEvent => randomEvent;
 
     private void Awake()
     {
@@ -38,12 +45,11 @@ public class BaseManager : MonoBehaviour
 
     private void Start()
     {
-        currentQuest = forceQuest;
-        forceQuest = null;
-        if (forceQuest == null)
+        ItemType itemType = (ItemType)Random.Range(0, Enum.GetValues(typeof(ItemType)).Length); //get random item type
+        GetNewQuest(itemType);
+        foreach (Quest quest in ActiveQuests)
         {
-            ItemType itemType = (ItemType)Random.Range(0, Enum.GetValues(typeof(ItemType)).Length); //get random item type
-            Debug.Log(GetNewQuest(itemType));
+            Debug.Log(quest);
         }
     }
 
@@ -60,73 +66,77 @@ public class BaseManager : MonoBehaviour
         return questItem;
     }
 
-    public bool LaunchRandomEvent(ItemType itemType)
+    public Quest GetRandomEvent(ItemType itemType)
     {
         Item questItem = GetRandomItemByType(itemType);
-        randomEvent = new Quest(Random.Range(amountMin, amountMax), questItem,Random.Range(eventPopulationMin, eventPopulationMax),Random.Range(eventPopulationMin, eventPopulationMax));
-        int targetItemAmount = currentQuest.Amount;
-        List<Item> toBeRemoved = new List<Item>();
-        foreach (Item item in inventory.Items)
+        if (questItem == null)
         {
-            if (item.parent == currentQuest.Item.parent && targetItemAmount > 0)
-            {
-                targetItemAmount--;
-                toBeRemoved.Add(item);
-            }
+            Debug.LogError("itemtype doesnt exist in loot table");
+            return null;
         }
-
-        if (targetItemAmount <= 0)
-        {
-            Debug.Log("Event completed");
-            foreach (Item item in toBeRemoved)
-            {
-                inventory.RemoveItem(item);
-            }
-
-            this.population += randomEvent.PopReward;
-            return true;
-        }
-        else
-        {
-            Debug.Log("Event Failed");
-            this.population -= randomEvent.PopConsequence;
-            return false;
-        }
+        Quest randomEvent = new Quest(Random.Range(amountMin, amountMax), questItem,Random.Range(eventRewardPopulationMin, eventRewardPopulationMax),Random.Range(eventFailPopulationMin, eventFailPopulationMax));
+        ActiveEvents.Add(randomEvent);
+        return randomEvent;
     }
 
     public Quest GetNewQuest(ItemType itemType)
     {
         Item item = GetRandomItemByType(itemType);
-        currentQuest = new Quest(Random.Range(amountMin, amountMax), item,Random.Range(questPopulationMin, questPopulationMax),Random.Range(questPopulationMin, questPopulationMax));
+        if (item == null)
+        {
+            Debug.LogError("itemtype doesnt exist in loot table");
+            return null;
+        }
+        Quest currentQuest = new Quest(Random.Range(amountMin, amountMax), item,Random.Range(questRewardPopulationMin, questRewardPopulationMax),Random.Range(questFailPopulationMin, questFailPopulationMax));
+        ActiveQuests.Add(currentQuest);
         return currentQuest;
     }
     
     public void TransferItems(Inventory inventory)
     {
-        int targetItemAmount = currentQuest.Amount;
         foreach (Item item in inventory.Items)
         {
-            if (item.parent == currentQuest.Item.parent && targetItemAmount > 0)
+            this.inventory.AddItem(item);
+        }
+        inventory.Clear();
+    }
+
+    public bool TurnInQuest(Quest quest, bool isEvent)
+    {
+        List<Item> toBeRemoved = new List<Item>();
+        int targetItemAmount = quest.Amount;
+        foreach (Item item in inventory.Items)
+        {
+            if (item.parent == quest.Item.parent && targetItemAmount > 0)
             {
                 targetItemAmount--;
+                toBeRemoved.Add(item);
             }
-            else
+
+            if (targetItemAmount <= 0)
             {
-                this.inventory.AddItem(item);
+                break;
             }
         }
 
+        foreach (Item item in toBeRemoved)
+        {
+            inventory.RemoveItem(item);
+        }
+
+        if (isEvent) ActiveEvents.Remove(quest);
+        else ActiveQuests.Remove(quest);
+
         if (targetItemAmount <= 0)
         {
-            population += currentQuest.PopReward;
+            population += quest.PopReward;
             Debug.Log("quest completed");
+            return true;
         }
-        else
-        {
-            population -= currentQuest.PopConsequence;
-            Debug.Log("quest failed");
-        }
-        inventory.Clear();
+
+        population -= quest.PopConsequence;
+        Debug.Log("quest failed");
+        return false;
     }
 }
 
