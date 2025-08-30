@@ -5,10 +5,10 @@ public class EntityStats
 {
     //TODO: move damage out of here.
     public float maxHealth;
-    private float currentHealth;
+    public float currentHealth;
     public float damage;
     public float speed;
-    public HealthBarUI healthBarUI;
+    public OldHealthBarUI healthBarUI;
     
     public EntityStats(float maxHealth, float damage, float speed)
     {
@@ -28,7 +28,6 @@ public class EntityStats
         if (damage <= 0) return false;
         
         currentHealth -= damage;
-        healthBarUI?.SetHealth(currentHealth, maxHealth);
         if (currentHealth <= 0)
         {
             return true;
@@ -47,6 +46,5 @@ public class EntityStats
         {
             currentHealth = maxHealth;
         }
-        healthBarUI.SetHealth(currentHealth, maxHealth);
     }
 }

@@ -4,35 +4,25 @@ using UnityEngine.UI;
 
 public class HealthBarUI : MonoBehaviour
 {
-    [Serializable]
-    public class HealthBarPercentToColor
-    {
-        [Range(0, 1)] public float percent;
-        public Color color = Color.black;
-    }
-    
     [SerializeField] private Slider slider;
-    [SerializeField] private Image fill;
-    //please keep this array sorted in descending order of percent
-    [SerializeField] private HealthBarPercentToColor[] percentToColors;
-    
-    public void SetHealth(float currentHealth, float maxHealth)
+
+    private void Start()
     {
-        if (slider == null) return;
-        
-        slider.value = Math.Clamp(currentHealth / maxHealth, 0, 1);
-        SetFillColor();
+        Player.Instance.OnDamage += Instance_OnDamage;
     }
 
-    private void SetFillColor()
+    private void OnDestroy()
     {
-        for (int i = percentToColors.Length-1; i > 0; i--)
-        {
-            if (slider.value <= percentToColors[i].percent)
-            {
-                fill.color = percentToColors[i].color;
-                return;
-            }
-        }
+        Player.Instance.OnDamage -= Instance_OnDamage;
+    }
+
+    private void Instance_OnDamage(EntityStats stats)
+    {
+        SetHealth(stats.currentHealth, stats.maxHealth);
+    }
+
+    public void SetHealth(float currentHealth, float maxHealth)
+    {
+        slider.value = Mathf.Clamp(currentHealth / maxHealth, 0, 1);
     }
 }

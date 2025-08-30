@@ -1,23 +1,39 @@
+using System;
 using UnityEngine;
 
 public class Car : MonoBehaviour, Interactable
 {
+    public static Car Instance { get; private set; }
+
+    public event Action OnInteract;
+
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Color highlightColor = Color.yellow;
     [SerializeField] private Inventory trunkInventory;
+    [SerializeField] private AudioClipSO openingSound;
     private Color defaultColor;
-    
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Debug.LogError("Multiple cars in scene");
+        }
+    }
+
     private void Start()
     {
         defaultColor = spriteRenderer.color;
     }
-    
 
     public void Interact(Player player)
     {
-        Debug.Log(BaseManager.Instance.Population);
-        BaseManager.Instance.TransferItems(trunkInventory);
-        Debug.Log(BaseManager.Instance.Population);
+        AudioManager.Instance.SpawnTempSoundSourceAtWorldSpacePoint(transform.position, openingSound.GetRandomAudioClipReference());
+        OnInteract?.Invoke();
     }
 
     public void Select(Player player, bool isSelected)

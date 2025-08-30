@@ -5,6 +5,7 @@ namespace Entity
 {
     public abstract class Entity : MonoBehaviour, AttackHitBoxSource, Damageable
     {
+        public event Action<EntityStats> OnDamage;
         public event Action OnDie;
 
         [SerializeField] protected EntityStats stats;
@@ -55,6 +56,8 @@ namespace Entity
             {
                 Die();
             }
+
+            OnDamage?.Invoke(stats);
         }
 
         public void Heal(float heal)
