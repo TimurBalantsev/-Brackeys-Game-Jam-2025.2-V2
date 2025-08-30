@@ -3427,7 +3427,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 5044797242894452885}
   m_FillRect: {fileID: 2309448858842343348}
   m_HandleRect: {fileID: 0}
@@ -7799,7 +7799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3302314551375956228, guid: e17c4e63793093d4886a0d006981b35c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000071525574
+      value: 0.0000030398369
       objectReference: {fileID: 0}
     - target: {fileID: 3480855329240880642, guid: e17c4e63793093d4886a0d006981b35c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8087,7 +8087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4429977455305153149, guid: e17c4e63793093d4886a0d006981b35c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000014305115
+      value: 0.0000051259995
       objectReference: {fileID: 0}
     - target: {fileID: 4650825567766501353, guid: e17c4e63793093d4886a0d006981b35c, type: 3}
       propertyPath: m_AnchorMax.y
