@@ -14,6 +14,8 @@ public class Player : Entity.Entity
     [SerializeField] public AudioSource hurtSound;
     [SerializeField] public AudioSource deathSound;
 
+    public bool canMove = true;
+
     public static Player Instance;
 
     public Inventory Inventory => inventory;
@@ -120,6 +122,7 @@ public class Player : Entity.Entity
 
     public void Move(Vector2 movementDirection)
     {
+        if (!canMove) return;
         Vector2 newPosition = rigidBody.position + movementDirection * (stats.speed * Time.fixedDeltaTime);
         rigidBody.MovePosition(newPosition);
     }

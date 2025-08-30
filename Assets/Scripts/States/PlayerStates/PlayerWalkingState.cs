@@ -35,6 +35,7 @@ public class PlayerWalkingState : PlayerState
 
     public PlayerState FixedUpdate(float fixedDeltaTime)
     {
+        if (!player.canMove) return new PlayerIdleState();
         Vector2 movementDirection = InputManager.Instance.GetMovementDirection();
         player.Move(movementDirection);
         player.Animator.SetFloat(ANIMATOR_HORIZONTAL, movementDirection.x);
