@@ -2,7 +2,6 @@
 {
     Food,
     Medical,
-    Weapon,
     Ammo,
     Tech,
     Car,
