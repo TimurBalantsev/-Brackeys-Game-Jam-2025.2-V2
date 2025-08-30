@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class Pistol : MonoBehaviour
@@ -11,10 +12,18 @@ public class Pistol : MonoBehaviour
     [SerializeField] private float damage;
     [SerializeField] private LayerMask targetLayer;
     [SerializeField] private float bulletRange;
+    [SerializeField] private float maxAmmo;
+    [SerializeField] private float reloadTime;
+    private float currentReloadTime;
+    [SerializeField] private TextMeshProUGUI reloadText;
+    private float ammo;
     
 
     private void Start()
     {
+        ammo = maxAmmo;
+        currentReloadTime = 0;
+        reloadText.gameObject.SetActive(false);
         InputManager.Instance.OnAttackPerformed += InstanceOnOnAttackPerformed;
     }
     private void InstanceOnOnAttackPerformed(object sender, EventArgs e)
@@ -22,13 +31,26 @@ public class Pistol : MonoBehaviour
         if (Player.Instance.canMove)
         {
             Shoot();
-
         }
+    }
+
+    private void HandleReload()
+    {
+        if (ammo > 0) return;
+        reloadText.gameObject.SetActive(true);
+        if (currentReloadTime >= reloadTime)
+        {
+            ammo = maxAmmo;
+            reloadText.gameObject.SetActive(false);
+            currentReloadTime = 0;
+        }
+        currentReloadTime += Time.deltaTime;
     }
 
     private void Update()
     {
         HandlePosition();
+        HandleReload();
     }
 
     private void HandlePosition()
@@ -45,7 +67,8 @@ public class Pistol : MonoBehaviour
 
     private void Shoot()
     {
-        
+        if (ammo <= 0) return;
+        ammo--;
         spriteRenderer.GetComponent<Animator>().Play("shoot", 0, 0f);
         SoundManager.Instance.SpawnTempSoundSourceAtWorldSpacePoint(transform.position, shootSound.GetRandomAudioClipReference());
         
