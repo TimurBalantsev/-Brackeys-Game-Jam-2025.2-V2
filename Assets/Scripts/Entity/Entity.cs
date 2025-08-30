@@ -4,7 +4,7 @@ namespace Entity
 {
     public abstract class Entity : MonoBehaviour, AttackHitBoxSource, Damageable
     {
-        [SerializeField] protected EntityStats stats;
+        [SerializeField] public EntityStats stats;
 
         [SerializeField] protected SpriteRenderer spriteRenderer;
         [SerializeField] private bool isSpriteFacingRight = true;

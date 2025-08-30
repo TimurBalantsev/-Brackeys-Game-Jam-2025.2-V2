@@ -18,6 +18,13 @@ public class EntityStats
         this.speed = speed;
     }
 
+    public void SetMaxHealth(float maxHealth)
+    {
+        float currentHealthNormalized = currentHealth / this.maxHealth;
+        this.maxHealth = maxHealth;
+        this.currentHealth = maxHealth * currentHealthNormalized;
+    }
+
     public void Initialize()
     {
         currentHealth = maxHealth;
