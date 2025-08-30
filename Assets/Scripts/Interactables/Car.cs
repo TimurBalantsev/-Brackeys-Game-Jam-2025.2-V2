@@ -32,7 +32,7 @@ public class Car : MonoBehaviour, Interactable
 
     public void Interact(Player player)
     {
-        AudioManager.Instance.SpawnTempSoundSourceAtWorldSpacePoint(transform.position, openingSound.GetRandomAudioClipReference());
+        AudioManager.Instance.PlayTempSoundAt(transform.position, openingSound.GetRandomAudioClipReference());
         OnInteract?.Invoke();
     }
 

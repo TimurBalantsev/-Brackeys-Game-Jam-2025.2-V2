@@ -17,10 +17,19 @@ public class PlayerInteract : MonoBehaviour
     private void Start()
     {
         interactionCollider.radius = interactRange;
-        interactionCollider.includeLayers += interactableLayer;
+        interactionCollider.includeLayers += interactableLayer;       
+    }
+
+    private void OnEnable()
+    {
         InputManager.Instance.OnInteract += HandleInteract;
     }
-    
+
+    private void OnDisable()
+    {
+        InputManager.Instance.OnInteract -= HandleInteract;
+    }
+
     private void Update()
     {
         SelectInteractable(GetClosestInteractable());

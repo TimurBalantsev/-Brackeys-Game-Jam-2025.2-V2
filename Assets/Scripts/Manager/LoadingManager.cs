@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,11 +11,14 @@ public class LoadingManager : MonoBehaviour
     public event Action<LevelSO, int> OnLevelLoaded;
 
     [SerializeField] private LevelSO[] levels;
+    [SerializeField] private int nextLevelOptionsAmount;
 
     private LevelSO currentLevel;
+    private LevelSO[] nextLevelOptions; 
     private int currentStreak;
     public int CurrentStreak => currentStreak;
     public LevelSO CurrentLevel => currentLevel;
+    public LevelSO[] NextLevelOptions => nextLevelOptions;
 
     private void Awake()
     {
@@ -79,11 +84,25 @@ public class LoadingManager : MonoBehaviour
         }
     }
 
+    private void ChooseNextLevelOptions()
+    {
+        // Exclude current level
+        List<LevelSO> availableLevels = levels.Where(l => l != currentLevel).ToList();
+
+        nextLevelOptions = availableLevels
+            .OrderBy(x => UnityEngine.Random.value)
+            .Take(nextLevelOptionsAmount)
+            .ToArray();
+    }
+
     private void InstantiateLevel(LevelSO levelSO)
     {
         Instantiate(levelSO.prefab);
         Fade.Instance.FadeOut(2f);
 
+        ChooseNextLevelOptions();
+
+        Debug.LogWarning(currentStreak);
         OnLevelLoaded?.Invoke(levelSO, currentStreak);
     }
 }

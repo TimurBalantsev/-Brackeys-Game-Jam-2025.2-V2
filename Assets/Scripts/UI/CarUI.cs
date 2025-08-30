@@ -8,6 +8,8 @@ public class CarUI : MonoBehaviour
     [SerializeField] private Button closeButton;
     [SerializeField] private Button backToBaseButton;
 
+    [SerializeField] private LevelDisplay[] levelDisplays;
+
     private void Start()
     {
         closeButton.onClick.AddListener(Close);
@@ -23,6 +25,7 @@ public class CarUI : MonoBehaviour
 
     private void Instance_OnInteract()
     {
+        Refresh();
         background.SetActive(true);
         SetPlayerCanMove();
     }
@@ -30,6 +33,17 @@ public class CarUI : MonoBehaviour
     public void SetPlayerCanMove()
     {
         Player.Instance.canMove = !background.activeSelf;
+    }
+
+    private void Refresh()
+    {
+        for (int i = 0; i < LoadingManager.Instance.NextLevelOptions.Length; i++)
+        {
+            LevelSO levelSO = LoadingManager.Instance.NextLevelOptions[i];
+
+            levelDisplays[i].DisplayLevel(levelSO);
+            levelDisplays[i].GetComponent<Button>().onClick.AddListener(() => LoadingManager.Instance.LoadLevel(levelSO, true));
+        }
     }
 
     private void Close()
