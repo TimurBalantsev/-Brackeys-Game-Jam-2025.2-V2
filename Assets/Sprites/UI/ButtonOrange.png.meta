@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 49ff4c52f14a7074cb95735a01944664
+guid: fa066eba2fce8e249ab4e1aa282ba20b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8647242238388663334
-    second: Zombie-Tileset---_0514_Capa-517_0
+      213: 649223268058989734
+    second: Button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 8, y: 8, z: 8, w: 8}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zombie-Tileset---_0514_Capa-517_0
+      name: Button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4
-        height: 6
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 8, z: 8, w: 8}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adb071ecff2def780800000000000000
-      internalID: -8647242238388663334
+      spriteID: 6a403906f11820900800000000000000
+      internalID: 649223268058989734
       vertices: []
       indices: 
       edges: []
@@ -164,8 +164,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: b167b926a20708046b9157d9f4c9c7c5
+    internalID: -1644102316
     vertices: []
     indices: 
     edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Zombie-Tileset---_0514_Capa-517_0: -8647242238388663334
+      Button_0: 649223268058989734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

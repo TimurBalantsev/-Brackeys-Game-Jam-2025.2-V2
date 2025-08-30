@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Button backToBaseButton;
+
+    private void Start()
     {
-        
+        backToBaseButton.onClick.AddListener(BackToBase);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void BackToBase()
     {
-        
+        LoadingManager.Instance.BackToBase();
     }
 }
