@@ -4,6 +4,5 @@ using UnityEngine;
 public class LevelSO : ScriptableObject
 {
     public string levelName;
-    public Sprite preview;
     public GameObject prefab;
 }

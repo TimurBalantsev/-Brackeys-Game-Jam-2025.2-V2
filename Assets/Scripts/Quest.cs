@@ -19,7 +19,7 @@ public class Quest
         this.item = item;
         this.popReward = popReward;
         this.popConsequence = popConsequence;
-    }   
+    }
 
     public override string ToString()
     {
