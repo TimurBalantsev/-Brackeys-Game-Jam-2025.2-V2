@@ -158,5 +158,6 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     {
         base.Die();
         Debug.Log($"Enemy {name} died");
+        Destroy(gameObject);
     }
 }

@@ -35,6 +35,13 @@ public class EntityStats
 
         return false;
     }
+
+    public void SetMaxHealth(float newMaxHealth)
+    {
+        float normalizedHealth = currentHealth / maxHealth;
+        this.maxHealth = newMaxHealth;
+        currentHealth = maxHealth * normalizedHealth;
+    }
     
     public void Heal(float heal)
     {

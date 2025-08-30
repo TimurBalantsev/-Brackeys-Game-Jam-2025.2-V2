@@ -8,7 +8,7 @@ namespace Entity
         public event Action<EntityStats> OnDamage;
         public event Action OnDie;
 
-        [SerializeField] protected EntityStats stats;
+        [SerializeField] public EntityStats stats;
 
         [SerializeField] protected SpriteRenderer spriteRenderer;
         [SerializeField] private bool isSpriteFacingRight = true;
