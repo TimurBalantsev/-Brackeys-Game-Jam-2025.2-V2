@@ -14,6 +14,9 @@ public class EnemySpawnManager : MonoBehaviour
 
     [SerializeField] private List<EnemySpawnWeight> enemySpawnWeights;
     [SerializeField] private Transform spawnPointsContainer;
+    [SerializeField] private float difficultyScale = 1.0f;
+    [SerializeField] private float incrementPerLevel = 0.3f;
+
     private List<Transform> spawnPoints = new List<Transform>();
 
     private void Start()
@@ -27,7 +30,21 @@ public class EnemySpawnManager : MonoBehaviour
             Vector3 position = spawnPoint.position;
             Enemy enemyPrefab = GetRandomEnemyPrefab();
             Enemy spawnedEnemy = Instantiate(enemyPrefab, position, Quaternion.identity);
+            spawnedEnemy.stats.damage *= difficultyScale;
+            
+            spawnedEnemy.stats.SetMaxHealth(spawnedEnemy.stats.maxHealth * difficultyScale);
+            spawnedEnemy.stats.speed *= difficultyScale;
         }
+    }
+
+    public void IncrementDifficultyScale()
+    {
+        difficultyScale += incrementPerLevel;
+    }
+
+    public void SetDifficultyScale(float difficultyScale)
+    {
+        this.difficultyScale = difficultyScale;
     }
 
     public int TotalWeight()

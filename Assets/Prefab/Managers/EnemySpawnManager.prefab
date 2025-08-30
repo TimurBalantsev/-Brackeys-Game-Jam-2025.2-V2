@@ -1174,6 +1174,8 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 5356416600534485757, guid: 5d9669529745daa4598155d01ac41146, type: 3}
     weight: 1
   spawnPointsContainer: {fileID: 2892791578939355163}
+  difficultyScale: 1
+  incrementPerLevel: 0.1
 --- !u!1 &8563525079188316798
 GameObject:
   m_ObjectHideFlags: 0
