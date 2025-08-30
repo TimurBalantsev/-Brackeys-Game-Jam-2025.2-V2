@@ -45,7 +45,9 @@ public class BaseManager : MonoBehaviour
 
     private void Start()
     {
+ 
         ItemType itemType = (ItemType)Random.Range(0, Enum.GetValues(typeof(ItemType)).Length); //get random item type
+        Debug.Log(itemType.ToString());
         GetNewQuest(itemType);
         foreach (Quest quest in ActiveQuests)
         {
@@ -56,7 +58,6 @@ public class BaseManager : MonoBehaviour
     public Item GetRandomItemByType(ItemType itemType)
     {
         if (!weightedLootTable.ContainsItemType(itemType)) return null;
-        Debug.Log(itemType.ToString());
         Item questItem;
         do
         {
