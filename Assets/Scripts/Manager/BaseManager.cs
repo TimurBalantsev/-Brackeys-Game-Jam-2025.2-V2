@@ -45,7 +45,6 @@ public class BaseManager : MonoBehaviour
 
     private void Start()
     {
- 
         ItemType itemType = (ItemType)Random.Range(0, Enum.GetValues(typeof(ItemType)).Length); //get random item type
         Debug.Log(itemType.ToString());
         GetNewQuest(itemType);

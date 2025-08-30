@@ -10,10 +10,10 @@ public class LoadingManager : MonoBehaviour
 
     [SerializeField] private LevelSO[] levels;
 
-    private GameObject currentLevelPrefab;
+    private LevelSO currentLevel;
     private int currentStreak;
-
     public int CurrentStreak => currentStreak;
+    public LevelSO CurrentLevel => currentLevel;
 
     private void Awake()
     {
@@ -37,9 +37,14 @@ public class LoadingManager : MonoBehaviour
 
     public void StartGame()
     {
+        LoadLevel(levels[0], true);
+    }
+
+    public void LoadMenu()
+    {
         Fade.Instance.FadeIn(2f, () =>
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("Menu");
         });
     }
 
@@ -47,38 +52,38 @@ public class LoadingManager : MonoBehaviour
     {
         if (scene.name == "Game")
         {
-            LoadLevel(levels[UnityEngine.Random.Range(0, levels.Length)], false);
+            InstantiateLevel(currentLevel);
+        }
+        if (scene.name == "Menu")
+        {
+            Fade.Instance.FadeOut(2f);
         }
     }
 
-    public void LoadLevel(LevelSO levelSO, bool fadeIn)
+    public void LoadLevel(LevelSO levelSO, bool fade)
     {
         currentStreak++;
 
-        if (fadeIn)
+        if (fade)
         {
             Fade.Instance.FadeIn(2f, () =>
             {
-                SwapLevel(levelSO);
-                Fade.Instance.FadeOut(2f);
-                OnLevelLoaded?.Invoke(levelSO, currentStreak);
+                SceneManager.LoadScene("Game");
+                currentLevel = levelSO;
             });
         }
         else
         {
-            SwapLevel(levelSO);
-            Fade.Instance.FadeOut(2f);
-            OnLevelLoaded?.Invoke(levelSO, currentStreak);
+            SceneManager.LoadScene("Game");
+            currentLevel = levelSO;
         }
     }
 
-    private void SwapLevel(LevelSO levelSO)
+    private void InstantiateLevel(LevelSO levelSO)
     {
-        if (currentLevelPrefab != null)
-        {
-            Destroy(currentLevelPrefab);
-        }
+        Instantiate(levelSO.prefab);
+        Fade.Instance.FadeOut(2f);
 
-        currentLevelPrefab = Instantiate(levelSO.prefab);
+        OnLevelLoaded?.Invoke(levelSO, currentStreak);
     }
 }

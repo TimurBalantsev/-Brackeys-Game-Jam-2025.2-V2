@@ -1,9 +1,12 @@
 ﻿using HitBox;
+using System;
 using UnityEngine;
 namespace Entity
 {
     public abstract class Entity : MonoBehaviour, AttackHitBoxSource, Damageable
     {
+        public event Action OnDie;
+
         [SerializeField] protected EntityStats stats;
 
         [SerializeField] protected SpriteRenderer spriteRenderer;
@@ -67,6 +70,7 @@ namespace Entity
         protected virtual void Die()
         {
             isDead = true;
+            OnDie?.Invoke();
         }
     }
 };
