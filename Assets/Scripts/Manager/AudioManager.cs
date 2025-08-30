@@ -36,14 +36,14 @@ public class AudioManager : MonoBehaviour
 
     private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
     {
-        switch (SceneManager.GetActiveScene().buildIndex)
+        switch (SceneManager.GetActiveScene().name)
         {
-            case 0:
+            case "Menu":
                 menuMusic.Play();
                 StartCoroutine(StartFade(audioMixer, EXPOSED_PARAM_GAMEMUSIC, musicFade, 0));
                 StartCoroutine(StartFade(audioMixer, EXPOSED_PARAM_MENUMUSIC, musicFade, 1));
                 break;
-            case 1:
+            case "Game":
                 gameMusic.Play();
                 StartCoroutine(StartFade(audioMixer, EXPOSED_PARAM_MENUMUSIC, musicFade, 0));
                 StartCoroutine(StartFade(audioMixer, EXPOSED_PARAM_GAMEMUSIC, musicFade, 1));
