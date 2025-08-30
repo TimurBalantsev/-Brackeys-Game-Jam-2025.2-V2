@@ -48,16 +48,18 @@ MonoBehaviour:
   weightedLootTable: {fileID: 11400000, guid: dd4e457ee954c2547b78dcc9e40040fc, type: 2}
   amountMin: 2
   amountMax: 5
-  questPopulationMin: 10
-  questPopulationMax: 20
+  questRewardPopulationMin: 0
+  questRewardPopulationMax: 0
+  questFailPopulationMin: 0
+  questFailPopulationMax: 0
+  eventRewardPopulationMin: 0
+  eventRewardPopulationMax: 0
+  eventFailPopulationMin: 0
+  eventFailPopulationMax: 0
   population: 100
   inventory: {fileID: 4971918997813491501}
-  forceQuest:
-    amount: 1
-    item:
-      parent: {fileID: 11400000, guid: fa854c90710182c408a95e1ea0a3d1cd, type: 2}
-    popReward: 50
-    popConsequence: 20
+  ActiveQuests: []
+  ActiveEvents: []
 --- !u!114 &4971918997813491501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSlots: 999999
-  maxWeight: 0
+  maxWeight: 999999
   maxWeightBuffer: 0
   isContainer: 1
   inventoryName: Base Camp

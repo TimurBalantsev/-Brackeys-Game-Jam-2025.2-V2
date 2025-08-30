@@ -9,12 +9,12 @@ public class BaseManager : MonoBehaviour
     [SerializeField] private WeightedLootTableSO weightedLootTable;
     [SerializeField] private int amountMin;
     [SerializeField] private int amountMax;
-    
+
     [SerializeField] private int questRewardPopulationMin;
     [SerializeField] private int questRewardPopulationMax;
     [SerializeField] private int questFailPopulationMin;
     [SerializeField] private int questFailPopulationMax;
-    
+
     [SerializeField] private int eventRewardPopulationMin;
     [SerializeField] private int eventRewardPopulationMax;
     [SerializeField] private int eventFailPopulationMin;
@@ -26,12 +26,11 @@ public class BaseManager : MonoBehaviour
 
     public List<Quest> ActiveQuests = new List<Quest>();
     public List<Quest> ActiveEvents = new List<Quest>();
-    
-    
-    
+
     public static BaseManager Instance;
 
     public int Population => population;
+    public Inventory Inventory => inventory;
 
     private void Awake()
     {
@@ -41,13 +40,19 @@ public class BaseManager : MonoBehaviour
         }
 
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
+    public void GenerateDefaultQuests()
     {
-        ItemType itemType = (ItemType)Random.Range(0, Enum.GetValues(typeof(ItemType)).Length); //get random item type
-        Debug.Log(itemType.ToString());
-        GetNewQuest(itemType);
+        for (int i = 0; i < 3; i++)
+        {
+            ItemType questItemType = (ItemType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(ItemType)).Length);
+            GetNewQuest(questItemType);
+        }
+
+        ItemType eventItemType = (ItemType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(ItemType)).Length);
+        GetRandomEvent(eventItemType);
     }
 
     public Item GetRandomItemByType(ItemType itemType)
@@ -70,7 +75,7 @@ public class BaseManager : MonoBehaviour
             Debug.LogError("itemtype doesnt exist in loot table");
             return null;
         }
-        Quest randomEvent = new Quest(Random.Range(amountMin, amountMax), questItem,Random.Range(eventRewardPopulationMin, eventRewardPopulationMax),Random.Range(eventFailPopulationMin, eventFailPopulationMax));
+        Quest randomEvent = new Quest(Random.Range(amountMin, amountMax), questItem, Random.Range(eventRewardPopulationMin, eventRewardPopulationMax), Random.Range(eventFailPopulationMin, eventFailPopulationMax));
         ActiveEvents.Add(randomEvent);
         return randomEvent;
     }
@@ -83,18 +88,31 @@ public class BaseManager : MonoBehaviour
             Debug.LogError("itemtype doesnt exist in loot table");
             return null;
         }
-        Quest currentQuest = new Quest(Random.Range(amountMin, amountMax), item,Random.Range(questRewardPopulationMin, questRewardPopulationMax),Random.Range(questFailPopulationMin, questFailPopulationMax));
+        Quest currentQuest = new Quest(Random.Range(amountMin, amountMax), item, Random.Range(questRewardPopulationMin, questRewardPopulationMax), Random.Range(questFailPopulationMin, questFailPopulationMax));
         ActiveQuests.Add(currentQuest);
         return currentQuest;
     }
-    
+
     public void TransferItems(Inventory inventory)
     {
         foreach (Item item in inventory.Items)
-        {
+        {   
             this.inventory.AddItem(item);
         }
         inventory.Clear();
+    }
+
+    public void TryTurnInAll()
+    {
+        foreach (Quest quest in ActiveQuests.ToArray())
+        {
+            TurnInQuest(quest, false);
+        }
+
+        foreach (Quest quest in ActiveEvents.ToArray())
+        {
+            TurnInQuest(quest, false);
+        }
     }
 
     public bool TurnInQuest(Quest quest, bool isEvent)

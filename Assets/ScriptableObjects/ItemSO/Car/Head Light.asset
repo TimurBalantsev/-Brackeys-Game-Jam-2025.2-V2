@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Head Lights
   description: 
-  itemType: 5
+  itemType: 4
   weight: 2
   slot: 5
   icon: {fileID: -9191761651314643663, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}

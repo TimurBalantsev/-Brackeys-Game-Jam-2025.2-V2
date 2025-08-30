@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Radio
   description: 
-  itemType: 4
+  itemType: 3
   weight: 2
   slot: 2
   icon: {fileID: 21300000, guid: dca3f1b72eeb86547a55a0d8b1b5b388, type: 3}

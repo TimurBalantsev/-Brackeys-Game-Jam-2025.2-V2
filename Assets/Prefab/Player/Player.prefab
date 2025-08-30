@@ -260,9 +260,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats:
-    maxHealth: 10
+    maxHealth: 9999999
+    currentHealth: 0
     damage: 2
-    speed: 0.5
+    speed: 2
     healthBarUI: {fileID: 0}
   spriteRenderer: {fileID: 3642813237899114465}
   isSpriteFacingRight: 1
@@ -277,6 +278,7 @@ MonoBehaviour:
   walkSoundLoop: {fileID: 1130657913849345093}
   hurtSound: {fileID: 3415908498676714537}
   deathSound: {fileID: 8352199951656370110}
+  canMove: 1
   lastMovement: {x: 0, y: 0}
 --- !u!114 &3470584594326562364
 MonoBehaviour:

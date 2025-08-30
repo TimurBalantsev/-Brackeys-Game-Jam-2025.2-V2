@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Oil Filter
   description: 
-  itemType: 5
+  itemType: 4
   weight: 4
   slot: 2
   icon: {fileID: 704310415938601680, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}

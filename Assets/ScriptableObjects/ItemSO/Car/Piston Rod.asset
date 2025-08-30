@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Piston Rod
   description: 
-  itemType: 5
+  itemType: 4
   weight: 1
   slot: 0.2
   icon: {fileID: -693528899484767441, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}

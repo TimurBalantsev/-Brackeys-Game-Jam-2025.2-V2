@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,13 +10,13 @@ public class LoadingManager : MonoBehaviour
     public static LoadingManager Instance;
 
     public event Action<LevelSO, int> OnLevelLoaded;
-
+    public event Action OnLoadBase;
 
     [SerializeField] private LevelSO[] levels;
     [SerializeField] private int nextLevelOptionsAmount;
 
     private LevelSO currentLevel;
-    private LevelSO[] nextLevelOptions; 
+    private LevelSO[] nextLevelOptions;
     private int currentStreak;
     public int CurrentStreak => currentStreak;
     public LevelSO CurrentLevel => currentLevel;
@@ -36,19 +37,33 @@ public class LoadingManager : MonoBehaviour
         }
     }
 
-    public void BackToBase()
+    public void LoadBase()
     {
-        currentStreak = 0;
+        Time.timeScale = 0f;
+
         Fade.Instance.FadeIn(2f, () =>
         {
-            BaseManager.Instance.TransferItems(Player.Instance.Inventory);
+            if (Car.Instance != null && Player.Instance != null)
+            {
+                BaseManager.Instance.TransferItems(Car.Instance.Inventory);
+                BaseManager.Instance.TransferItems(Player.Instance.Inventory);
+                BaseManager.Instance.TryTurnInAll();
+            }
+
+            OnLoadBase?.Invoke();
         });
     }
 
     public void StartGame()
     {
+        BaseManager.Instance.GenerateDefaultQuests();
+        LoadBase();
+    }
+
+    public void LoadLevelAfterBase()
+    {
         currentStreak = 0;
-        LoadLevel(levels[UnityEngine.Random.Range(0, levels.Length)], true);
+        LoadLevel(levels[UnityEngine.Random.Range(0, levels.Length)], false);
     }
 
     public void LoadMenu()
@@ -63,7 +78,7 @@ public class LoadingManager : MonoBehaviour
     {
         if (scene.name == "Game")
         {
-            InstantiateLevel(currentLevel);
+            InstantiateCurrentLevel();
         }
         if (scene.name == "Menu")
         {
@@ -103,15 +118,15 @@ public class LoadingManager : MonoBehaviour
             .ToArray();
     }
 
-    private void InstantiateLevel(LevelSO levelSO)
+    public void InstantiateCurrentLevel()
     {
-        Instantiate(levelSO.prefab);
+        Instantiate(currentLevel.prefab);
 
         Time.timeScale = 1f;
         Fade.Instance.FadeOut(2f);
 
         ChooseNextLevelOptions();
 
-        OnLevelLoaded?.Invoke(levelSO, currentStreak);
+        OnLevelLoaded?.Invoke(currentLevel, currentStreak);
     }
 }

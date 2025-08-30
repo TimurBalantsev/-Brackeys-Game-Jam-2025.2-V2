@@ -54,6 +54,6 @@ public class CarUI : MonoBehaviour
 
     private void BackToBase()
     {
-        LoadingManager.Instance.BackToBase();
+        LoadingManager.Instance.LoadBase();
     }
 }

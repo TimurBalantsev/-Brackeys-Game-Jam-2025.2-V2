@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Toaster
   description: 
-  itemType: 4
+  itemType: 3
   weight: 4
   slot: 4
   icon: {fileID: -4934188887333409374, guid: 6b89d90540a0330408d90e240e23de76, type: 3}

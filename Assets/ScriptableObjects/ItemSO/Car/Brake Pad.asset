@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Brake Pad
   description: 
-  itemType: 5
+  itemType: 4
   weight: 1
   slot: 0.5
   icon: {fileID: -8578047029897106071, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}

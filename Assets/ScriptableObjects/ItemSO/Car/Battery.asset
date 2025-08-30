@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Battery
   description: 
-  itemType: 5
+  itemType: 4
   weight: 2
   slot: 2
   icon: {fileID: 6379287516102469402, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}

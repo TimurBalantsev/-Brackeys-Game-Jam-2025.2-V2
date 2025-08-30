@@ -20,6 +20,8 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private Transform inventoryList;
     [SerializeField] private TextMeshProUGUI inventoryName;
 
+    [SerializeField] private bool autoHide = true;
+
     private Inventory inventory;
     
     private bool isContainer = false;
@@ -27,8 +29,11 @@ public class InventoryUI : MonoBehaviour
     private void Start()
     {
         itemUITemplate.gameObject.SetActive(false);
-        closeButton.onClick.AddListener(CloseInventory);
-        gameObject.SetActive(false);
+        closeButton?.onClick.AddListener(CloseInventory);
+        if (autoHide)
+        {
+            gameObject.SetActive(false);
+        }
         // LayoutRebuilder.ForceRebuildLayoutImmediate(parametersContainer.GetComponent<RectTransform>());
     }
 

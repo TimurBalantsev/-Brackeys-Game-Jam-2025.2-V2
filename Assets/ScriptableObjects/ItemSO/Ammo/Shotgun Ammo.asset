@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 12g
   description: 
-  itemType: 3
+  itemType: 2
   weight: 0.5
   slot: 0.5
   icon: {fileID: 6066325612735239030, guid: 86edb86770eadff438027160f19bfb3c, type: 3}

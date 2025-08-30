@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Car Jack
   description: 
-  itemType: 5
+  itemType: 4
   weight: 2
   slot: 3
   icon: {fileID: 3836866186081247230, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}

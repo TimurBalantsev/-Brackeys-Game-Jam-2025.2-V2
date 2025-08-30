@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Walkie
   description: 
-  itemType: 4
+  itemType: 3
   weight: 0.3
   slot: 1
   icon: {fileID: 21300000, guid: fa97966cf85b88749988edc848f13710, type: 3}

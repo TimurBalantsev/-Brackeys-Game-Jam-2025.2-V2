@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Hair Dryer
   description: 
-  itemType: 4
+  itemType: 3
   weight: 1
   slot: 1
   icon: {fileID: -1189741599379595685, guid: 6b89d90540a0330408d90e240e23de76, type: 3}

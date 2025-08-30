@@ -25,12 +25,18 @@ public class Fade : MonoBehaviour
 
     public void FadeIn(float duration, Action callback = null)
     {
+        PersistantCanvas.Instance.SetBlocking(true);
+
         StartFade(0f, 1f, duration, callback);
     }
 
     public void FadeOut(float duration, Action callback = null)
     {
-        StartFade(1f, 0f, duration, callback);
+        StartFade(1f, 0f, duration, () =>
+        {
+            callback?.Invoke();
+            PersistantCanvas.Instance.SetBlocking(false);
+        });
     }
 
     private void StartFade(float from, float to, float duration, Action callback)
@@ -45,8 +51,6 @@ public class Fade : MonoBehaviour
 
     private IEnumerator FadeRoutine(float from, float to, float duration, Action callback)
     {
-        PersistantCanvas.Instance.SetBlocking(true);
-
         float time = 0f;
         Color color = image.color;
         color.a = from;
@@ -62,8 +66,6 @@ public class Fade : MonoBehaviour
         }
 
         fadeRoutine = null;
-
-        PersistantCanvas.Instance.SetBlocking(false);
 
         callback?.Invoke();
     }

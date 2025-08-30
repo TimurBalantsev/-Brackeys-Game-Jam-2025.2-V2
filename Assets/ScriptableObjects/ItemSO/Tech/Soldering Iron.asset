@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Soldering Iron
   description: 
-  itemType: 4
+  itemType: 3
   weight: 0.3
   slot: 0.5
   icon: {fileID: -7218073849535297666, guid: 6b89d90540a0330408d90e240e23de76, type: 3}

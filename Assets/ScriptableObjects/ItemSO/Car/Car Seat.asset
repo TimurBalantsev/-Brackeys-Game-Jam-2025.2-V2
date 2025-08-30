@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Car Seat
   description: 
-  itemType: 5
+  itemType: 4
   weight: 5
   slot: 13
   icon: {fileID: 1243469492287208163, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}

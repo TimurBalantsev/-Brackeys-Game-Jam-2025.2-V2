@@ -13,6 +13,8 @@ public class Car : MonoBehaviour, Interactable
     [SerializeField] private AudioClipSO openingSound;
     private Color defaultColor;
 
+    public Inventory Inventory => trunkInventory;
+
     private void Awake()
     {
         if (Instance == null)

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Back Light
   description: 
-  itemType: 5
+  itemType: 4
   weight: 0.1
   slot: 0.1
   icon: {fileID: -7572640394913123842, guid: 0d30a108b0db67a4b8aa5cddfb9a1334, type: 3}
