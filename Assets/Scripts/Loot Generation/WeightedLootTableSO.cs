@@ -40,4 +40,17 @@ public class WeightedLootTableSO : ScriptableObject
 
         return null;
     }
+
+    public bool ContainsItemType(ItemType type)
+    {
+        foreach (LootTableInfo info in lootTable)
+        {
+            if (info.itemSO.itemType == type)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

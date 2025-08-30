@@ -47,13 +47,22 @@ public class BaseManager : MonoBehaviour
         }
     }
 
-    public bool LaunchRandomEvent(ItemType itemType)
+    public Item GetRandomItemByType(ItemType itemType)
     {
+        if (!weightedLootTable.ContainsItemType(itemType)) return null;
+        Debug.Log(itemType.ToString());
         Item questItem;
         do
         {
             questItem = weightedLootTable.GetRandomItem();
         } while (questItem.itemType != itemType);
+
+        return questItem;
+    }
+
+    public bool LaunchRandomEvent(ItemType itemType)
+    {
+        Item questItem = GetRandomItemByType(itemType);
         randomEvent = new Quest(Random.Range(amountMin, amountMax), questItem,Random.Range(eventPopulationMin, eventPopulationMax),Random.Range(eventPopulationMin, eventPopulationMax));
         int targetItemAmount = currentQuest.Amount;
         List<Item> toBeRemoved = new List<Item>();
@@ -87,12 +96,8 @@ public class BaseManager : MonoBehaviour
 
     public Quest GetNewQuest(ItemType itemType)
     {
-        Item item;
-        do
-        {
-            item = weightedLootTable.GetRandomItem();
-        } while (item.itemType != itemType);
-        currentQuest = new Quest(Random.Range(amountMin, amountMax), weightedLootTable.GetRandomItem(),Random.Range(questPopulationMin, questPopulationMax),Random.Range(questPopulationMin, questPopulationMax));
+        Item item = GetRandomItemByType(itemType);
+        currentQuest = new Quest(Random.Range(amountMin, amountMax), item,Random.Range(questPopulationMin, questPopulationMax),Random.Range(questPopulationMin, questPopulationMax));
         return currentQuest;
     }
     
