@@ -160,7 +160,7 @@ MonoBehaviour:
   distance: 0.16
   spriteRenderer: {fileID: 7702846672398574181}
   shootSound: {fileID: 11400000, guid: 991ad8023ca8a024d85148fdbfa6c300, type: 2}
-  damage: 2
+  damage: 1
   targetLayer:
     serializedVersion: 2
     m_Bits: 640
