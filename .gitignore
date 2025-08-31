@@ -63,6 +63,9 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
+#UNITY BUILDS
+/build
+
 # Mono auto generated files
 mono_crash.*
 
