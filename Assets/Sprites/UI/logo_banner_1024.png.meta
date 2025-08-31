@@ -1,43 +1,55 @@
 fileFormatVersion: 2
-guid: 2eee01f7005a1974c90feb64d366f100
+guid: b7fc3879ba06451449cf0e7d2233065a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6581714483013565440
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_0
+      213: -4262830870071721939
+    second: logo_banner_1024_0
   - first:
-      213: -6998550630236790838
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_1
+      213: -8926224986558991273
+    second: logo_banner_1024_1
   - first:
-      213: -4507339511476509256
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_2
+      213: 2893450435254961753
+    second: logo_banner_1024_2
   - first:
-      213: 534841904910418850
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_3
+      213: -6817788696163467163
+    second: logo_banner_1024_3
   - first:
-      213: 8309249296359154840
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_4
+      213: 1693183439960104608
+    second: logo_banner_1024_4
   - first:
-      213: 2520743361350851950
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_5
+      213: 3905638728862963377
+    second: logo_banner_1024_5
   - first:
-      213: 4399413240322594947
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_6
+      213: 1917016188542656476
+    second: logo_banner_1024_6
   - first:
-      213: 4561267742690267778
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_7
+      213: 1365408691770929602
+    second: logo_banner_1024_7
   - first:
-      213: 574078428001560642
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_8
+      213: -5014177024589001638
+    second: logo_banner_1024_8
   - first:
-      213: 6545798970585674731
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_9
+      213: -159392794763075518
+    second: logo_banner_1024_9
   - first:
-      213: -3501952270261335384
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_10
+      213: -7622745440496764832
+    second: logo_banner_1024_10
   - first:
-      213: -6650897523392985928
-    second: Black_PICKUP_CLEAN_EAST_000-sheet_11
+      213: -6661397311205083181
+    second: logo_banner_1024_11
+  - first:
+      213: 2487743668088215239
+    second: logo_banner_1024_12
+  - first:
+      213: 5209237469202334373
+    second: logo_banner_1024_13
+  - first:
+      213: 2169998153279718120
+    second: logo_banner_1024_14
+  - first:
+      213: 2910200806767678179
+    second: logo_banner_1024_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -70,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -79,7 +91,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -107,8 +119,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -172,13 +184,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_0
+      name: logo_banner_1024_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 228
-        width: 85
-        height: 40
+        x: 24
+        y: 17
+        width: 63
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 004cee29c8d09a4a0800000000000000
-      internalID: -6581714483013565440
+      spriteID: d204ecbb8e167d4c0800000000000000
+      internalID: -4262830870071721939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_1
+      name: logo_banner_1024_1
       rect:
         serializedVersion: 2
-        x: 107
-        y: 228
-        width: 85
-        height: 40
+        x: 35
+        y: 100
+        width: 43
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acf562e184720ee90800000000000000
-      internalID: -6998550630236790838
+      spriteID: 7547feafaadaf1480800000000000000
+      internalID: -8926224986558991273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_2
+      name: logo_banner_1024_2
       rect:
         serializedVersion: 2
-        x: 207
-        y: 228
-        width: 85
-        height: 40
+        x: 84
+        y: 52
+        width: 63
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b52c506896b271c0800000000000000
-      internalID: -4507339511476509256
+      spriteID: 956429837d9972820800000000000000
+      internalID: 2893450435254961753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_3
+      name: logo_banner_1024_3
       rect:
         serializedVersion: 2
-        x: 307
-        y: 228
-        width: 85
-        height: 39
+        x: 181
+        y: 43
+        width: 79
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a3cd29f0e32c6700800000000000000
-      internalID: 534841904910418850
+      spriteID: 560c0839d495261a0800000000000000
+      internalID: -6817788696163467163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_4
+      name: logo_banner_1024_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 128
-        width: 85
-        height: 40
+        x: 268
+        y: 44
+        width: 48
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 894e6a3f532605370800000000000000
-      internalID: 8309249296359154840
+      spriteID: 0ae55662e556f7710800000000000000
+      internalID: 1693183439960104608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_5
+      name: logo_banner_1024_5
       rect:
         serializedVersion: 2
-        x: 107
-        y: 128
-        width: 85
-        height: 40
+        x: 316
+        y: 43
+        width: 66
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6ddd3f4bba7bf220800000000000000
-      internalID: 2520743361350851950
+      spriteID: 1b692ee1bbd933630800000000000000
+      internalID: 3905638728862963377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_6
+      name: logo_banner_1024_6
       rect:
         serializedVersion: 2
-        x: 207
-        y: 128
-        width: 85
-        height: 40
+        x: 387
+        y: 43
+        width: 65
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,20 +331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3881491780bdd0d30800000000000000
-      internalID: 4399413240322594947
+      spriteID: cdf12c2111c9a9a10800000000000000
+      internalID: 1917016188542656476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_7
+      name: logo_banner_1024_7
       rect:
         serializedVersion: 2
-        x: 307
-        y: 128
-        width: 85
-        height: 39
+        x: 462
+        y: 17
+        width: 69
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +353,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 282508868d0ec4f30800000000000000
-      internalID: 4561267742690267778
+      spriteID: 2c1bc3e88f7e2f210800000000000000
+      internalID: 1365408691770929602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_8
+      name: logo_banner_1024_8
       rect:
         serializedVersion: 2
-        x: 7
-        y: 28
-        width: 85
-        height: 39
+        x: 536
+        y: 43
+        width: 66
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2486f36e94987f700800000000000000
-      internalID: 574078428001560642
+      spriteID: a5c8278ff801a6ab0800000000000000
+      internalID: -5014177024589001638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_9
+      name: logo_banner_1024_9
       rect:
         serializedVersion: 2
-        x: 107
-        y: 28
-        width: 85
-        height: 39
+        x: 611
+        y: 44
+        width: 48
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be370ec8b7957da50800000000000000
-      internalID: 6545798970585674731
+      spriteID: 240e3600919b9cdf0800000000000000
+      internalID: -159392794763075518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_10
+      name: logo_banner_1024_10
       rect:
         serializedVersion: 2
-        x: 207
-        y: 28
-        width: 85
-        height: 40
+        x: 666
+        y: 44
+        width: 70
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,20 +419,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aa43bed6f0966fc0800000000000000
-      internalID: -3501952270261335384
+      spriteID: 06836fda861963690800000000000000
+      internalID: -7622745440496764832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_PICKUP_CLEAN_EAST_000-sheet_11
+      name: logo_banner_1024_11
       rect:
         serializedVersion: 2
-        x: 307
-        y: 28
-        width: 85
-        height: 40
+        x: 734
+        y: 43
+        width: 70
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -429,8 +441,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b4c2a0c0f343b3a0800000000000000
-      internalID: -6650897523392985928
+      spriteID: 3d7f0e56076fd83a0800000000000000
+      internalID: -6661397311205083181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo_banner_1024_12
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 44
+        width: 46
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c610ac7fad368220800000000000000
+      internalID: 2487743668088215239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo_banner_1024_13
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 44
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2c576e0edea4840800000000000000
+      internalID: 5209237469202334373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo_banner_1024_14
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 43
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2cd71c2d16d1e10800000000000000
+      internalID: 2169998153279718120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo_banner_1024_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 22
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e25170073c136820800000000000000
+      internalID: 2910200806767678179
       vertices: []
       indices: 
       edges: []
@@ -439,7 +539,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 90678a3a350951c49865d24bffbdfc89
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -449,18 +549,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Black_PICKUP_CLEAN_EAST_000-sheet_0: -6581714483013565440
-      Black_PICKUP_CLEAN_EAST_000-sheet_1: -6998550630236790838
-      Black_PICKUP_CLEAN_EAST_000-sheet_10: -3501952270261335384
-      Black_PICKUP_CLEAN_EAST_000-sheet_11: -6650897523392985928
-      Black_PICKUP_CLEAN_EAST_000-sheet_2: -4507339511476509256
-      Black_PICKUP_CLEAN_EAST_000-sheet_3: 534841904910418850
-      Black_PICKUP_CLEAN_EAST_000-sheet_4: 8309249296359154840
-      Black_PICKUP_CLEAN_EAST_000-sheet_5: 2520743361350851950
-      Black_PICKUP_CLEAN_EAST_000-sheet_6: 4399413240322594947
-      Black_PICKUP_CLEAN_EAST_000-sheet_7: 4561267742690267778
-      Black_PICKUP_CLEAN_EAST_000-sheet_8: 574078428001560642
-      Black_PICKUP_CLEAN_EAST_000-sheet_9: 6545798970585674731
+      logo_banner_1024_0: -4262830870071721939
+      logo_banner_1024_1: -8926224986558991273
+      logo_banner_1024_10: -7622745440496764832
+      logo_banner_1024_11: -6661397311205083181
+      logo_banner_1024_12: 2487743668088215239
+      logo_banner_1024_13: 5209237469202334373
+      logo_banner_1024_14: 2169998153279718120
+      logo_banner_1024_15: 2910200806767678179
+      logo_banner_1024_2: 2893450435254961753
+      logo_banner_1024_3: -6817788696163467163
+      logo_banner_1024_4: 1693183439960104608
+      logo_banner_1024_5: 3905638728862963377
+      logo_banner_1024_6: 1917016188542656476
+      logo_banner_1024_7: 1365408691770929602
+      logo_banner_1024_8: -5014177024589001638
+      logo_banner_1024_9: -159392794763075518
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

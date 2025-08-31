@@ -13,7 +13,7 @@ public class LoadingManager : MonoBehaviour
     public event Action OnLoadBase;
 
     [SerializeField] private LevelSO[] levels;
-    [SerializeField] private int nextLevelOptionsAmount;
+    [SerializeField] private int nextLevelOptionsAmount = 2;
 
     private LevelSO currentLevel;
     private LevelSO[] nextLevelOptions;

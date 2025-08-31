@@ -6,6 +6,8 @@ using Random = UnityEngine.Random;
 
 public class BaseManager : MonoBehaviour
 {
+    public event Action OnNoPopulation;
+
     [SerializeField] private WeightedLootTableSO weightedLootTable;
     [SerializeField] private int amountMin;
     [SerializeField] private int amountMax;
@@ -20,8 +22,7 @@ public class BaseManager : MonoBehaviour
     [SerializeField] private int eventFailPopulationMin;
     [SerializeField] private int eventFailPopulationMax;
 
-
-    [SerializeField] private int population;
+    [SerializeField] private int population = 5;
     [SerializeField] private Inventory inventory;
 
     public List<Quest> ActiveQuests = new List<Quest>();

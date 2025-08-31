@@ -11,11 +11,18 @@ public class GameOverUI : MonoBehaviour
     private void Start()
     {
         Player.Instance.OnDie += Instance_OnDie;
+        BaseManager.Instance.OnNoPopulation += Instance_OnNoPopulation;
     }
 
     private void OnDestroy()
     {
         Player.Instance.OnDie -= Instance_OnDie;
+        BaseManager.Instance.OnNoPopulation -= Instance_OnNoPopulation;
+    }
+
+    private void Instance_OnNoPopulation()
+    {
+        background.SetActive(true);
     }
 
     private void Instance_OnDie()

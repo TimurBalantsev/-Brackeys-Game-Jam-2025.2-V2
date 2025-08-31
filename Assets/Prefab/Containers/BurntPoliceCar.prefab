@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2524560353377132387
+--- !u!1001 &777033181627851099
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1134310444271806860, guid: 9b7f020107462c142be8622d0bdbbc67, type: 3}
       propertyPath: m_Name
-      value: Van
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466067019011246052, guid: 9b7f020107462c142be8622d0bdbbc67, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466067019011246052, guid: 9b7f020107462c142be8622d0bdbbc67, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.02
+      value: BurntPoliceCar
       objectReference: {fileID: 0}
     - target: {fileID: 4847381995512761621, guid: 9b7f020107462c142be8622d0bdbbc67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63,15 +55,7 @@ PrefabInstance:
     - target: {fileID: 6756676655635435163, guid: 9b7f020107462c142be8622d0bdbbc67, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 31697de13a72323449a3cef4498e88db, type: 3}
-    - target: {fileID: 7925889728614937805, guid: 9b7f020107462c142be8622d0bdbbc67, type: 3}
-      propertyPath: maxItemsSpawned
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7925889728614937805, guid: 9b7f020107462c142be8622d0bdbbc67, type: 3}
-      propertyPath: minItemsSpawned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -2711729486613992015, guid: 7d25674bfd0e4d946a65100261663c09, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

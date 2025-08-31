@@ -1163,6 +1163,7 @@ MonoBehaviour:
   closeButton: {fileID: 6501041513534424658}
   inventoryList: {fileID: 2415889498199308870}
   inventoryName: {fileID: 2228409194787343058}
+  autoHide: 1
 --- !u!1 &3851837822575756406
 GameObject:
   m_ObjectHideFlags: 0

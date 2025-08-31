@@ -261,10 +261,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats:
-    maxHealth: 9999999
+    maxHealth: 10
     currentHealth: 0
     damage: 2
-    speed: 2
+    speed: 0.5
     healthBarUI: {fileID: 0}
   spriteRenderer: {fileID: 3642813237899114465}
   isSpriteFacingRight: 1
@@ -711,6 +711,18 @@ PrefabInstance:
     - target: {fileID: 1645805442783693195, guid: 71560be3cc3de7f42bc4e67a1d71bba7, type: 3}
       propertyPath: m_Name
       value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982490480288858910, guid: 71560be3cc3de7f42bc4e67a1d71bba7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a0b53db201fddf9408bb7f7330a623bd, type: 2}
+    - target: {fileID: 1982490480288858910, guid: 71560be3cc3de7f42bc4e67a1d71bba7, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3459165418387872540, guid: a0b53db201fddf9408bb7f7330a623bd, type: 2}
+    - target: {fileID: 1982490480288858910, guid: 71560be3cc3de7f42bc4e67a1d71bba7, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5283240400004345203, guid: 71560be3cc3de7f42bc4e67a1d71bba7, type: 3}
       propertyPath: pivot

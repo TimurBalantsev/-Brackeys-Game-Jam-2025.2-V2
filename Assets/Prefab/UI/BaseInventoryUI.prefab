@@ -133,6 +133,10 @@ PrefabInstance:
       value: -0.000025123358
       objectReference: {fileID: 0}
     - target: {fileID: 2734754986016744262, guid: 0d057add16ebcea45bc337d2e9e7fd86, type: 3}
+      propertyPath: autoHide
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734754986016744262, guid: 0d057add16ebcea45bc337d2e9e7fd86, type: 3}
       propertyPath: closeButton
       value: 
       objectReference: {fileID: 0}
@@ -247,6 +251,10 @@ PrefabInstance:
     - target: {fileID: 4658862476210105673, guid: 0d057add16ebcea45bc337d2e9e7fd86, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5010007593237775630, guid: 0d057add16ebcea45bc337d2e9e7fd86, type: 3}
+      propertyPath: m_Value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5071822591978360345, guid: 0d057add16ebcea45bc337d2e9e7fd86, type: 3}
       propertyPath: m_AnchorMax.y
