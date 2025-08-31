@@ -108,11 +108,6 @@ public class LoadingManager : MonoBehaviour
 
         currentStreak++;
 
-        if (Car.Instance != null)
-        {
-            Debug.LogWarning(Car.Instance.Inventory);
-        }
-
         if (fade)
         {
             Fade.Instance.FadeIn(2f, () =>

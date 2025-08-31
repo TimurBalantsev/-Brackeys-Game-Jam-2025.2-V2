@@ -88,6 +88,10 @@ PrefabInstance:
       propertyPath: stats.maxHealth
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6861447496570824424, guid: 4c3f0b5d91cf04846a198c60234bd4dc, type: 3}
+      propertyPath: stats.currentHealth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7486400538606977092, guid: 4c3f0b5d91cf04846a198c60234bd4dc, type: 3}
       propertyPath: m_Controller
       value: 

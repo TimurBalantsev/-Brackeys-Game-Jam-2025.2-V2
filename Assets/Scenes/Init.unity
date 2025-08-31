@@ -365,11 +365,67 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1247523108019312552, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695472419082581620, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695472419082581620, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147670603712396861, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147670603712396861, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448527647148864580, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448527647148864580, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5616959910846365095, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
       propertyPath: m_Name
       value: PersistantCanvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6631327893322893808, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327893322893808, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833987404361244633, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833987404361244633, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978634455866939480, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978634455866939480, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3194475985952927410, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+    - {fileID: 1048846458079393121, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+    - {fileID: 7060709117571030389, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
+    - {fileID: 8937428508843147595, guid: 63018a8fd6e9c8343afe3765129f73b8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

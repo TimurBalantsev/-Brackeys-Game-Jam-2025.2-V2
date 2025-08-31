@@ -716,10 +716,6 @@ PrefabInstance:
       propertyPath: pivot
       value: 
       objectReference: {fileID: 6306243544655891594}
-    - target: {fileID: 5283240400004345203, guid: 71560be3cc3de7f42bc4e67a1d71bba7, type: 3}
-      propertyPath: distance
-      value: 0.16
-      objectReference: {fileID: 0}
     - target: {fileID: 7536844307075427541, guid: 71560be3cc3de7f42bc4e67a1d71bba7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.16

@@ -21,6 +21,8 @@ public class EntityStats
     public void Initialize()
     {
         currentHealth = maxHealth;
+
+        if (healthBarUI != null) healthBarUI.SetHealth(this.currentHealth, this.maxHealth);
     }
     
     public bool TakeDamage(float damage)
@@ -28,6 +30,9 @@ public class EntityStats
         if (damage <= 0) return false;
         
         currentHealth -= damage;
+
+        if (healthBarUI != null) healthBarUI.SetHealth(this.currentHealth, this.maxHealth);
+
         if (currentHealth <= 0)
         {
             return true;
@@ -41,6 +46,8 @@ public class EntityStats
         float normalizedHealth = currentHealth / maxHealth;
         this.maxHealth = newMaxHealth;
         currentHealth = maxHealth * normalizedHealth;
+
+        if (healthBarUI != null) healthBarUI.SetHealth(this.currentHealth, this.maxHealth);
     }
     
     public void Heal(float heal)
@@ -53,5 +60,7 @@ public class EntityStats
         {
             currentHealth = maxHealth;
         }
+
+        if (healthBarUI != null) healthBarUI.SetHealth(this.currentHealth, this.maxHealth);
     }
 }

@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pivot: {fileID: 0}
-  distance: 0.1
+  distance: 0.16
   spriteRenderer: {fileID: 7702846672398574181}
   shootSound: {fileID: 11400000, guid: 991ad8023ca8a024d85148fdbfa6c300, type: 2}
   damage: 2
