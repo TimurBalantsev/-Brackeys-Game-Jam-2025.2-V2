@@ -13,7 +13,8 @@ public class InputManager : MonoBehaviour
     public event EventHandler OnAttackReleased;
     public event EventHandler OnInteract;
     public event EventHandler OnInventory;
-    
+    public event EventHandler OnToggleInfo;
+
     public enum InputActions
     {
         NONE,
@@ -41,6 +42,12 @@ public class InputManager : MonoBehaviour
         playerInput.Player.Attack.canceled += PlayerAttackReleased;
         playerInput.Player.Interact.started += PlayerInteractStarted;
         playerInput.Player.ToggleInventory.started += PlayerInventoryStarted;
+        playerInput.Player.ToggleInfo.started += ToggleInfo_started;
+    }
+
+    private void ToggleInfo_started(InputAction.CallbackContext obj)
+    {
+        OnToggleInfo?.Invoke(this, EventArgs.Empty);
     }
 
     private void PlayerInventoryStarted(InputAction.CallbackContext obj)

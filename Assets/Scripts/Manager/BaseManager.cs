@@ -6,8 +6,6 @@ using Random = UnityEngine.Random;
 
 public class BaseManager : MonoBehaviour
 {
-    public event Action OnNoPopulation;
-
     [SerializeField] private WeightedLootTableSO weightedLootTable;
     [SerializeField] private int amountMin;
     [SerializeField] private int amountMax;
@@ -46,6 +44,9 @@ public class BaseManager : MonoBehaviour
 
     public void GenerateDefaultQuests()
     {
+        ActiveQuests.Clear();
+        ActiveEvents.Clear();
+
         for (int i = 0; i < 3; i++)
         {
             ItemType questItemType = (ItemType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(ItemType)).Length);
@@ -97,7 +98,7 @@ public class BaseManager : MonoBehaviour
     public void TransferItems(Inventory inventory)
     {
         foreach (Item item in inventory.Items)
-        {   
+        {
             this.inventory.AddItem(item);
         }
         inventory.Clear();
@@ -108,11 +109,17 @@ public class BaseManager : MonoBehaviour
         foreach (Quest quest in ActiveQuests.ToArray())
         {
             TurnInQuest(quest, false);
+
+            ItemType itemType = (ItemType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(ItemType)).Length);
+            GetNewQuest(itemType);
         }
 
         foreach (Quest quest in ActiveEvents.ToArray())
         {
-            TurnInQuest(quest, false);
+            TurnInQuest(quest, true);
+
+            ItemType itemType = (ItemType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(ItemType)).Length);
+            GetRandomEvent(itemType);
         }
     }
 

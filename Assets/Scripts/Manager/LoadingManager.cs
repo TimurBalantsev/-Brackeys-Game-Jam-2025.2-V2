@@ -12,6 +12,7 @@ public class LoadingManager : MonoBehaviour
     public event Action<LevelSO, int> OnLevelLoaded;
     public event Action OnLoadBase;
 
+    [SerializeField] public Inventory persistantTruckInventory;
     [SerializeField] private LevelSO[] levels;
     [SerializeField] private int nextLevelOptionsAmount = 2;
 
@@ -21,6 +22,8 @@ public class LoadingManager : MonoBehaviour
     public int CurrentStreak => currentStreak;
     public LevelSO CurrentLevel => currentLevel;
     public LevelSO[] NextLevelOptions => nextLevelOptions;
+
+    private bool restartGameAfterSceneReload;
 
     private void Awake()
     {
@@ -45,9 +48,15 @@ public class LoadingManager : MonoBehaviour
         {
             if (Car.Instance != null && Player.Instance != null)
             {
-                BaseManager.Instance.TransferItems(Car.Instance.Inventory);
+                BaseManager.Instance.TransferItems(persistantTruckInventory);
                 BaseManager.Instance.TransferItems(Player.Instance.Inventory);
                 BaseManager.Instance.TryTurnInAll();
+            }
+
+            if (BaseManager.Instance.Population <= 0)
+            {
+                GameOverUI.Instance.Show("Your base lost all its population", false);
+                return;
             }
 
             OnLoadBase?.Invoke();
@@ -60,6 +69,12 @@ public class LoadingManager : MonoBehaviour
         LoadBase();
     }
 
+    public void RestartGame()
+    {
+        restartGameAfterSceneReload = true;
+        SceneManager.LoadScene("Game");
+    }
+
     public void LoadLevelAfterBase()
     {
         currentStreak = 0;
@@ -68,16 +83,18 @@ public class LoadingManager : MonoBehaviour
 
     public void LoadMenu()
     {
-        Fade.Instance.FadeIn(2f, () =>
-        {
-            SceneManager.LoadScene("Menu");
-        });
+        SceneManager.LoadScene("Menu");
     }
 
     private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
         if (scene.name == "Game")
         {
+            if (restartGameAfterSceneReload)
+            {
+                restartGameAfterSceneReload = false;
+                StartGame();
+            }
             InstantiateCurrentLevel();
         }
         if (scene.name == "Menu")
@@ -91,6 +108,11 @@ public class LoadingManager : MonoBehaviour
         Time.timeScale = 0f;
 
         currentStreak++;
+
+        if (Car.Instance != null)
+        {
+            TransferTruckItems(Car.Instance.Inventory);
+        }
 
         if (fade)
         {
@@ -128,5 +150,14 @@ public class LoadingManager : MonoBehaviour
         ChooseNextLevelOptions();
 
         OnLevelLoaded?.Invoke(currentLevel, currentStreak);
+    }
+
+    public void TransferTruckItems(Inventory inventory)
+    {
+        foreach (Item item in inventory.Items)
+        {
+            persistantTruckInventory.AddItem(item);
+        }
+        inventory.Clear();
     }
 }

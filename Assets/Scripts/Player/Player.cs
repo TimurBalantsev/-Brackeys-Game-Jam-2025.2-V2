@@ -47,7 +47,19 @@ public class Player : Entity.Entity
         InputManager.Instance.OnAttackPerformed += InputManager_OnAttackPerformed;
         // InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
         InputManager.Instance.OnInventory += InputManager_OnInventoryPressed;
+        InputManager.Instance.OnToggleInfo += Instance_OnToggleInfo;
         stats.Initialize();
+    }
+
+    private void OnDestroy()
+    {
+        InputManager.Instance.OnInventory -= InputManager_OnInventoryPressed;
+        InputManager.Instance.OnToggleInfo -= Instance_OnToggleInfo;
+    }
+
+    private void Instance_OnToggleInfo(object sender, EventArgs e)
+    {
+        InGameBaseInfoUIController.Instance.ToggleInfo();
     }
 
     private void InputManager_OnInventoryPressed(object sender, EventArgs e)
@@ -140,5 +152,6 @@ public class Player : Entity.Entity
         deathSound.Play();
         ChangeState(new PlayerDeathState());
         Debug.Log("Player died");
+        GameOverUI.Instance.Show("You died", true);
     }
 }

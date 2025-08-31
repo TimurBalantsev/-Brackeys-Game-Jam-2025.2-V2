@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7666390725620227802}
   - component: {fileID: 8622694194686691360}
+  - component: {fileID: 3247382633059340173}
   m_Layer: 0
   m_Name: LoadingManager
   m_TagString: Untagged
@@ -44,8 +45,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d326b43555c1a46b1b5681f5a4226d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  persistantTruckInventory: {fileID: 3247382633059340173}
   levels:
   - {fileID: 11400000, guid: df996da99e0ed3544b58deaf13391bcb, type: 2}
   - {fileID: 11400000, guid: 056d6aae42be6c346b3afcf958abc686, type: 2}
   - {fileID: 11400000, guid: 6c8f47c6eabbc884eb556528e0baa528, type: 2}
   nextLevelOptionsAmount: 2
+--- !u!114 &3247382633059340173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051898073774653610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3578b79db13f447b96285f56e035f81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSlots: 200
+  maxWeight: 500
+  maxWeightBuffer: 20
+  isContainer: 1
+  inventoryName: Pickup
+  testItems: []

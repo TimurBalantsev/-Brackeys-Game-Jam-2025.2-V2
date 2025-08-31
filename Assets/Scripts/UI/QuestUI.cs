@@ -24,7 +24,7 @@ public class QuestUI : MonoBehaviour
 
         if (quest.PopReward > 0)
         {
-            popRewardText.text = quest.PopReward.ToString();
+            popRewardText.text = "+" + quest.PopReward.ToString();
         }
         else
         {
@@ -33,7 +33,7 @@ public class QuestUI : MonoBehaviour
 
         if (quest.PopConsequence > 0)
         {
-            popConsequenceText.text = quest.PopConsequence.ToString();
+            popConsequenceText.text = "-" + quest.PopConsequence.ToString();
         }
         else
         {

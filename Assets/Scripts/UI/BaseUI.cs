@@ -51,6 +51,10 @@ public class BaseUI : MonoBehaviour
 
         inventoryUI.DisplayInventory(BaseManager.Instance.Inventory);
 
+        foreach (Transform child in populationContainer)
+        {
+            Destroy(child.gameObject);
+        }
         for (int i = 0; i < BaseManager.Instance.Population; i++)
         {
             Instantiate(populationPrefab, populationContainer);

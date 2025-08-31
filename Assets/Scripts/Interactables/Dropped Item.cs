@@ -8,13 +8,18 @@ public class DroppedItem : MonoBehaviour, Interactable
     [SerializeField] private Color highlightColor = Color.yellow;
     private Color defaultColor;
 
-    [SerializeField] private ItemSO ForceItemSO;
+    [SerializeField] private ItemSO forceItemSO;
+    [SerializeField] private WeightedLootTableSO weightedLootTableSO;
 
     private void Start()
     {
-        if (ForceItemSO)
+        if (forceItemSO)
         {
-            Initialize(ForceItemSO.CreateItem());
+            Initialize(forceItemSO.CreateItem());
+        }
+        else
+        {
+            Initialize(weightedLootTableSO.GetRandomItem());
         }
 
         defaultColor = spriteRenderer.color;

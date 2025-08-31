@@ -26,6 +26,12 @@ public class Pistol : MonoBehaviour
         reloadText.gameObject.SetActive(false);
         InputManager.Instance.OnAttackPerformed += InstanceOnOnAttackPerformed;
     }
+
+    private void OnDestroy()
+    {
+        InputManager.Instance.OnAttackPerformed -= InstanceOnOnAttackPerformed;
+    }
+
     private void InstanceOnOnAttackPerformed(object sender, EventArgs e)
     {
         if (Player.Instance.canMove)
@@ -75,7 +81,7 @@ public class Pistol : MonoBehaviour
         Vector2 direction = (MainCamera.Instance.GetMainCamera.ScreenToWorldPoint(Input.mousePosition) - pivot.position);
 
         Ray2D ray = new Ray2D(transform.position, direction.normalized);
-        RaycastHit2D hit= Physics2D.Raycast(transform.position, direction.normalized, bulletRange, targetLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized, bulletRange, targetLayer);
         if (hit)
         {
             if (hit.collider.TryGetComponent<Enemy>(out Enemy enemy))

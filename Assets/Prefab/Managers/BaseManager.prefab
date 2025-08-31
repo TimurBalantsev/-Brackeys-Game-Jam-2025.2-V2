@@ -47,16 +47,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weightedLootTable: {fileID: 11400000, guid: dd4e457ee954c2547b78dcc9e40040fc, type: 2}
   amountMin: 2
-  amountMax: 5
-  questRewardPopulationMin: 0
-  questRewardPopulationMax: 0
-  questFailPopulationMin: 0
-  questFailPopulationMax: 0
-  eventRewardPopulationMin: 0
-  eventRewardPopulationMax: 0
+  amountMax: 3
+  questRewardPopulationMin: 2
+  questRewardPopulationMax: 4
+  questFailPopulationMin: 1
+  questFailPopulationMax: 3
+  eventRewardPopulationMin: 4
+  eventRewardPopulationMax: 6
   eventFailPopulationMin: 0
   eventFailPopulationMax: 0
-  population: 100
+  population: 10
   inventory: {fileID: 4971918997813491501}
   ActiveQuests: []
   ActiveEvents: []

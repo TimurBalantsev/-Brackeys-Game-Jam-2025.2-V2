@@ -1,38 +1,60 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverUI : MonoBehaviour
 {
+    public static GameOverUI Instance { get; private set; }
+
     [SerializeField] private Button tryAgainButton;
     [SerializeField] private Button menuButton;
+
+    [SerializeField] private TextMeshProUGUI reasonText;
 
     [SerializeField] private GameObject background;
 
     private void Start()
     {
-        Player.Instance.OnDie += Instance_OnDie;
-        BaseManager.Instance.OnNoPopulation += Instance_OnNoPopulation;
+        if (Instance == null)
+        {
+            Instance = this;
+
+            tryAgainButton.onClick.AddListener(Restart);
+            tryAgainButton.onClick.AddListener(Menu);
+        }
+        else
+        {
+            Debug.LogError("Multiple GameOverUIs in scene");
+        }
     }
 
-    private void OnDestroy()
+    private void Restart()
     {
-        Player.Instance.OnDie -= Instance_OnDie;
-        BaseManager.Instance.OnNoPopulation -= Instance_OnNoPopulation;
+        gameObject.SetActive(false);
+        LoadingManager.Instance.RestartGame();
     }
 
-    private void Instance_OnNoPopulation()
+    private void Menu()
     {
-        background.SetActive(true);
-    }
-
-    private void Instance_OnDie()
-    {
-        background.SetActive(true);
-    }
-
-    private void Awake()
-    {
-        tryAgainButton.onClick.AddListener(LoadingManager.Instance.StartGame);
+        gameObject.SetActive(false);
         menuButton.onClick.AddListener(LoadingManager.Instance.LoadMenu);
+    }
+
+    public void Show(string reason, bool fadeIn)
+    {
+        if (fadeIn)
+        {
+            Fade.Instance.FadeIn(2f, () =>
+            {
+                reasonText.text = reason;
+                background.SetActive(true);
+            });
+        }
+        else
+        {
+            reasonText.text = reason;
+            background.SetActive(true);
+        }
     }
 }

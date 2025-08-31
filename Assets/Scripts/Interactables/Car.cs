@@ -29,6 +29,7 @@ public class Car : MonoBehaviour, Interactable
 
     private void Start()
     {
+        trunkInventory = LoadingManager.Instance.persistantTruckInventory;
         defaultColor = spriteRenderer.color;
     }
 
