@@ -538,7 +538,7 @@ MonoBehaviour:
   stats:
     maxHealth: 5
     currentHealth: 5
-    damage: 2
+    damage: 3
     speed: 0.3
     healthBarUI: {fileID: 2874844286062158353}
   spriteRenderer: {fileID: 3731390317818495351}

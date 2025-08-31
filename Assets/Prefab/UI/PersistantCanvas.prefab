@@ -642,11 +642,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -834,6 +834,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058819688824520235, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3058819688824520235, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3655557370158373971, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -902,6 +910,22 @@ PrefabInstance:
       propertyPath: populationContainer
       value: 
       objectReference: {fileID: 2128492526179267081}
+    - target: {fileID: 4989105808497574319, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989105808497574319, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955702498009512987, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955702498009512987, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6100408014944119258, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
       propertyPath: m_SizeDelta.x
       value: -268.63
@@ -954,6 +978,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -45
       objectReference: {fileID: 0}
+    - target: {fileID: 6794766333667964514, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794766333667964514, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323253965657247751, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323253965657247751, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7615490980424580281, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -980,6 +1020,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7946934574685674041, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470148094559164294, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470148094559164294, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+      propertyPath: m_ChildControlHeight
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8614585224633085280, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
@@ -1022,7 +1070,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseUI
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3850267769359427309, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+    - {fileID: 1708456982522838334, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+    - {fileID: 8703001021122499882, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
+    - {fileID: 7292444047371340052, guid: 779e30fd05eed0246a157ba6b46fa8a4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
