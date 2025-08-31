@@ -53,7 +53,7 @@ MonoBehaviour:
     typeColor: {r: 0.11457586, g: 1, b: 0, a: 1}
   - type: 2
     typeIcon: {fileID: -7173003525342006096, guid: 86edb86770eadff438027160f19bfb3c, type: 3}
-    typeColor: {r: 0, g: 0, b: 0, a: 1}
+    typeColor: {r: 0.5377358, g: 0.2279937, b: 0.13333334, a: 1}
   - type: 3
     typeIcon: {fileID: -4544898330648155148, guid: 031b010595472c844bf0400883a70991, type: 3}
     typeColor: {r: 0, g: 1, b: 0.8698616, a: 1}

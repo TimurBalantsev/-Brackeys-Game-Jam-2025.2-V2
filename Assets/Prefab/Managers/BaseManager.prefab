@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weightedLootTable: {fileID: 11400000, guid: dd4e457ee954c2547b78dcc9e40040fc, type: 2}
-  amountMin: 2
+  amountMin: 1
   amountMax: 3
   questRewardPopulationMin: 2
   questRewardPopulationMax: 4
