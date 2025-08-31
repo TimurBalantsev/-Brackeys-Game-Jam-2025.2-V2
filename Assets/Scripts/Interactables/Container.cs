@@ -12,7 +12,17 @@ public class Container : MonoBehaviour, Interactable
     [SerializeField] private int maxItemsSpawned;
     [SerializeField] private int minItemsSpawned;
     [SerializeField] private AudioClipSO openingSound;
-    
+
+    [SerializeField] private bool usePersistantCarInventory = false;
+
+    private void Awake()
+    {
+        if (usePersistantCarInventory)
+        {
+            inventory = LoadingManager.Instance.persistantTruckInventory;
+        }
+    }
+
     private void Start()
     {
         if (spriteRenderers.Length == 0)

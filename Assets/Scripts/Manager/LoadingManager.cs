@@ -111,7 +111,7 @@ public class LoadingManager : MonoBehaviour
 
         if (Car.Instance != null)
         {
-            TransferTruckItems(Car.Instance.Inventory);
+            Debug.LogWarning(Car.Instance.Inventory);
         }
 
         if (fade)
@@ -152,12 +152,15 @@ public class LoadingManager : MonoBehaviour
         OnLevelLoaded?.Invoke(currentLevel, currentStreak);
     }
 
+    /*
     public void TransferTruckItems(Inventory inventory)
     {
         foreach (Item item in inventory.Items)
         {
             persistantTruckInventory.AddItem(item);
         }
+        Debug.LogWarning(persistantTruckInventory);
         inventory.Clear();
     }
+    */
 }

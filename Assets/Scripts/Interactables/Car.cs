@@ -9,11 +9,10 @@ public class Car : MonoBehaviour, Interactable
 
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Color highlightColor = Color.yellow;
-    [SerializeField] private Inventory trunkInventory;
     [SerializeField] private AudioClipSO openingSound;
     private Color defaultColor;
 
-    public Inventory Inventory => trunkInventory;
+    public Inventory Inventory => LoadingManager.Instance.persistantTruckInventory;
 
     private void Awake()
     {
@@ -29,7 +28,6 @@ public class Car : MonoBehaviour, Interactable
 
     private void Start()
     {
-        trunkInventory = LoadingManager.Instance.persistantTruckInventory;
         defaultColor = spriteRenderer.color;
     }
 
