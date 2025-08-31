@@ -1322,11 +1322,14 @@ MonoBehaviour:
     Move -
     WASD
 
+    Interact - E
+
     Shoot - Mouse
 
     Inventory - I
 
-    Toggle Info - Tab'
+    Toggle Info
+    - Tab'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de1fd406098aeab4b8b2ba20b9c4e786, type: 2}
   m_sharedMaterial: {fileID: -3713778260847056140, guid: de1fd406098aeab4b8b2ba20b9c4e786, type: 2}
