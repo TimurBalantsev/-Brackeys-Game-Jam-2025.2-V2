@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1facceece6a1c404da31c4da53addf04, type: 3}
+  m_Name: Suburbs
+  m_EditorClassIdentifier: 
+  levelName: Suburbs
+  preview: {fileID: 1300261171, guid: f1ce473fdca2278478df31473f99861e, type: 3}
+  prefab: {fileID: 4032578934580917961, guid: fcb04927c95149d4eab8fbcdf0569912, type: 3}

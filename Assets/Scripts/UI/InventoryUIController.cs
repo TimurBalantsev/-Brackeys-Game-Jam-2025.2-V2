@@ -19,6 +19,11 @@
          Instance = this;
      }
 
+     public void SetPlayerCanMove()
+     {
+         Player.Instance.canMove = !PlayerUI.gameObject.activeSelf && (ContainerUI == null || !ContainerUI.gameObject.activeSelf);
+     }
+
      public void TogglePlayerInventory(Player player)
      {
          if (PlayerUI.gameObject.activeSelf)
@@ -29,27 +34,33 @@
          {
              DisplayPlayerInventory(player);
          }
+
+         SetPlayerCanMove();
      }
      public void DisplayInventory(Inventory container, Inventory playerInventory)
      {
          ContainerUI.DisplayInventory(container);
          PlayerUI.DisplayInventory(playerInventory);
+         SetPlayerCanMove();
      }
 
      public void DisplayPlayerInventory(Player player)
      {
          PlayerUI.DisplayInventory(player.Inventory);
+         SetPlayerCanMove();
      }
      
 
      public void CloseContainer()
      {
          ContainerUI.HideInventory();
+         SetPlayerCanMove();
      }
 
      public void ClosePlayer()
      {
          PlayerUI.HideInventory();
+         SetPlayerCanMove();
      }
 
      public void RefereshUI()

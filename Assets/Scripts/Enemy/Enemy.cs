@@ -44,6 +44,11 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
 
     private void EnemyFOV_OnTargetSpotted(Entity.Entity target)
     {
+        if (target.IsDead)
+        {
+            return;
+        }
+
         int randomTargetSpottedSoundIndex = Random.Range(0, targetSpottedSounds.Length);
         targetSpottedSounds[randomTargetSpottedSoundIndex].Play();
 
@@ -158,5 +163,6 @@ public class Enemy : Entity.Entity, AttackHitBoxSource
     {
         base.Die();
         Debug.Log($"Enemy {name} died");
+        Destroy(gameObject);
     }
 }

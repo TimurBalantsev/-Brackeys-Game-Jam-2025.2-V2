@@ -20,8 +20,8 @@ public class ItemUI : MonoBehaviour
 
     private void Start()
     {
-        TransferButton.onClick.AddListener(TransferOnClick);
-        DropButton.onClick.AddListener(DropButtonOnClick);
+        TransferButton?.onClick.AddListener(TransferOnClick);
+        DropButton?.onClick.AddListener(DropButtonOnClick);
     }
 
     private void DropButtonOnClick()
@@ -53,6 +53,9 @@ public class ItemUI : MonoBehaviour
         descriptionText.text = item.description;
         weightText.text = $"{item.weight}";
         slotText.text = $"{item.slot}";
+
+        if (typeIcon == null) return;
+
         typeIcon.color = ItemTypeHelper.Instance.GetItemTypeColor(item.itemType);
         typeIcon.sprite = ItemTypeHelper.Instance.GetItemTypeSprite(item.itemType);
     }

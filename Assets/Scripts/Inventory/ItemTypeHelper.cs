@@ -21,6 +21,7 @@ public class ItemTypeHelper : MonoBehaviour
             Debug.LogError("Multiple instances of ItemTypeHelper found!");
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     
     public Sprite GetItemTypeSprite(ItemType itemType)

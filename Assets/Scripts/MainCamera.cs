@@ -9,9 +9,21 @@ public class MainCamera : MonoBehaviour
 
     private Camera mainCamera;
 
+    public static MainCamera Instance;
+
+    public Camera GetMainCamera => mainCamera;
+    
+    
+
     private void Awake()
     {
         mainCamera = GetComponent<Camera>();
+        if (Instance != null)
+        {
+            Debug.LogError("More than one main camera in scene");
+        }
+
+        Instance = this;
     }
 
     private void Start()

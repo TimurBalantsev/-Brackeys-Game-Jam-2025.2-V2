@@ -1,10 +1,14 @@
 ﻿using HitBox;
+using System;
 using UnityEngine;
 namespace Entity
 {
     public abstract class Entity : MonoBehaviour, AttackHitBoxSource, Damageable
     {
-        [SerializeField] protected EntityStats stats;
+        public event Action<EntityStats> OnDamage;
+        public event Action OnDie;
+
+        [SerializeField] public EntityStats stats;
 
         [SerializeField] protected SpriteRenderer spriteRenderer;
         [SerializeField] private bool isSpriteFacingRight = true;
@@ -52,6 +56,8 @@ namespace Entity
             {
                 Die();
             }
+
+            OnDamage?.Invoke(stats);
         }
 
         public void Heal(float heal)
@@ -67,6 +73,7 @@ namespace Entity
         protected virtual void Die()
         {
             isDead = true;
+            OnDie?.Invoke();
         }
     }
 };

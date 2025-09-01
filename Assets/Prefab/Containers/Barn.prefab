@@ -1751,7 +1751,7 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   lootTable: {fileID: 11400000, guid: dd4e457ee954c2547b78dcc9e40040fc, type: 2}
-  maxItemsSpawned: 10
+  maxItemsSpawned: 16
   minItemsSpawned: 3
   openingSound: {fileID: 11400000, guid: 316de8d45ef309145ac38cc5d599e2d3, type: 2}
 --- !u!114 &6746966386220557346

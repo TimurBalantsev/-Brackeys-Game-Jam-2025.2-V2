@@ -44,7 +44,10 @@ class EnemyChasingState : EnemyState
 
         if (distanceToTarget <= enemy.attackStartRange)
         {
-            return new EnemyAttackingState();
+            if (!enemy.Target.IsDead)
+            {
+                return new EnemyAttackingState();
+            }
         }
 
         return null;

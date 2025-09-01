@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca403553c7e04aa5bc772e5e20ed1dfd, type: 3}
+  m_Name: Soldering Iron
+  m_EditorClassIdentifier: 
+  itemName: Soldering Iron
+  description: 
+  itemType: 3
+  weight: 0.3
+  slot: 0.5
+  icon: {fileID: -7218073849535297666, guid: 6b89d90540a0330408d90e240e23de76, type: 3}

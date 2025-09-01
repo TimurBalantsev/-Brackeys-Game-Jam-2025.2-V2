@@ -14,6 +14,8 @@ public class Player : Entity.Entity
     [SerializeField] public AudioSource hurtSound;
     [SerializeField] public AudioSource deathSound;
 
+    public bool canMove = true;
+
     public static Player Instance;
 
     public Inventory Inventory => inventory;
@@ -45,7 +47,19 @@ public class Player : Entity.Entity
         InputManager.Instance.OnAttackPerformed += InputManager_OnAttackPerformed;
         // InputManager.Instance.OnAttackReleased += InputManager_OnAttackReleased;
         InputManager.Instance.OnInventory += InputManager_OnInventoryPressed;
+        InputManager.Instance.OnToggleInfo += Instance_OnToggleInfo;
         stats.Initialize();
+    }
+
+    private void OnDestroy()
+    {
+        InputManager.Instance.OnInventory -= InputManager_OnInventoryPressed;
+        InputManager.Instance.OnToggleInfo -= Instance_OnToggleInfo;
+    }
+
+    private void Instance_OnToggleInfo(object sender, EventArgs e)
+    {
+        InGameBaseInfoUIController.Instance.ToggleInfo();
     }
 
     private void InputManager_OnInventoryPressed(object sender, EventArgs e)
@@ -120,6 +134,7 @@ public class Player : Entity.Entity
 
     public void Move(Vector2 movementDirection)
     {
+        if (!canMove) return;
         Vector2 newPosition = rigidBody.position + movementDirection * (stats.speed * Time.fixedDeltaTime);
         rigidBody.MovePosition(newPosition);
     }
@@ -137,5 +152,6 @@ public class Player : Entity.Entity
         deathSound.Play();
         ChangeState(new PlayerDeathState());
         Debug.Log("Player died");
+        GameOverUI.Instance.Show("You died", true);
     }
 }

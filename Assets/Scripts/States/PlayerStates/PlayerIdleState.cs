@@ -27,6 +27,10 @@ public class PlayerIdleState : PlayerState
 
     public PlayerState Input(InputManager.InputActions inputAction)
     {
+        if (!player.canMove)
+        {
+            return null;
+        }
         switch (inputAction)
         {
             case InputManager.InputActions.MOVE:
